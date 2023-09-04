@@ -16,4 +16,4 @@ License
 This project is licensed under the MIT License.
 
 Contact
-For more information, visit kimnellans.me OR get in touch via email: kim.nellans@gmail.com.
+For more information, visit https://kimnellans.me OR get in touch via email: kim.nellans@gmail.com.
