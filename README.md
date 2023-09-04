@@ -1,5 +1,5 @@
-Kim Nellans Portfolio
-Description
+Kim Nellans Portfolio Description:
+
 This repository contains the UX / UI/ Front End Dev. portfolio website for Kim Nellans, showcasing various projects and professional information.
 
 Installation
