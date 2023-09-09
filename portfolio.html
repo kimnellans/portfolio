@@ -4,18 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Kim Nellans</title>
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Standard favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-    <!-- Favicon for modern browsers -->
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+    <title>Portfolio - Locavore Project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+
+    <!-- Header: Logo, Navigation, and Social Icons -->
     <header>
         <a href="index.html">
             <img src="assets/kimn.svg" alt="Kim Nellans Logo">
@@ -29,79 +24,128 @@
         </nav>
         <div class="social-icons">
             <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
+                    alt="Instagram"></a>
             <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
     </header>
 
-    <main>
-        <!-- Hero Section with background image and overlaying text -->
-        <section class="hero">
-            <picture>
-                <source media="(max-width: 480px)" srcset="img/locavore/project-page/hero/hero-mobile1x.png 1x, img/locavore/project-page/hero/hero-mobile2x.png 2x">
-                <source media="(max-width: 768px)" srcset="img/locavore/project-page/hero/hero-tablet1x.png 1x, img/locavore/project-page/hero/hero-tablet2x.png 2x">
-                <img src="img/locavore/project-page/hero/hero1x.png" srcset="img/locavore/project-page/hero/hero2x.png 2x" alt="Locavore mobile mockup image">
-            </picture>
-            <span class="eyebrow">LOCAVORE</span>
-            <h1>Connecting Communities to Fresh, Local Produce</h1>
-        </section>
+    <!-- Hero Section -->
+    <section class="hero">
+        <span>LOCAVORE</span>
+        <h1>Connecting Communities to Fresh, Local Produce</h1>
+        <img src="img/locavore/project-page/hero/hero1x.png" srcset="img/locavore/project-page/hero/hero-mobile1x.png 480w,
+                     img/locavore/project-page/hero/hero-mobile2x.png 960w,
+                     img/locavore/project-page/hero/hero-tablet1x.png 768w,
+                     img/locavore/project-page/hero/hero-tablet2x.png 1536w,
+                     img/locavore/project-page/hero/hero1x.png 1920w,
+                     img/locavore/project-page/hero/hero2x.png 3840w" alt="Locavore mobile mockup image">
+    </section>
 
-        <!-- 2-column layout with text and GIF -->
-        <section class="two-column">
-            <div class="left-column">
-                <h2>Bridging the Gap: Locavore's Mission</h2>
-                <p>
-                    Project Title: Bridging the Gap: Locavore's Mission - Connecting Local Farmers and Patrons in Boise, Idaho<br>
-                    My Role: Product Designer- Responsible for the entire UX / UI process.<br>
-                    Timeline: 3 Months (June - August 2023)<br>
-                    Objective: To foster community engagement by making fresh, locally sourced food accessible to all in Boise, Idaho.<br>
-                    Constraints: Limited by the conceptual nature of the project, with constraints on metrics and outcomes.
-                </p>
-                <a href="#">Jump To Full Prototype👇</a>
-            </div>
-            <div class="right-column">
-                <img src="img/locavore/project-page/proto-long.gif" alt="Locavore Prototype GIF">
-            </div>
-        </section>
+    <!-- Two Column Section: Text and GIF -->
+    <section class="two-col">
+        <div>
+            <h2>Bridging the Gap: Locavore's Mission</h2>
+            <p>Project Title: Bridging the Gap: Locavore's Mission - Connecting Local Farmers and Patrons in Boise,
+                Idaho</p>
+            <p>My Role: Product Designer- Responsible for the entire UX / UI process.</p>
+            <p>Timeline: 3 Months (June - August 2023)</p>
+            <p>Objective: To foster community engagement by making fresh, locally sourced food accessible to all in
+                Boise, Idaho.</p>
+            <p>Constraints: Limited by the conceptual nature of the project, with constraints on metrics and outcomes.
+            </p>
+            <a href="#">Jump To Full Prototype👇</a>
+        </div>
+        <div>
+            <img src="img/locavore/project-page/proto-long.gif" alt="Locavore Prototype GIF">
+        </div>
+    </section>
 
-        <!-- 2-column layout with text content -->
-        <section class="two-column">
-            <div class="left-column">
-                <h2>The Challenge: Nourishing Local Communities</h2>
-                <p>Addressing Accessibility and Mobility Issues</p>
-            </div>
-            <div class="right-column">
-                <h2>Understanding the People</h2>
-                <p>
-                    The primary patrons of Locavore are people who value fresh, local produce and the farmers who supply it. To delve into the needs and challenges of these distinct groups, comprehensive research was conducted, encompassing surveys and interviews.
-                </p>
-                <p>
-                    Patrons: The research focused on understanding their shopping habits, motivations, and challenges in buying local produce, along with their comfort level with digital platforms. The insights revealed a strong desire for fresh local produce but highlighted the need for a people-friendly digital solution.
-                </p>
-                <p>
-                    Farmers: For farmers, the study centered on their current inventory management methods, challenges in reaching patrons, and comfort with digital platforms. The need for an efficient way to communicate available products to customers was a key insight.
-                </p>
-            </div>
-        </section>
+    <!-- Two Column Section: Introduction and BFM Background -->
+    <section class="two-col">
+        <div>
+            <h2>Introduction: Connecting Farmers and Patrons</h2>
+            <p>Bridging the Gap with Digital Solutions</p>
+            <blockquote>“I love supporting local farmers, but without a car, it's been nearly impossible to get fresh
+                produce from the market.”</blockquote>
+            <cite>— BFM MARKET PATRON</cite>
+        </div>
+        <div>
+            <p>In the heart of Boise, Idaho, an established tradition, the Boise Farmers Market (BFM), thrives as a
+                community pillar. It connects local farmers to their patrons, providing fresh, locally-grown produce
+                directly to consumers. When the pandemic emerged, accessibility became a growing issue, rendering a
+                chunk of the population unable to participate in this vibrant exchange.</p>
+            <p>The BFM's response? An online ordering and drive-thru option, a timely solution that preserved the
+                connection between farmers and patrons. Yet, a significant problem remained. Those unable to visit the
+                market or align their schedules with the restrictive pickup window found themselves excluded from this
+                local food-centric experience. People without transportation, mobility issues, or schedule conflicts
+                were particularly affected.</p>
+            <p>This led to the realization that while the drive-thru option improved accessibility for some, it still
+                left out those with various limitations. The challenge became: How to evolve this local staple into a
+                platform accessible to everyone, with a focus on delivery to address these issues?</p>
+        </div>
+    </section>
 
-        <!-- 3 images in a row -->
-        <section class="three-images">
-            <img src="img/locavore/project-page/bfm/bfm1x_1.jpg" alt="Locavore Image 1">
-            <img src="img/locavore/project-page/bfm/bfm1x_2.jpg" alt="Locavore Image 2">
-            <img src="img/locavore/project-page/bfm/bfm1x_3.jpg" alt="Locavore Image 3">
-        </section>
+    <!-- Full Width Image: Farmer -->
+    <img src="img/locavore/project-page/bfm/farmer1x.png" srcset="img/locavore/project-page/bfm/farmer-mobile1x.png 480w,
+                 img/locavore/project-page/bfm/farmer-mobile2x.png 960w,
+                 img/locavore/project-page/bfm/farmer-tablet1x.png 768w,
+                 img/locavore/project-page/bfm/farmer-tablet2x.png 1536w,
+                 img/locavore/project-page/bfm/farmer1.5x.png 2880w,
+                 img/locavore/project-page/bfm/farmer1x.png 1920w" alt="BLM farmer holding produce">
 
-        <!-- Full-width farmer image -->
-        <section>
-            <picture>
-                <source media="(max-width: 480px)" srcset="img/locavore/project-page/bfm/farmer-mobile1x.png 1x, img/locavore/project-page/bfm/farmer-mobile2x.png 2x">
-                <source media="(max-width: 768px)" srcset="img/locavore/project-page/bfm/farmer-tablet1x.png 1x, img/locavore/project-page/bfm/farmer-tablet2x.png 2x">
-                <img src="img/locavore/project-page/bfm/farmer1x.png" srcset="img/locavore/project-page/bfm/farmer1.5x.png 1.5x" alt="BLM farmer holding produce">
-            </picture>
-        </section>
+    <!-- Two Column Section: Challenge and Understanding -->
+    <section class="two-col">
+        <div>
+            <h2>The Challenge: Nourishing Local Communities</h2>
+            <p>Addressing Accessibility and Mobility Issues</p>
+        </div>
+        <div>
+            <h2>The main problem my design aimed to solve was the disconnect between local farmers and consumers,
+                particularly those who were excluded due to transportation, mobility, or scheduling issues. The goal of
+                the Locavore app was to create a digital solution that would enable these consumers to find local
+                farmers, view inventory, place orders, and opt for delivery, all within a seamless user interface.</h2>
+            <p>While the design also considered the need for farmers to manage their inventory effectively and connect
+                directly with consumers, the primary focus of this iteration was on the delivery option, addressing the
+                main pain point and serving as the MVP for the project.</p>
+            <p>This problem posed a considerable risk - community members missing out on fresh, local produce and local
+                farmers losing a larger customer base. I saw an opportunity here, a chance to bridge this gap and create
+                an inclusive solution that not just serves but flourishes within the community.</p>
+        </div>
+    </section>
 
-    </main>
+    <!-- Three Images in a Row -->
+    <section class="three-col">
+        <img src="img/locavore/project-page/bfm/bfm1x_1.jpg" alt="Locavore Image 1">
+        <img src="img/locavore/project-page/bfm/bfm1x_2.jpg" alt="Locavore Image 2">
+        <img src="img/locavore/project-page/bfm/bfm1x_3.jpg" alt="Locavore Image 3">
+    </section>
 
+    <!-- Two Column Section: Discovery & Insights -->
+    <section class="two-col">
+        <div>
+            <h2>Discovery & Insights: Understanding the Terrain</h2>
+            <p>Research and Personas</p>
+            <blockquote>“The online platform has been a lifeline, but we need to reach more people who can't make it to
+                the market.”</blockquote>
+            <cite>— BFM MARKET PATRON</cite>
+        </div>
+        <div>
+            <h2>Understanding the People</h2>
+            <p>The primary patrons of Locavore are people who value fresh, local produce and the farmers who supply it.
+                To delve into the needs and challenges of these distinct groups, comprehensive research was conducted,
+                encompassing surveys and interviews.</p>
+            <p>Patrons: The research focused on understanding their shopping habits, motivations, and challenges in
+                buying local produce, along with their comfort level with digital platforms. The insights revealed a
+                strong desire for fresh local produce but highlighted the need for a people-friendly digital solution.
+            </p>
+            <p>Farmers: For farmers, the study centered on their current inventory management methods, challenges in
+                reaching patrons, and comfort with digital platforms. The need for an efficient way to communicate
+                available products to customers was a key insight.</p>
+        </div>
+    </section>
+
+    <!-- Footer: Navigation and Social Icons -->
     <footer>
         <nav>
             <ul>
@@ -113,10 +157,16 @@
         </nav>
         <div class="social-icons">
             <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
+                    alt="Instagram"></a>
             <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
+        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With
+            gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my
+            daily life.</p>
+        <p>© 2023 kim n. All rights reserved. Made with love by me 💛</p>
     </footer>
+
 </body>
 
 </html>
