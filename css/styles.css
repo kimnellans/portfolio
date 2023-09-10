@@ -95,3 +95,18 @@ code,
     /* Regular */
     line-height: 1.5;
 }
+
+.hero {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    overflow: hidden; /* Ensures the image doesn't overflow the section */
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+}
