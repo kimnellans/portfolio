@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-    font-family: 'Lato', Helvetica, sans-serif;
+    font-family: 'Cabin', Helvetica, sans-serif; /* Updated to Cabin */
     font-size: 1rem;
     font-weight: 400; /* Regular */
     line-height: 1.5;
@@ -15,12 +15,12 @@ a {
 
 a:hover {
     color: #5CB2D9; /* Link Hover Color */
-    text-decoration: underline; /* Add underline on hover for clarity */
+    text-decoration: none; /* Removed underline on hover */
 }
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Arvo', serif;
+    font-family: 'Roboto Condensed', serif; /* Updated to Roboto Condensed */
     margin-top: 0;
 }
 
@@ -50,6 +50,10 @@ h5 {
 h6 {
     font-size: 1rem;
 }
+
+/* ... rest of your CSS ... */
+
+
 
 /* Dark Background Sections */
 .dark-section {
