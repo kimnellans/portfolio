@@ -68,4 +68,45 @@ h6 {
     color: #F9FAFC; /* Light headers on dark background */
 }
 
-/* ... other styles ... */
+
+.hero {
+    position: relative;
+    width: 100%; /* Ensure it spans the full width */
+    min-height: 75vh;
+    overflow: hidden; /* To ensure the image doesn't overflow the section */
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Image will be below the overlay */
+}
+
+.overlay {
+    position: relative; /* Relative positioning so it's on top of the image */
+    z-index: 2; /* Overlay and text will be above the image */
+    background: rgba(15, 24, 42, 0.6); /* Dark overlay */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAFC; /* White text color */
+    width: 100%;
+    min-height: 75vh;
+}
+
+/* Styling for the eyebrow text */
+.hero span {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+/* Styling for the h1 text */
+.hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
