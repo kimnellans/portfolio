@@ -163,3 +163,161 @@ nav ul li a:hover, nav ul li a.active {
 .social-icons img {
     width: 24px; /* Increased icon size */
 }
+/* Reset and Global Styles */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333333; /* Default dark text color */
+    background-color: #F9FAFC; /* Light Background Color */
+}
+
+a {
+    text-decoration: none;
+    color: #7DD3FC; /* Link Color */
+}
+
+a:hover {
+    color: #5CB2D9; /* Link Hover Color */
+    text-decoration: none; /* Remove underline on hover */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+/* Light and Dark Sections */
+.light-section {
+    background-color: #F9FAFC; /* Light background */
+    color: #0F182A; /* Dark text */
+}
+
+.dark-section {
+    background-color: #0F182A; /* Dark background */
+    color: #F9FAFC; /* Light text */
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative;
+    width: 100%;
+    min-height: 75vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.overlay {
+    position: relative;
+    z-index: 2;
+    background: rgba(15, 24, 42, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #F9FAFC;
+    width: 100%;
+    min-height: 75vh;
+}
+
+.hero span {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+/* Header Styles */
+header {
+    background-color: #FFFFFF;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.logo img {
+    width: 80%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+
+nav ul li a {
+    color: #0F182A;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #7DD3FC;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 24px;
+}
