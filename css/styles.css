@@ -112,8 +112,8 @@ h6 {
 }
 
 header {
-    background-color: #FFFFFF; /* White background */
-    height: 150px; /* Adjust as needed */
+    background-color: #FFFFFF;
+    height: 140px; /* Reduced height */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -123,33 +123,39 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%; /* Adjust as needed */
-    max-width: 1200px; /* Adjust as needed */
+    width: 90%;
+    max-width: 1200px;
 }
 
-.logo {
-    flex: 1;
+.logo img {
+    width: 90%; /* Reduced logo size */
 }
 
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Space between items */
-    flex: 2;
+    gap: 20px;
+    list-style-type: none; /* Remove list item dots */
 }
 
 nav ul li a {
-    color: #0F182A; /* Dark Text Color */
-    transition: color 0.3s ease; /* Smooth color transition */
+    color: #0F182A;
+    text-transform: uppercase; /* Capitalize nav items */
+    font-size: 1.1rem; /* Increased font size */
+    transition: color 0.3s ease;
+    text-decoration: none; /* Remove underline */
 }
 
 nav ul li a:hover, nav ul li a.active {
-    color: #7DD3FC; /* Link Hover Color and Active Color */
+    color: #7DD3FC;
 }
 
 .social-icons {
     display: flex;
-    gap: 15px; /* Space between icons */
-    flex: 1;
+    gap: 15px;
     justify-content: flex-end;
+}
+
+.social-icons img {
+    width: 24px; /* Increased icon size */
 }
