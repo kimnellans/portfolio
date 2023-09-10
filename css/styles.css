@@ -1,122 +1,71 @@
-/* Base font size */
-html {
-    font-size: 17px;
-}
-
-/* Body Text */
+/* Base Styles */
 body {
     font-family: 'Lato', Helvetica, sans-serif;
     font-size: 1rem;
-    font-weight: 400;
-    /* Regular */
+    font-weight: 400; /* Regular */
     line-height: 1.5;
+    color: #0F182A; /* Dark Text Color */
+    background-color: #F9FAFC; /* Light Background Color */
 }
 
-/* H1 */
+a {
+    color: #7DD3FC; /* Link Color */
+    text-decoration: none; /* Remove default underline */
+}
+
+a:hover {
+    color: #5CB2D9; /* Link Hover Color */
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Arvo', serif;
+    margin-top: 0;
+}
+
 h1 {
-    font-family: 'Arvo', Georgia, 'Times New Roman', serif;
-    font-size: 2.827rem;
-    /* 17px * 1.414^3 */
-    font-weight: 700;
-    /* Bold */
-    line-height: 1.2;
-}
-
-/* H2 */
-h2 {
-    font-family: 'Arvo', Georgia, 'Times New Roman', serif;
-    font-size: 2rem;
-    /* 17px * 1.414^2 */
-    font-weight: 700;
-    /* Bold */
-    line-height: 1.2;
-}
-
-/* H3 */
-h3 {
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 1.414rem;
-    /* 17px * 1.414^1 */
-    font-weight: 700;
-    /* Bold */
-    line-height: 1.3;
-}
-
-/* H4 */
-h4 {
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 1rem;
-    /* Base size */
-    font-weight: 400;
-    /* Regular */
-    line-height: 1.3;
-}
-
-/* Buttons */
-button,
-.button {
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    /* Bold */
-    letter-spacing: 0.05rem;
-    /* ... other button styles ... */
-}
-
-/* Captions */
-figcaption,
-.caption {
-    font-family: 'Lato', Helvetica, sans-serif;
-    font-size: 0.85rem;
-    font-weight: 400;
-    /* Regular */
-    font-style: italic;
-    letter-spacing: 0.05rem;
-}
-
-/* Quotes */
-blockquote,
-.quote {
-    font-family: 'Arvo', Georgia, 'Times New Roman', serif;
-    font-size: 1.25rem;
-    font-weight: 400;
-    /* Regular */
-    font-style: italic;
-    line-height: 1.4;
-    letter-spacing: 0.03rem;
-}
-
-/* Monospace (Mono) Text */
-code,
-.mono {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
-    font-weight: 400;
-    /* Regular */
-    line-height: 1.5;
-}
-
-.hero {
-    position: relative;
-    background-image: linear-gradient(rgba(15, 24, 42, 0.6), rgba(15, 24, 42, 0.6)), url('img/locavore/project-page/hero/hero1x.png');
-    background-size: cover;
-    background-position: center;
-    min-height: 75vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    color: #F9FAFC; /* White text color */
-}
-
-/* Styling for the eyebrow text */
-.hero span {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
-}
-
-/* Styling for the h1 text */
-.hero h1 {
     font-size: 2.5rem;
-    text-align: center;
+    line-height: 1.2;
 }
+
+h2 {
+    font-size: 2rem;
+    line-height: 1.3;
+}
+
+h3 {
+    font-size: 1.75rem;
+    line-height: 1.4;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1rem;
+}
+
+/* Dark Background Sections */
+.dark-section {
+    background-color: #0F182A;
+    color: #F9FAFC; /* Light text on dark background for contrast */
+}
+
+/* Light Background Sections */
+.light-section {
+    background-color: #F9FAFC;
+    color: #0F182A; /* Dark text on light background */
+}
+
+/* Headers on Dark Background */
+.dark-section h1, .dark-section h2, .dark-section h3 {
+    color: #F9FAFC; /* Light headers on dark background */
+}
+
+/* ... other styles ... */
