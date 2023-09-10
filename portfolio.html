@@ -4,20 +4,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Locavore Project</title>
+    <title>Home | Kim Nellans</title>
 
     <!-- Adding normalize.css from the CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <!-- Your custom stylesheet -->
-    <link rel="stylesheet" href="styles.css">
-</head>
+    <!-- Google Fonts: LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
 
+    <!-- Google Fonts: ARVO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Standard favicon -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+    <!-- Favicon for modern browsers -->
+    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
+</head>
 
 <body>
 
     <!-- Header: Logo, Navigation, and Social Icons -->
-    <header>
+    <header class="dark-section">
         <a href="index.html">
             <img src="assets/kimn.svg" alt="Kim Nellans Logo">
         </a>
@@ -37,19 +57,14 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero light-section">
         <span>LOCAVORE</span>
         <h1>Connecting Communities to Fresh, Local Produce</h1>
-        <img src="img/locavore/project-page/hero/hero1x.png" srcset="img/locavore/project-page/hero/hero-mobile1x.png 480w,
-                     img/locavore/project-page/hero/hero-mobile2x.png 960w,
-                     img/locavore/project-page/hero/hero-tablet1x.png 768w,
-                     img/locavore/project-page/hero/hero-tablet2x.png 1536w,
-                     img/locavore/project-page/hero/hero1x.png 1920w,
-                     img/locavore/project-page/hero/hero2x.png 3840w" alt="Locavore mobile mockup image">
+        <img src="img/locavore/project-page/hero/hero1x.png" alt="Locavore mobile mockup image">
     </section>
 
     <!-- Two Column Section: Text and GIF -->
-    <section class="two-col">
+    <section class="two-col light-section">
         <div>
             <h2>Bridging the Gap: Locavore's Mission</h2>
             <p>Project Title: Bridging the Gap: Locavore's Mission - Connecting Local Farmers and Patrons in Boise,
@@ -68,7 +83,7 @@
     </section>
 
     <!-- Two Column Section: Introduction and BFM Background -->
-    <section class="two-col">
+    <section class="two-col light-section">
         <div>
             <h2>Introduction: Connecting Farmers and Patrons</h2>
             <p>Bridging the Gap with Digital Solutions</p>
@@ -93,15 +108,10 @@
     </section>
 
     <!-- Full Width Image: Farmer -->
-    <img src="img/locavore/project-page/bfm/farmer1x.png" srcset="img/locavore/project-page/bfm/farmer-mobile1x.png 480w,
-                 img/locavore/project-page/bfm/farmer-mobile2x.png 960w,
-                 img/locavore/project-page/bfm/farmer-tablet1x.png 768w,
-                 img/locavore/project-page/bfm/farmer-tablet2x.png 1536w,
-                 img/locavore/project-page/bfm/farmer1.5x.png 2880w,
-                 img/locavore/project-page/bfm/farmer1x.png 1920w" alt="BLM farmer holding produce">
+    <img src="img/locavore/project-page/bfm/farmer1x.png" alt="BLM farmer holding produce" class="light-section">
 
     <!-- Two Column Section: Challenge and Understanding -->
-    <section class="two-col">
+    <section class="two-col light-section">
         <div>
             <h2>The Challenge: Nourishing Local Communities</h2>
             <p>Addressing Accessibility and Mobility Issues</p>
@@ -121,14 +131,14 @@
     </section>
 
     <!-- Three Images in a Row -->
-    <section class="three-col">
+    <section class="three-col light-section">
         <img src="img/locavore/project-page/bfm/bfm1x_1.jpg" alt="Locavore Image 1">
         <img src="img/locavore/project-page/bfm/bfm1x_2.jpg" alt="Locavore Image 2">
         <img src="img/locavore/project-page/bfm/bfm1x_3.jpg" alt="Locavore Image 3">
     </section>
 
     <!-- Two Column Section: Discovery & Insights -->
-    <section class="two-col">
+    <section class="two-col light-section">
         <div>
             <h2>Discovery & Insights: Understanding the Terrain</h2>
             <p>Research and Personas</p>
@@ -152,7 +162,7 @@
     </section>
 
     <!-- Footer: Navigation and Social Icons -->
-    <footer>
+    <footer class="dark-section">
         <nav>
             <ul>
                 <li><a href="blog.html">BLOG</a></li>

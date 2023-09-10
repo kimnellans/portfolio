@@ -1,0 +1,97 @@
+/* Base font size */
+html {
+    font-size: 17px;
+}
+
+/* Body Text */
+body {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    /* Regular */
+    line-height: 1.5;
+}
+
+/* H1 */
+h1 {
+    font-family: 'Arvo', Georgia, 'Times New Roman', serif;
+    font-size: 2.827rem;
+    /* 17px * 1.414^3 */
+    font-weight: 700;
+    /* Bold */
+    line-height: 1.2;
+}
+
+/* H2 */
+h2 {
+    font-family: 'Arvo', Georgia, 'Times New Roman', serif;
+    font-size: 2rem;
+    /* 17px * 1.414^2 */
+    font-weight: 700;
+    /* Bold */
+    line-height: 1.2;
+}
+
+/* H3 */
+h3 {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1.414rem;
+    /* 17px * 1.414^1 */
+    font-weight: 700;
+    /* Bold */
+    line-height: 1.3;
+}
+
+/* H4 */
+h4 {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1rem;
+    /* Base size */
+    font-weight: 400;
+    /* Regular */
+    line-height: 1.3;
+}
+
+/* Buttons */
+button,
+.button {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    /* Bold */
+    letter-spacing: 0.05rem;
+    /* ... other button styles ... */
+}
+
+/* Captions */
+figcaption,
+.caption {
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 0.85rem;
+    font-weight: 400;
+    /* Regular */
+    font-style: italic;
+    letter-spacing: 0.05rem;
+}
+
+/* Quotes */
+blockquote,
+.quote {
+    font-family: 'Arvo', Georgia, 'Times New Roman', serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+    /* Regular */
+    font-style: italic;
+    line-height: 1.4;
+    letter-spacing: 0.03rem;
+}
+
+/* Monospace (Mono) Text */
+code,
+.mono {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: 400;
+    /* Regular */
+    line-height: 1.5;
+}

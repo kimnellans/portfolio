@@ -4,7 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About | Kim Nellans</title>
+    <title>Home | Kim Nellans</title>
+
+    <!-- Adding normalize.css from the CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Google Fonts: LATO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Google Fonts: ARVO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Your custom stylesheet -->
+    <link rel="stylesheet" href="css/styles.css">
 
     <!-- Standard favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -12,17 +32,10 @@
     <!-- Favicon for modern browsers -->
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
-
-    <!-- Adding normalize.css from the CDN -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <!-- Link to your external CSS file -->
-    <link rel="stylesheet" href="styles.css">
 </head>
 
-
-<body>
-    <header>
+<body class="light-section">
+    <header class="dark-section">
         <a href="index.html">
             <img src="assets/kimn.svg" alt="Kim Nellans Logo">
         </a>
@@ -46,7 +59,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="light-section">
         <!-- Outer content block div -->
         <div>
             <!-- Inner div for centering content -->
@@ -88,7 +101,7 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="dark-section">
         <nav>
             <ul>
                 <li><a href="blog.html">BLOG</a></li>
@@ -111,3 +124,8 @@
         <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With
             gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my
             daily life.</p>
+    </footer>
+
+</body>
+
+</html>
