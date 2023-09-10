@@ -110,3 +110,46 @@ h6 {
     font-size: 2.5rem;
     text-align: center;
 }
+
+header {
+    background-color: #FFFFFF; /* White background */
+    height: 150px; /* Adjust as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%; /* Adjust as needed */
+    max-width: 1200px; /* Adjust as needed */
+}
+
+.logo {
+    flex: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Space between items */
+    flex: 2;
+}
+
+nav ul li a {
+    color: #0F182A; /* Dark Text Color */
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #7DD3FC; /* Link Hover Color and Active Color */
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px; /* Space between icons */
+    flex: 1;
+    justify-content: flex-end;
+}
