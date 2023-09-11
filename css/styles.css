@@ -113,3 +113,11 @@ img {
   width: 100%;
   height: auto; /* This ensures the aspect ratio of the image is maintained */
 }
+
+/* Header Styles */
+.header {
+  background-color: #FFFFFF; /* Setting the background color to pure white */
+  padding: 10px; /* Adding padding of 10 pixels to all sides */
+  margin: 20px; /* Adding margin of 20 pixels to all sides */
+}
+
