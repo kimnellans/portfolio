@@ -8,114 +8,108 @@ Link Color: #7DD3FC;
 Highlight Color: #CFD8E0;
 */
 
-/* Colors used */
-/*
-Dark Background: #0F182A;
-Light Background: #F9FAFC;
-Text Color on Dark Background: #FFFFFF;
-Text Color on Light Background: #333333;
-Link Color: #7DD3FC;
-Highlight Color: #CFD8E0;
-*/
-
 /* Typography Styles */
 body {
-    font-family: 'Lora', serif;
-    font-size: 16px;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #333333;
+  font-family: 'Lora', serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333333;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 }
 
 h1 {
-    font-size: 2.75em;
-    font-weight: 700;
+  font-size: 2.75em;
+  font-weight: 700;
 }
 
 h2 {
-    font-size: 2.25em;
-    font-weight: 700;
+  font-size: 2.25em;
+  font-weight: 700;
 }
 
 h3 {
-    font-size: 1.75em;
-    font-weight: 400;
+  font-size: 1.75em;
+  font-weight: 400;
 }
 
 h4 {
-    font-size: 1.35em;
-    font-weight: 400;
+  font-size: 1.35em;
+  font-weight: 400;
 }
 
 /* Link Style */
 a {
-    color: #7DD3FC;
-    text-decoration: underline;
+  color: #7DD3FC;
+  text-decoration: underline;
 }
 
 /* Highlighted Element */
 .highlighted {
-    background-color: #CFD8E0;
+  background-color: #CFD8E0;
 }
 
 /* Styling for Hyperlinks */
 a {
-    color: #ff7f50; /* Default link color */
-    text-decoration: none; /* No underlining */
-  }
-  
-  a:hover {
-    color: #cc6540; /* Color when hovering */
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  
-  a:visited {
-    color: #ff7f50; /* Visited link color */
-  }
-  
-  a:active {
-    color: #994c30; /* Selected link color when clicked */
-  }
-  
-  a:hover,
-  a:focus {
-    color: #cc6540; /* Hover and focus state color */
-    text-decoration: underline; /* Underlining when hovering or focusing */
-  }
+  color: #ff7f50; /* Default link color */
+  text-decoration: none; /* No underlining */
+}
 
-  /* Styling for Buttons */
+a:hover {
+  color: #cc6540; /* Color when hovering */
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited {
+  color: #ff7f50; /* Visited link color */
+}
+
+a:active {
+  color: #994c30; /* Selected link color when clicked */
+}
+
+a:hover,
+a:focus {
+  color: #cc6540; /* Hover and focus state color */
+  text-decoration: underline; /* Underlining when hovering or focusing */
+}
+
+/* Styling for Buttons */
 .button {
-    display: inline-block;
-    background-color: #ff7f50; /* Button background color */
-    color: #ffffff; /* Button text color */
-    font-weight: bold; /* Bold font weight */
-    padding: 10px; /* Padding around the button text */
-    border-radius: 3px; /* Rounded corners */
-    border-bottom: 2px solid #994c30; /* Bottom border */
-    transition: 0.2s opacity; /* Smooth transition for opacity */
-  }
-  
-  .button:hover {
-    opacity: 0.8; /* Reduce opacity on hover */
-    text-decoration: none; /* Remove underlining on hover */
-  }
-  
-  /* Styling for the specific button with the "contact" class */
-  .button.contact {
-    background-color: transparent; /* Transparent background */
-    color: #ff7f50; /* Text color */
-    text-transform: uppercase; /* Uppercase text */
-    border: 2px solid #ff7f50; /* Border style */
-  }
-  
-  .button.contact:hover {
-    background-color: #ff7f50; /* Background color on hover */
-    color: #ffffff; /* Text color on hover */
-  }
-  
-  
+  display: inline-block;
+  background-color: #ff7f50; /* Button background color */
+  color: #ffffff; /* Button text color */
+  font-weight: bold; /* Bold font weight */
+  padding: 10px; /* Padding around the button text */
+  border-radius: 3px; /* Rounded corners */
+  border-bottom: 2px solid #994c30; /* Bottom border */
+  transition: 0.2s opacity; /* Smooth transition for opacity */
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduce opacity on hover */
+  text-decoration: none; /* Remove underlining on hover */
+}
+
+/* Styling for the specific button with the "contact" class */
+.button.contact {
+  background-color: transparent; /* Transparent background */
+  color: #ff7f50; /* Text color */
+  text-transform: uppercase; /* Uppercase text */
+  border: 2px solid #ff7f50; /* Border style */
+}
+
+.button.contact:hover {
+  background-color: #ff7f50; /* Background color on hover */
+  color: #ffffff; /* Text color on hover */
+}
+
+/* Image Styles */
+img {
+  width: 100%;
+  height: auto; /* This ensures the aspect ratio of the image is maintained */
+}

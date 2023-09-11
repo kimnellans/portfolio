@@ -1,16 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <!-- Viewport settings for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About | Kim Nellans</title>
-
-    <!-- Normalize CSS reset -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <!-- Link to stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <!-- Standard favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -19,15 +13,11 @@
     <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
 
-    <!-- CSS for responsive images -->
-    <style>
-        img {
-            width: 100%;
-        }
-    </style>
+    <!-- Link to your external CSS file -->
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Header: Logo, Navigation, and Social Icons -->
     <header>
         <a href="index.html">
             <img src="assets/kimn.svg" alt="Kim Nellans Logo">
@@ -52,36 +42,72 @@
         </div>
     </header>
 
-    <!-- Wrap main content in container and row -->
-    <div class="container">
-        <div class="row">
-            <!-- About Page Content -->
-            <main>
-                <h1>About Me</h1>
-                <p>Welcome to my portfolio website. I'm Kim Nellans, a passionate front-end developer and lead product designer at Apple. I'm also your mentor, dedicated to helping you learn and grow in the world of web development and design.</p>
-                <p>I have a deep love for creating beautiful and user-friendly websites. With years of experience in the industry, I'm excited to share my knowledge with you and guide you on your journey to becoming a skilled developer and designer.</p>
-                <p>Feel free to explore the resources and projects on this website, and don't hesitate to reach out if you have any questions or need assistance. Let's embark on this learning journey together!</p>
-            </main>
-        </div>
-    </div>
+    <main>
+        <!-- Outer content block div -->
+        <div>
+            <!-- Inner div for centering content -->
+            <div>
+                <h1>Who me?</h1>
+            </div>
 
-    <!-- Footer: Navigation and Social Icons -->
+            <!-- Div for two columns -->
+            <div>
+                <!-- Left column -->
+                <div>
+                    <h2>Visual Product Designer with a Heart for Mindfulness</h2>
+                    <picture>
+                        <source srcset="img/bio/portfolio1_2x.jpg" media="(min-width: 768px)">
+                        <img src="img/bio/portfolio1_1x.jpg" alt="Kim's Bio Image">
+                    </picture>
+                </div>
+
+                <!-- Right column -->
+                <div>
+                    <p>👋 Hi, I'm Kim, a UX/UI and Product Designer with a deep passion for visual storytelling and
+                        mindfulness. From my first camera at age 8, I've been drawn to capturing life's beauty.</p>
+                    <p>I've worn many hats in my career, from advocating for people with disabilities at UCLA to
+                        navigating India without an itinerary (and insanely detailed maps that I still managed to
+                        misread!). These diverse experiences have sculpted my empathy and shaped my approach to UX
+                        design.</p>
+                    <p>Prioritizing simplicity and intentionality in design, I also value humor and not taking life too
+                        seriously, cherishing the present moment and the richness it offers. With expertise in tools
+                        like Figma and front-end development, I craft seamless interfaces.</p>
+                    <p>Beyond the screen, I'm an adventurer at heart. Whether skiing in Washington or embarking on a
+                        Yukon expedition, I embrace life with humor and purpose. And yes, I have a thing for maps, even
+                        if they sometimes lead me astray.</p>
+                    <p>I'm drawn to companies that champion mindfulness, wellness, and positive impact. Keen to explore
+                        my portfolio or chat about unique adventures? Let's connect and create designs that resonate.
+                    </p>
+                    <a href="contact.html">Connect with me</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
     <footer>
         <nav>
             <ul>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="files/Resume_Kim Nellans.pdf" target="_blank">RESUME</a></li>
+                <li><a href="files/Resume_KimNellans.pdf">RESUME</a></li>
                 <li><a href="mailto:knellans@me.com">GET IN TOUCH</a></li>
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
-            <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
+            <a href="https://github.com/kimnellans" target="_blank">
+                <img src="img/footer/git.svg" alt="GitHub Icon">
+            </a>
+            <a href="https://www.linkedin.com/feed/" target="_blank">
+                <img src="img/footer/linked-in.svg" alt="LinkedIn Icon">
+            </a>
+            <a href="https://www.instagram.com/indiatraveladventure/" target="_blank">
+                <img src="img/footer/instagram.svg" alt="Instagram Icon">
+            </a>
         </div>
-        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my daily life.</p>
-        <p>© 2023 Kim N. All rights reserved. Made with love by me 💛</p>
+        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With
+            gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my
+            daily life.</p>
     </footer>
 </body>
+
 </html>
