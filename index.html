@@ -7,7 +7,8 @@
     <title>Home | Kim Nellans</title>
 
     <!-- Normalize CSS reset -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
     <!-- Link to main stylesheet -->
     <link rel="stylesheet" href="css/style.css">
@@ -21,28 +22,46 @@
 </head>
 
 <body>
-    <header>
-        <a href="index.html">
+    <header class="header">
+        <!-- Logo aligned left -->
+        <a href="index.html" class="logo">
             <img src="assets/kimn.svg" alt="Kim Nellans Logo">
         </a>
-        <nav>
+
+        <!-- Navigation items center-aligned -->
+        <nav class="nav-center">
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="files/Resume_KimNellans.pdf" target="_blank">Resume</a></li>
             </ul>
         </nav>
-        <div class="social-icons">
+
+        <!-- Social links aligned right -->
+        <div class="social-icons social-right">
             <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
+                    alt="Instagram"></a>
             <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
-        <picture>
-            <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
-            <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait">
-        </picture>
-        <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant about pixel-perfect UI, and currently obsessed with design systems.</h1>
     </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Left column with image -->
+        <div class="hero-left">
+            <picture>
+                <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
+                <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait">
+            </picture>
+        </div>
+
+        <!-- Right column with H1 text -->
+        <div class="hero-right">
+            <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant about pixel-perfect
+                UI, and currently obsessed with design systems.</h1>
+        </div>
+    </section>
 
     <main>
         <!-- Green Yogini Project -->
@@ -96,10 +115,13 @@
         </nav>
         <div class="social-icons">
             <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
+                    alt="Instagram"></a>
             <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
-        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my daily life.</p>
+        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With
+            gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my
+            daily life.</p>
         <p>© 2023 kim n. All rights reserved. Made with love by me 💛</p>
     </footer>
 </body>
