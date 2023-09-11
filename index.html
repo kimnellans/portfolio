@@ -1,20 +1,28 @@
+INDEX.HTML
+
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Kim Nellans</title>
 
     <!-- Adding normalize.css from the CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <!-- Google Fonts: Lora and Nunito Sans -->
+    <!-- Google Fonts: LATO -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,700;1,400;1,700&family=Nunito+Sans:wght@200;300;400;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
 
-    <!-- Custom stylesheet -->
+    <!-- Google Fonts: ARVO -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400;1,700;1,900&display=swap" rel="stylesheet">
+
+    <!-- Your custom stylesheet -->
     <link rel="stylesheet" href="css/styles.css">
 
     <!-- Standard favicon -->
@@ -25,34 +33,75 @@
     <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
 </head>
 
+
 <body>
-    <!-- Header: Logo, Navigation, and Social Icons -->
     <header>
-        <div class="header-container">
-            <div class="logo">
-                <a href="index.html">
-                    <img src="assets/kimn.svg" alt="Kim Nellans Logo">
-                </a>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="files/Resume_KimNellans.pdf" target="_blank">Resume</a></li>
-                </ul>
-            </nav>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
-                <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
-            </div>
+        <a href="index.html">
+            <img src="assets/kimn.svg" alt="Kim Nellans Logo">
+        </a>
+        <nav>
+            <ul>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="files/Resume_KimNellans.pdf" target="_blank">Resume</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
+                    alt="Instagram"></a>
+            <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
+        <picture>
+            <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
+            <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait">
+        </picture>
+        <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant about pixel-perfect UI,
+            and currently obsessed with design systems.</h1>
     </header>
 
-    <!-- [Rest of the body content remains unchanged] -->
+    <main>
+        <!-- Green Yogini Project -->
+        <section class="project">
+            <div class="project-content">
+                <h2>Green Yogini</h2>
+                <h4>How Might We Transform Our Old Clothes into Stylish, Eco-Friendly Wear?</h4>
+                <a href="case-studies/green-yogini.html">Read the Case Study</a>
+            </div>
+            <picture>
+                <source srcset="img/green-yogini/home-page/GY@1X.jpg" media="(max-width:767px)">
+                <img src="img/green-yogini/home-page/GY@2X.jpg" alt="Green Yogini Project Image">
+            </picture>
+        </section>
 
-    <!-- Footer with dark background -->
-    <footer class="dark-section">
+        <!-- Locavore Project -->
+        <section class="project">
+            <div class="project-content">
+                <h2>Locavore</h2>
+                <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
+                <a href="case-studies/locavore.html">Read the Case Study</a>
+            </div>
+            <picture>
+                <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
+                <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
+            </picture>
+        </section>
+
+        <!-- YUJ Project -->
+        <section class="project">
+            <div class="project-content">
+                <h2>YUJ</h2>
+                <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
+                <a href="case-studies/yuj.html">Read the Case Study</a>
+            </div>
+            <picture>
+                <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
+                <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
+            </picture>
+        </section>
+    </main>
+
+    <footer>
         <nav>
             <ul>
                 <li><a href="blog.html">BLOG</a></li>
@@ -63,10 +112,13 @@
         </nav>
         <div class="social-icons">
             <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
+                    alt="Instagram"></a>
             <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
-        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my daily life.</p>
+        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With
+            gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my
+            daily life.</p>
         <p>© 2023 kim n. All rights reserved. Made with love by me 💛</p>
     </footer>
 </body>

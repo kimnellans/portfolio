@@ -17,7 +17,6 @@ a {
 
 a:hover {
     color: #5CB2D9;
-    text-decoration: none;
 }
 
 img {
@@ -148,7 +147,6 @@ nav ul li {
 
 nav ul li a {
     color: #0F182A;
-    text-decoration: none;
 }
 
 nav ul li a:hover {
@@ -164,4 +162,27 @@ nav ul li a:hover {
 
 .social-icons img {
     width: 24px;
+}
+
+/* Additional styles from the previous CSS */
+.button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    background-color: #333333;
+    color: #FFFFFF;
+    padding: 20px 0;
+    text-align: center;
 }
