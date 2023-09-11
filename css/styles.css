@@ -52,13 +52,13 @@ h4 {
     font-weight: 400;
 }
 
-/* Example for a link style */
+/* Link Style */
 a {
     color: #7DD3FC;
     text-decoration: underline;
 }
 
-/* Example for a highlighted element */
+/* Highlighted Element */
 .highlighted {
     background-color: #CFD8E0;
 }
