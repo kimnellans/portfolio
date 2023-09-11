@@ -1,0 +1,55 @@
+/* Base & Global Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem; /* 17px */
+    line-height: 1.5;
+    color: #333333;
+    background-color: #F9FAFC;
+}
+
+body.dark-section {
+    background-color: #0F182A;
+    color: #FFFFFF;
+}
+
+a {
+    color: #7DD3FC;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #5BA9D6;
+    text-decoration: underline;
+}
+
+/* Headers styled with Lora, given it has a more elegant touch */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 3.529rem; /* 60px */
+}
+
+h2 {
+    font-size: 2.353rem; /* 40px */
+}
+
+h3 {
+    font-size: 1.765rem; /* 30px */
+}
+
+h4 {
+    font-size: 1.471rem; /* 25px */
+}
+
+h5 {
+    font-size: 1.176rem; /* 20px */
+}
+
+h6 {
+    font-size: 0.882rem; /* 15px */
+}
+
+/* Other custom styles can be added below */
