@@ -11,7 +11,7 @@ Highlight Color: #CFD8E0;
 /* Typography Styles */
 body {
   font-family: 'Lora', serif;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
   line-height: 1.6;
   color: #333333;
@@ -23,90 +23,179 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75em;
+  font-size: 2.75rem;
   font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
+  font-size: 2.25rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.75rem;
   font-weight: 400;
 }
 
 h4 {
-  font-size: 1.35em;
+  font-size: 1.35rem;
   font-weight: 400;
 }
 
-/* Link Style */
+/* General Link Styles for Dark Backgrounds */
 a {
-  color: #7DD3FC;
-  text-decoration: underline;
-}
-
-/* Highlighted Element */
-.highlighted {
-  background-color: #CFD8E0;
-}
-
-/* Styling for Hyperlinks */
-a {
-  color: #ff7f50; /* Default link color */
+  color: #7DD3FC; /* Default link color for dark backgrounds */
   text-decoration: none; /* No underlining */
 }
 
 a:hover {
-  color: #cc6540; /* Color when hovering */
+  color: #006B98; /* Slightly darker shade when hovering */
   text-decoration: underline; /* Underlining when hovering over a link */
 }
 
 a:visited {
-  color: #ff7f50; /* Visited link color */
+  color: #7DD3FC; /* Visited link color remains the same for dark backgrounds */
 }
 
 a:active {
-  color: #994c30; /* Selected link color when clicked */
+  color: #004D6E; /* Even darker shade for the active state */
 }
 
-a:hover,
 a:focus {
-  color: #cc6540; /* Hover and focus state color */
-  text-decoration: underline; /* Underlining when hovering or focusing */
+  color: #006B98; /* Slightly darker shade for focus state */
+  text-decoration: underline; /* Underlining when the link is focused */
+  outline: none; /* Removing the default browser outline */
 }
 
-/* Styling for Buttons */
-.button {
+/* Link Styles for Light Backgrounds */
+a.light-bg {
+  color: #0090C1; /* Default link color for light backgrounds */
+}
+
+a.light-bg:hover {
+  color: #006B98; /* Slightly darker shade when hovering */
+}
+
+a.light-bg:visited {
+  color: #0090C1; /* Visited link color for light backgrounds */
+}
+
+a.light-bg:active {
+  color: #004D6E; /* Even darker shade for the active state on light backgrounds */
+}
+
+a.light-bg:focus {
+  color: #006B98; /* Slightly darker shade for focus state on light backgrounds */
+}
+
+
+/* Styling for Hyperlinks on Dark Backgrounds */
+a {
+  color: #7DD3FC; /* Default link color for dark backgrounds */
+  text-decoration: none; /* No underlining */
+}
+
+/* Styling for Hyperlinks on Light Backgrounds */
+a.light-bg {
+  color: #0090C1; /* Default link color for light backgrounds */
+  text-decoration: none; /* No underlining */
+}
+
+a:hover {
+  color: #006B98; /* Slightly darker shade when hovering */
+  text-decoration: underline; /* Underlining when hovering over a link */
+}
+
+a:visited {
+  color: #7DD3FC; /* Visited link color remains the same for dark backgrounds */
+}
+
+a.light-bg:visited {
+  color: #0090C1; /* Visited link color for light backgrounds */
+}
+
+a:active {
+  color: #004D6E; /* Even darker shade for the active state */
+}
+
+a:focus {
+  color: #006B98; /* Slightly darker shade for focus state */
+  text-decoration: underline; /* Underlining when the link is focused */
+  outline: none; /* Removing the default browser outline */
+}
+
+
+
+/* Regular (Dark) Button */
+.button.dark {
   display: inline-block;
-  background-color: #ff7f50; /* Button background color */
-  color: #ffffff; /* Button text color */
-  font-weight: bold; /* Bold font weight */
-  padding: 10px; /* Padding around the button text */
-  border-radius: 3px; /* Rounded corners */
-  border-bottom: 2px solid #994c30; /* Bottom border */
-  transition: 0.2s opacity; /* Smooth transition for opacity */
+  background-color: #0F182A;
+  color: #F9FAFC;
+  font-weight: bold;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid #F9FAFC;
+  transition: 0.2s all;
 }
 
-.button:hover {
-  opacity: 0.8; /* Reduce opacity on hover */
-  text-decoration: none; /* Remove underlining on hover */
+.button.dark:hover {
+  background-color: #0a0f21; /* Slightly darker shade on hover */
 }
 
-/* Styling for the specific button with the "contact" class */
-.button.contact {
-  background-color: transparent; /* Transparent background */
-  color: #ff7f50; /* Text color */
-  text-transform: uppercase; /* Uppercase text */
-  border: 2px solid #ff7f50; /* Border style */
+.button.dark:active,
+.button.dark:focus {
+  background-color: #050a15; /* Even darker shade for active/focus state */
+  outline: none;
 }
 
-.button.contact:hover {
-  background-color: #ff7f50; /* Background color on hover */
-  color: #ffffff; /* Text color on hover */
+/* Light Button */
+.button.light {
+  display: inline-block;
+  background-color: #F9FAFC;
+  color: #0F182A;
+  font-weight: bold;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid #0F182A;
+  transition: 0.2s all;
 }
+
+.button.light:hover {
+  background-color: #e5e7ea; /* Slightly darker shade on hover */
+}
+
+.button.light:active,
+.button.light:focus {
+  background-color: #d1d3d6; /* Even darker shade for active/focus state */
+  outline: none;
+}
+
+/* Ghost Button */
+.button.ghost {
+  display: inline-block;
+  background-color: transparent;
+  color: #0F182A;
+  font-weight: bold;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid #0F182A;
+  transition: 0.2s all;
+}
+
+.button.ghost:hover {
+  background-color: #0F182A;
+  color: #F9FAFC;
+}
+
+.button.ghost:active,
+.button.ghost:focus {
+  background-color: #050a15;
+  color: #F9FAFC;
+  outline: none;
+}
+
+
+
 
 /* Image Styles */
 img {
@@ -117,7 +206,6 @@ img {
 /* Header Styles */
 .header {
   background-color: #FFFFFF; /* Setting the background color to pure white */
-  padding: 10px; /* Adding padding of 10 pixels to all sides */
-  margin: 20px; /* Adding margin of 20 pixels to all sides */
+  padding: 0.625rem; /* Adding padding of 10 pixels to all sides */
+  margin: 1.25rem; /* Adding margin of 20 pixels to all sides */
 }
-
