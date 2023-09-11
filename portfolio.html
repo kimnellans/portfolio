@@ -1,33 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <!-- Viewport settings for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | Kim Nellans</title>
-
-    <!-- Normalize CSS reset -->
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-
-    <!-- Link to stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!-- Standard favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-
-    <!-- Favicon for modern browsers -->
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
-
-    <!-- CSS for responsive images -->
-    <style>
-        img {
-            width: 100%;
-        }
-    </style>
+    <title>Portfolio - Locavore Project</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Header: Logo, Navigation, and Social Icons -->
+
     <header>
         <a href="index.html">
             <img src="assets/kimn.svg" alt="Kim Nellans Logo">
@@ -36,23 +18,20 @@
             <ul>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="files/Resume_KimNellans.pdf" target="_blank">Resume</a></li>
+                <li><a href="files/Resume_Kim%20Nellans.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
+
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://github.com/kimnellans" target="_blank">
-                <img src="img/footer/git.svg" alt="GitHub Icon">
-            </a>
-            <a href="https://www.linkedin.com/feed/" target="_blank">
-                <img src="img/footer/linked-in.svg" alt="LinkedIn Icon">
-            </a>
-            <a href="https://www.instagram.com/indiatraveladventure/" target="_blank">
-                <img src="img/footer/instagram.svg" alt="Instagram Icon">
-            </a>
+            <a href="https://www.linkedin.com/feed/" rel="noopener noreferrer" target="_blank"><img
+                    src="img/footer/linked-in.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/" rel="noopener noreferrer" target="_blank"><img
+                    src="img/footer/instagram.svg" alt="Instagram"></a>
+            <a href="https://github.com/kimnellans" rel="noopener noreferrer" target="_blank"><img
+                    src="img/footer/git.svg" alt="GitHub"></a>
         </div>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <span>LOCAVORE</span>
         <h1>Connecting Communities to Fresh, Local Produce</h1>
@@ -61,10 +40,12 @@
                      img/locavore/project-page/hero/hero-tablet1x.png 768w,
                      img/locavore/project-page/hero/hero-tablet2x.png 1536w,
                      img/locavore/project-page/hero/hero1x.png 1920w,
-                     img/locavore/project-page/hero/hero2x.png 3840w" alt="Locavore mobile mockup image">
+                     img/locavore/project-page/hero/hero2x.png 3840w" sizes="(max-width: 480px) 480px, 
+                                                                              (max-width: 768px) 768px, 
+                                                                              1920px"
+            alt="Locavore mobile mockup image">
     </section>
 
-    <!-- Two Column Section: Text and GIF -->
     <section class="two-col">
         <div>
             <h2>Bridging the Gap: Locavore's Mission</h2>
@@ -110,11 +91,14 @@
 
     <!-- Full Width Image: Farmer -->
     <img src="img/locavore/project-page/bfm/farmer1x.png" srcset="img/locavore/project-page/bfm/farmer-mobile1x.png 480w,
-                 img/locavore/project-page/bfm/farmer-mobile2x.png 960w,
-                 img/locavore/project-page/bfm/farmer-tablet1x.png 768w,
-                 img/locavore/project-page/bfm/farmer-tablet2x.png 1536w,
-                 img/locavore/project-page/bfm/farmer1.5x.png 2880w,
-                 img/locavore/project-page/bfm/farmer1x.png 1920w" alt="BLM farmer holding produce">
+                         img/locavore/project-page/bfm/farmer-mobile2x.png 960w,
+                         img/locavore/project-page/bfm/farmer-tablet1x.png 768w,
+                         img/locavore/project-page/bfm/farmer-tablet2x.png 1536w,
+                         img/locavore/project-page/bfm/farmer1.5x.png 2880w,
+                         img/locavore/project-page/bfm/farmer1x.png 1920w" sizes="(max-width: 480px) 480px, 
+                                                                                  (max-width: 768px) 768px, 
+                                                                                  1920px"
+        alt="BFM farmer holding produce">
 
     <!-- Two Column Section: Challenge and Understanding -->
     <section class="two-col">
@@ -137,11 +121,27 @@
     </section>
 
     <!-- Three Images in a Row -->
-    <section class="three-col">
-        <img src="img/locavore/project-page/bfm/bfm1x_1.jpg" alt="Locavore Image 1">
-        <img src="img/locavore/project-page/bfm/bfm1x_2.jpg" alt="Locavore Image 2">
-        <img src="img/locavore/project-page/bfm/bfm1x_3.jpg" alt="Locavore Image 3">
-    </section>
+    <div class="three-col">
+
+        <figure>
+            <picture>
+                <img src="img/locavore/project-page/bfm/bfm1x_1.jpg" alt="heirloom-tomatoes">
+            </picture>
+        </figure>
+
+        <figure>
+            <picture>
+                <img src="img/locavore/project-page/bfm/bfm1x_2.jpg" alt="green jalapenos">
+            </picture>
+        </figure>
+
+        <figure>
+            <picture>
+                <img src="img/locavore/project-page/bfm/bfm1x_3.jpg" alt="fresh raspberries">
+            </picture>
+        </figure>
+    </div>
+
 
     <!-- Two Column Section: Discovery & Insights -->
     <section class="two-col">
@@ -173,17 +173,23 @@
             <ul>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="files/Resume_Kim Nellans.pdf" target="_blank">RESUME</a></li>
+                <li><a href="files/Resume_Kim%20Nellans.pdf" target="_blank" rel="noopener noreferrer">RESUME</a></li>
+
                 <li><a href="mailto:knellans@me.com">GET IN TOUCH</a></li>
             </ul>
         </nav>
         <div class="social-icons">
             <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
+                    alt="Instagram"></a>
             <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
-        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my daily life.</p>
-        <p>© 2023 Kim N. All rights reserved. Made with love by me 💛</p>
+        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With
+            gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my
+            daily life.</p>
+        <p>© 2023 kim n. All rights reserved. Made with love by me 💛</p>
     </footer>
+
 </body>
+
 </html>
