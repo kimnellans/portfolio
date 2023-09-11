@@ -121,7 +121,7 @@ header {
     height: 140px;
     display: flex;
     justify-content: space-between; /* Align elements horizontally */
-    align-items: center; /* Vertically center align elements */
+    /* Remove the align-items property */
     padding: 0 2rem;
 }
 
