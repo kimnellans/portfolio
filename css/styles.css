@@ -62,3 +62,60 @@ a {
 .highlighted {
     background-color: #CFD8E0;
 }
+
+/* Styling for Hyperlinks */
+a {
+    color: #ff7f50; /* Default link color */
+    text-decoration: none; /* No underlining */
+  }
+  
+  a:hover {
+    color: #cc6540; /* Color when hovering */
+    text-decoration: underline; /* Underlining when hovering over a link */
+  }
+  
+  a:visited {
+    color: #ff7f50; /* Visited link color */
+  }
+  
+  a:active {
+    color: #994c30; /* Selected link color when clicked */
+  }
+  
+  a:hover,
+  a:focus {
+    color: #cc6540; /* Hover and focus state color */
+    text-decoration: underline; /* Underlining when hovering or focusing */
+  }
+
+  /* Styling for Buttons */
+.button {
+    display: inline-block;
+    background-color: #ff7f50; /* Button background color */
+    color: #ffffff; /* Button text color */
+    font-weight: bold; /* Bold font weight */
+    padding: 10px; /* Padding around the button text */
+    border-radius: 3px; /* Rounded corners */
+    border-bottom: 2px solid #994c30; /* Bottom border */
+    transition: 0.2s opacity; /* Smooth transition for opacity */
+  }
+  
+  .button:hover {
+    opacity: 0.8; /* Reduce opacity on hover */
+    text-decoration: none; /* Remove underlining on hover */
+  }
+  
+  /* Styling for the specific button with the "contact" class */
+  .button.contact {
+    background-color: transparent; /* Transparent background */
+    color: #ff7f50; /* Text color */
+    text-transform: uppercase; /* Uppercase text */
+    border: 2px solid #ff7f50; /* Border style */
+  }
+  
+  .button.contact:hover {
+    background-color: #ff7f50; /* Background color on hover */
+    color: #ffffff; /* Text color on hover */
+  }
+  
+  
