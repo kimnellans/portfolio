@@ -120,47 +120,48 @@ header {
     background-color: #FFFFFF;
     height: 140px;
     display: flex;
-    justify-content: space-between; /* Align elements horizontally */
-    /* Remove the align-items property */
+    justify-content: space-between;
+    align-items: center;
     padding: 0 2rem;
 }
 
 .logo {
-    flex: 1; /* Left-aligned logo takes up available space */
+    flex: 1;
 }
 
 nav {
-    flex: 2; /* Center-aligned navigation takes up available space */
-    text-align: center; /* Center-align navigation items */
+    flex: 2;
+    text-align: center;
 }
 
 nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0;
+    display: inline-flex;
+    gap: 20px;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px; /* Add space between navigation items */
+    margin: 0;
 }
 
 nav ul li a {
-    color: #0F182A; /* Set default color for navigation items */
-    text-decoration: none; /* Remove underlines */
+    color: #0F182A;
+    text-decoration: none;
 }
 
 nav ul li a:hover {
-    color: #7DD3FC; /* Change color on hover */
+    color: #7DD3FC;
 }
 
 .social-icons {
-    flex: 1; /* Right-aligned social icons take up available space */
+    flex: 1;
     display: flex;
-    justify-content: flex-end; /* Right-align social icons */
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .social-icons img {
     width: 24px;
-    margin-left: 10px; /* Add space between social icons */
 }
