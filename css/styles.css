@@ -175,7 +175,7 @@ header {
     background-color: #FFFFFF;
     height: 140px;
     display: flex;
-    justify-content: space-between; /* Align logo, nav, and social icons horizontally */
+    justify-content: space-between; /* Align elements horizontally */
     align-items: center; /* Vertically center align elements */
     padding: 0 2rem;
 }
@@ -186,8 +186,7 @@ header {
 
 nav {
     flex: 2; /* Center-aligned navigation takes up available space */
-    display: flex;
-    justify-content: center; /* Center align navigation items horizontally */
+    text-align: center; /* Center-align navigation items */
 }
 
 nav ul {
@@ -199,6 +198,15 @@ nav ul {
 nav ul li {
     display: inline;
     margin-right: 20px; /* Add space between navigation items */
+}
+
+nav ul li a {
+    color: #0F182A; /* Set default color for navigation items */
+    text-decoration: none; /* Remove underlines */
+}
+
+nav ul li a:hover {
+    color: #7DD3FC; /* Change color on hover */
 }
 
 .social-icons {
