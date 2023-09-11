@@ -15,11 +15,21 @@ body.dark-section {
 a {
     color: #7DD3FC;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
 a:hover {
     color: #5BA9D6;
     text-decoration: underline;
+}
+
+a:visited {
+    color: #669CB6;
+}
+
+a:focus {
+    outline: 2px solid #7DD3FC;
+    outline-offset: 2px;
 }
 
 /* Headers styled with Lora, given it has a more elegant touch */
@@ -50,6 +60,26 @@ h5 {
 
 h6 {
     font-size: 0.882rem; /* 15px */
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Unique IDs for sections */
+#hero {
+    background-color: #F9FAFC;
+}
+
+#portfolio, #about {
+    background-color: #0F182A;
+    color: #FFFFFF;
+}
+
+#contact {
+    background-color: #F9FAFC;
 }
 
 /* Other custom styles can be added below */
