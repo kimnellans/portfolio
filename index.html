@@ -3,16 +3,14 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- Viewport settings for mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Kim Nellans</title>
 
     <!-- Normalize CSS reset -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
-    <!-- Link to stylesheet -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Link to main stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 
     <!-- Standard favicon -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
@@ -23,7 +21,6 @@
 </head>
 
 <body>
-    <!-- Header: Logo, Navigation, and Social Icons -->
     <header>
         <a href="index.html">
             <img src="assets/kimn.svg" alt="Kim Nellans Logo">
@@ -36,88 +33,74 @@
             </ul>
         </nav>
         <div class="social-icons">
-            <a href="https://github.com/kimnellans" target="_blank">
-                <img src="img/footer/git.svg" alt="GitHub Icon">
-            </a>
-            <a href="https://www.linkedin.com/feed/" target="_blank">
-                <img src="img/footer/linked-in.svg" alt="LinkedIn Icon">
-            </a>
-            <a href="https://www.instagram.com/indiatraveladventure/" target="_blank">
-                <img src="img/footer/instagram.svg" alt="Instagram Icon">
-            </a>
+            <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
+            <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
+        <picture>
+            <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
+            <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait">
+        </picture>
+        <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant about pixel-perfect UI, and currently obsessed with design systems.</h1>
     </header>
 
-    <!-- Wrap main content in container and row -->
-    <div class="container">
-        <div class="row">
-            <!-- Home page content -->
-            <main>
-                <h1>Welcome to Kim Nellans' Portfolio</h1>
-                <p>Explore my work, journey, and passion for design.</p>
+    <main>
+        <!-- Green Yogini Project -->
+        <section class="project" id="green-yogini">
+            <div class="project-content">
+                <h2>Green Yogini</h2>
+                <h4>How Might We Transform Our Old Clothes into Stylish, Eco-Friendly Wear?</h4>
+                <a href="case-studies/green-yogini.html">Read the Case Study</a>
+            </div>
+            <picture>
+                <source srcset="img/green-yogini/home-page/GY@1X.jpg" media="(max-width:767px)">
+                <img src="img/green-yogini/home-page/GY@2X.jpg" alt="Green Yogini Project Image">
+            </picture>
+        </section>
 
-                <!-- Green Yogini Project -->
-                <section class="project" id="green-yogini">
-                    <div class="project-content">
-                        <h2>Green Yogini</h2>
-                        <h4>How Might We Transform Our Old Clothes into Stylish, Eco-Friendly Wear?</h4>
-                        <a href="case-studies/green-yogini.html">Read the Case Study</a>
-                    </div>
-                    <picture>
-                        <source srcset="img/green-yogini/home-page/GY@1X.jpg" media="(max-width:767px)">
-                        <img src="img/green-yogini/home-page/GY@2X.jpg" alt="Green Yogini Project Image">
-                    </picture>
-                </section>
+        <!-- Locavore Project -->
+        <section class="project" id="locavore">
+            <div class="project-content">
+                <h2>Locavore</h2>
+                <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
+                <a href="case-studies/locavore.html">Read the Case Study</a>
+            </div>
+            <picture>
+                <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
+                <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
+            </picture>
+        </section>
 
-                <!-- Locavore Project -->
-                <section class="project" id="locavore">
-                    <div class="project-content">
-                        <h2>Locavore</h2>
-                        <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
-                        <a href="case-studies/locavore.html">Read the Case Study</a>
-                    </div>
-                    <picture>
-                        <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
-                        <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
-                    </picture>
-                </section>
+        <!-- YUJ Project -->
+        <section class="project" id="yuj">
+            <div class="project-content">
+                <h2>YUJ</h2>
+                <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
+                <a href="case-studies/yuj.html">Read the Case Study</a>
+            </div>
+            <picture>
+                <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
+                <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
+            </picture>
+        </section>
+    </main>
 
-                <!-- YUJ Project -->
-                <section class="project" id="yuj">
-                    <div class="project-content">
-                        <h2>YUJ</h2>
-                        <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
-                        <a href="case-studies/yuj.html">Read the Case Study</a>
-                    </div>
-                    <picture>
-                        <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
-                        <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
-                    </picture>
-                </section>
-            </main>
-        </div>
-    </div>
-
-    <!-- Footer: Navigation and Social Icons -->
     <footer>
         <nav>
             <ul>
                 <li><a href="blog.html">BLOG</a></li>
                 <li><a href="about.html">ABOUT</a></li>
-                <li><a href="files/Resume_Kim Nellans.pdf" target="_blank">RESUME</a></li>
+                <li><a href="files/Resume_KimNellans.pdf" target="_blank">RESUME</a></li>
                 <li><a href="mailto:knellans@me.com">GET IN TOUCH</a></li>
             </ul>
         </nav>
         <div class="social-icons">
             <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
-                    alt="Instagram"></a>
+            <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg" alt="Instagram"></a>
             <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
         </div>
-        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With
-            gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my
-            daily life.</p>
-        <p>© 2023 Kim N. All rights reserved. Made with love by me 💛</p>
+        <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in my daily life.</p>
+        <p>© 2023 kim n. All rights reserved. Made with love by me 💛</p>
     </footer>
 </body>
 
