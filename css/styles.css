@@ -33,6 +33,50 @@ Highlight Color: #CFD8E0;
   margin: 0 auto;
 }
 
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;  /* you can adjust this to your preferred max-width */
+  margin: 0 auto;
+}
+
+/* Begin new styles */
+.project {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px; /* Add spacing between each project section. Adjust as necessary. */
+  flex-wrap: wrap; /* Allow the content and image to stack on narrow screens */
+}
+
+.project-content {
+  flex: 1; /* The content and the image will each take up half the space in wide screens */
+  padding-right: 20px; /* Spacing between content and image */
+}
+
+.project picture, .project img {
+  flex: 1; /* The image will take up half the space on wide screens */
+  max-width: 50%; /* Ensure the image doesn't grow too large */
+}
+
+/* Adjustments for smaller screens */
+
+@media (max-width: 767px) {
+  .project {
+    flex-direction: column; /* Stack the content and image vertically */
+  }
+
+  .project-content, .project picture, .project img {
+    max-width: 100%; /* Allow both content and image to fill the width */
+    padding: 0;
+  }
+
+  .project-content {
+    margin-bottom: 20px; /* Spacing between content and image
+
+
 .logo {
   flex: 1; /* takes up available space */
 }
