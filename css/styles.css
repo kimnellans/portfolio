@@ -8,6 +8,13 @@ Link Color: #7DD3FC;
 Highlight Color: #CFD8E0;
 */
 
+/* Global Styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 /* Typography Styles */
 body {
   font-family: 'Lora', serif;
@@ -155,9 +162,3 @@ img {
   height: auto; /* This ensures the aspect ratio of the image is maintained */
 }
 
-/* Header Styles */
-.header {
-  background-color: #FFFFFF; /* Setting the background color to pure white */
-  padding: 0.625rem; /* Adding padding of 10 pixels to all sides */
-  margin: 1.25rem; /* Adding margin of 20 pixels to all sides */
-}
