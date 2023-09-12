@@ -15,8 +15,52 @@ Highlight Color: #CFD8E0;
   padding: 0;
 }
 
-.container {
-  padding: 50px 30px; /* 50px padding on the top and bottom, and 30px on the left and right */
+/* Header and Navigation styles */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; /* Remove bullet points */
+}
+
+.nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px; /* Consider replacing with margin if browser compatibility issues arise */
+}
+
+/* Hero Section styles */
+.hero {
+  display: flex;
+  background-color: #0F182A;
+  color: #FFFFFF;
+  padding: 40px;
+}
+
+.hero-image {
+  flex: 1;
+  border: 4px solid #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-text {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Typography Styles */
@@ -55,47 +99,44 @@ h4 {
 
 /* Consolidated Link Styles */
 a {
-  color: #7DD3FC; /* Default link color for dark backgrounds */
-  text-decoration: none; /* No underlining */
+  color: #7DD3FC;
+  text-decoration: none;
 }
 
 a:hover {
-  color: #006B98; /* Slightly darker shade when hovering */
-  text-decoration: underline; /* Underlining when hovering over a link */
+  color: #006B98;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: #7DD3FC; /* Visited link color remains the same for dark backgrounds */
+  color: #7DD3FC;
 }
 
 a:active {
-  color: #004D6E; /* Even darker shade for the active state */
+  color: #004D6E;
 }
 
 a:focus {
-  color: #006B98; /* Slightly darker shade for focus state */
-  text-decoration: underline; /* Underlining when the link is focused */
-  outline: none; /* Removing the default browser outline */
+  color: #006B98;
+  text-decoration: underline;
+  outline: none;
 }
 
 a.light-bg {
-  color: #0090C1; /* Default link color for light backgrounds */
+  color: #0090C1;
 }
 
-a.light-bg:hover {
-  color: #006B98; /* Slightly darker shade when hovering */
+a.light-bg:hover,
+a.light-bg:focus {
+  color: #006B98;
 }
 
 a.light-bg:visited {
-  color: #0090C1; /* Visited link color for light backgrounds */
+  color: #0090C1;
 }
 
 a.light-bg:active {
-  color: #004D6E; /* Even darker shade for the active state on light backgrounds */
-}
-
-a.light-bg:focus {
-  color: #006B98; /* Slightly darker shade for focus state on light backgrounds */
+  color: #004D6E;
 }
 
 /* Base Button Styles */
@@ -107,7 +148,6 @@ a.light-bg:focus {
   transition: 0.2s all;
 }
 
-/* Dark Button */
 .button.dark {
   background-color: #0F182A;
   color: #F9FAFC;
@@ -115,16 +155,15 @@ a.light-bg:focus {
 }
 
 .button.dark:hover {
-  background-color: #0a0f21; /* Slightly darker shade on hover */
+  background-color: #0a0f21;
 }
 
 .button.dark:active,
 .button.dark:focus {
-  background-color: #050a15; /* Even darker shade for active/focus state */
+  background-color: #050a15;
   outline: none;
 }
 
-/* Light Button */
 .button.light {
   background-color: #F9FAFC;
   color: #0F182A;
@@ -132,16 +171,15 @@ a.light-bg:focus {
 }
 
 .button.light:hover {
-  background-color: #e5e7ea; /* Slightly darker shade on hover */
+  background-color: #e5e7ea;
 }
 
 .button.light:active,
 .button.light:focus {
-  background-color: #d1d3d6; /* Even darker shade for active/focus state */
+  background-color: #d1d3d6;
   outline: none;
 }
 
-/* Ghost Button */
 .button.ghost {
   background-color: transparent;
   color: #0F182A;
@@ -163,6 +201,5 @@ a.light-bg:focus {
 /* Image Styles */
 img {
   width: 100%;
-  height: auto; /* This ensures the aspect ratio of the image is maintained */
+  height: auto; 
 }
-
