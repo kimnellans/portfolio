@@ -42,7 +42,7 @@ h4 {
   font-weight: 400;
 }
 
-/* General Link Styles for Dark Backgrounds */
+/* Consolidated Link Styles */
 a {
   color: #7DD3FC; /* Default link color for dark backgrounds */
   text-decoration: none; /* No underlining */
@@ -67,7 +67,6 @@ a:focus {
   outline: none; /* Removing the default browser outline */
 }
 
-/* Link Styles for Light Backgrounds */
 a.light-bg {
   color: #0090C1; /* Default link color for light backgrounds */
 }
@@ -88,54 +87,20 @@ a.light-bg:focus {
   color: #006B98; /* Slightly darker shade for focus state on light backgrounds */
 }
 
-
-/* Styling for Hyperlinks on Dark Backgrounds */
-a {
-  color: #7DD3FC; /* Default link color for dark backgrounds */
-  text-decoration: none; /* No underlining */
-}
-
-/* Styling for Hyperlinks on Light Backgrounds */
-a.light-bg {
-  color: #0090C1; /* Default link color for light backgrounds */
-  text-decoration: none; /* No underlining */
-}
-
-a:hover {
-  color: #006B98; /* Slightly darker shade when hovering */
-  text-decoration: underline; /* Underlining when hovering over a link */
-}
-
-a:visited {
-  color: #7DD3FC; /* Visited link color remains the same for dark backgrounds */
-}
-
-a.light-bg:visited {
-  color: #0090C1; /* Visited link color for light backgrounds */
-}
-
-a:active {
-  color: #004D6E; /* Even darker shade for the active state */
-}
-
-a:focus {
-  color: #006B98; /* Slightly darker shade for focus state */
-  text-decoration: underline; /* Underlining when the link is focused */
-  outline: none; /* Removing the default browser outline */
-}
-
-
-
-/* Regular (Dark) Button */
-.button.dark {
+/* Base Button Styles */
+.button {
   display: inline-block;
-  background-color: #0F182A;
-  color: #F9FAFC;
   font-weight: bold;
   padding: 0.625rem;
   border-radius: 0.25rem;
-  border: 0.125rem solid #F9FAFC;
   transition: 0.2s all;
+}
+
+/* Dark Button */
+.button.dark {
+  background-color: #0F182A;
+  color: #F9FAFC;
+  border: 0.125rem solid #F9FAFC;
 }
 
 .button.dark:hover {
@@ -150,14 +115,9 @@ a:focus {
 
 /* Light Button */
 .button.light {
-  display: inline-block;
   background-color: #F9FAFC;
   color: #0F182A;
-  font-weight: bold;
-  padding: 0.625rem;
-  border-radius: 0.25rem;
   border: 0.125rem solid #0F182A;
-  transition: 0.2s all;
 }
 
 .button.light:hover {
@@ -172,14 +132,9 @@ a:focus {
 
 /* Ghost Button */
 .button.ghost {
-  display: inline-block;
   background-color: transparent;
   color: #0F182A;
-  font-weight: bold;
-  padding: 0.625rem;
-  border-radius: 0.25rem;
   border: 0.125rem solid #0F182A;
-  transition: 0.2s all;
 }
 
 .button.ghost:hover {
@@ -193,9 +148,6 @@ a:focus {
   color: #F9FAFC;
   outline: none;
 }
-
-
-
 
 /* Image Styles */
 img {
