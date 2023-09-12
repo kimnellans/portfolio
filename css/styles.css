@@ -15,32 +15,47 @@ Highlight Color: #CFD8E0;
   padding: 0;
 }
 /* Header and Navigation styles */
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  flex-wrap: wrap; /* this is to allow the header content to wrap if needed */
 }
 
-.nav {
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;  /* you can adjust this to your preferred max-width */
+  margin: 0 auto;
+}
+
+.logo {
+  flex: 1; /* takes up available space */
+}
+
+.nav-center {
+  flex: 2; /* takes up double the available space */
+  text-align: center;
+}
+
+.nav-center ul {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Resetting padding for alignment purposes */
   display: flex;
   justify-content: center;
-  list-style-type: none; /* Remove bullet points */
-  margin: 0; /* Resetting margins to ensure alignment */
-  padding: 0; /* Resetting padding for alignment purposes */
-}
-
-.nav li {
-  display: inline-block;
-  margin: 0 10px;
+  gap: 20px; /* space between items, can be adjusted */
 }
 
 .social-icons {
+  flex: 1; /* takes up available space */
   display: flex;
   justify-content: flex-end;
-  gap: 10px; /* Consider replacing with margin if browser compatibility issues arise */
+  gap: 10px;
 }
-
 
 
 /* Hero Section styles */
