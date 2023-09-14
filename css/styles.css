@@ -8,245 +8,154 @@ Link Color: #7DD3FC;
 Highlight Color: #CFD8E0;
 */
 
-
 /* Typography Styles */
 body {
-    font-family: 'Lora', serif;
-    font-size: 1rem;
-    font-weight: 400;
-    line-height: 1.6;
-    color: #333333;
-  }
-  
-  h1, h2, h3, h4 {
-    font-family: 'Roboto', sans-serif;
-    line-height: 1.4;
-  }
-  
-  h1 {
-    font-size: 2.75rem;
-    font-weight: 700;
-  }
-  
-  h2 {
-    font-size: 2.25rem;
-    font-weight: 700;
-  }
-  
-  h3 {
-    font-size: 1.75rem;
-    font-weight: 400;
-  }
-  
-  h4 {
-    font-size: 1.35rem;
-    font-weight: 400;
-  }
-  
-  /* General Link Styles for Dark Backgrounds */
-  a {
-    color: #7DD3FC; /* Default link color for dark backgrounds */
-    text-decoration: none; /* No underlining */
-  }
-  
-  a:hover {
-    color: #006B98; /* Slightly darker shade when hovering */
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  
-  a:visited {
-    color: #7DD3FC; /* Visited link color remains the same for dark backgrounds */
-  }
-  
-  a:active {
-    color: #004D6E; /* Even darker shade for the active state */
-  }
-  
-  a:focus {
-    color: #006B98; /* Slightly darker shade for focus state */
-    text-decoration: underline; /* Underlining when the link is focused */
-    outline: none; /* Removing the default browser outline */
-  }
-  
-  /* Link Styles for Light Backgrounds */
-  a.light-bg {
-    color: #0090C1; /* Default link color for light backgrounds */
-  }
-  
-  a.light-bg:hover {
-    color: #006B98; /* Slightly darker shade when hovering */
-  }
-  
-  a.light-bg:visited {
-    color: #0090C1; /* Visited link color for light backgrounds */
-  }
-  
-  a.light-bg:active {
-    color: #004D6E; /* Even darker shade for the active state on light backgrounds */
-  }
-  
-  a.light-bg:focus {
-    color: #006B98; /* Slightly darker shade for focus state on light backgrounds */
-  }
-  
-  
-  /* Styling for Hyperlinks on Dark Backgrounds */
-  a {
-    color: #7DD3FC; /* Default link color for dark backgrounds */
-    text-decoration: none; /* No underlining */
-  }
-  
-  /* Styling for Hyperlinks on Light Backgrounds */
-  a.light-bg {
-    color: #0090C1; /* Default link color for light backgrounds */
-    text-decoration: none; /* No underlining */
-  }
-  
-  a:hover {
-    color: #006B98; /* Slightly darker shade when hovering */
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  
-  a:visited {
-    color: #7DD3FC; /* Visited link color remains the same for dark backgrounds */
-  }
-  
-  a.light-bg:visited {
-    color: #0090C1; /* Visited link color for light backgrounds */
-  }
-  
-  a:active {
-    color: #004D6E; /* Even darker shade for the active state */
-  }
-  
-  a:focus {
-    color: #006B98; /* Slightly darker shade for focus state */
-    text-decoration: underline; /* Underlining when the link is focused */
-    outline: none; /* Removing the default browser outline */
-  }
-  
-  
-  /* General Link Styles for Dark Backgrounds */
-  a {
-    color: #7DD3FC; /* Default link color for dark backgrounds */
-    text-decoration: none; /* No underlining */
-  }
-  
-  a:hover {
-    color: #006B98; /* Slightly darker shade when hovering */
-    text-decoration: underline; /* Underlining when hovering over a link */
-  }
-  
-  a:visited {
-    color: #7DD3FC; /* Visited link color remains the same for dark backgrounds */
-  }
-  
-  a:active {
-    color: #004D6E; /* Even darker shade for the active state */
-  }
-  
-  a:focus {
-    color: #006B98; /* Slightly darker shade for focus state */
-    text-decoration: underline; /* Underlining when the link is focused */
-    outline: none; /* Removing the default browser outline */
-  }
-  
-  /* Link Styles for Light Backgrounds */
-  a.light-bg {
-    color: #0090C1; /* Default link color for light backgrounds */
-  }
-  
-  a.light-bg:hover {
-    color: #006B98; /* Slightly darker shade when hovering */
-  }
-  
-  a.light-bg:visited {
-    color: #0090C1; /* Visited link color for light backgrounds */
-  }
-  
-  a.light-bg:active {
-    color: #004D6E; /* Even darker shade for the active state on light backgrounds */
-  }
-  
-  a.light-bg:focus {
-    color: #006B98; /* Slightly darker shade for focus state on light backgrounds */
-  }
-  
-  /* Regular (Dark) Button */
-  .button.dark {
-    display: inline-block;
-    background-color: #0F182A;
-    color: #F9FAFC;
-    font-weight: bold;
-    padding: 0.625rem;
-    border-radius: 0.25rem;
-    border: 0.125rem solid #F9FAFC;
-    transition: 0.2s all;
-  }
-  
-  .button.dark:hover {
-    background-color: #0a0f21; /* Slightly darker shade on hover */
-  }
-  
-  .button.dark:active,
-  .button.dark:focus {
-    background-color: #050a15; /* Even darker shade for active/focus state */
-    outline: none;
-  }
-  
-  /* Light Button */
-  .button.light {
-    display: inline-block;
-    background-color: #F9FAFC;
-    color: #0F182A;
-    font-weight: bold;
-    padding: 0.625rem;
-    border-radius: 0.25rem;
-    border: 0.125rem solid #0F182A;
-    transition: 0.2s all;
-  }
-  
-  .button.light:hover {
-    background-color: #e5e7ea; /* Slightly darker shade on hover */
-  }
-  
-  .button.light:active,
-  .button.light:focus {
-    background-color: #d1d3d6; /* Even darker shade for active/focus state */
-    outline: none;
-  }
-  
-  /* Ghost Button */
-  .button.ghost {
-    display: inline-block;
-    background-color: transparent;
-    color: #0F182A;
-    font-weight: bold;
-    padding: 0.625rem;
-    border-radius: 0.25rem;
-    border: 0.125rem solid #0F182A;
-    transition: 0.2s all;
-  }
-  
-  .button.ghost:hover {
-    background-color: #0F182A;
-    color: #F9FAFC;
-  }
-  
-  .button.ghost:active,
-  .button.ghost:focus {
-    background-color: #050a15;
-    color: #F9FAFC;
-    outline: none;
-  }
-  
-  
-  
-  /* Image Styles */
-  img {
-    width: 100%;
-    height: auto; /* This ensures the aspect ratio of the image is maintained */
-  }
-  
+  font-family: 'Lora', serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333333;
+}
 
-  
+h1, h2, h3, h4 {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
+}
+
+h1 {
+  font-size: 2.75rem;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 2.25rem;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+h4 {
+  font-size: 1.35rem;
+  font-weight: 400;
+}
+
+/* General Link Styles for Dark Backgrounds */
+a {
+  color: #7DD3FC;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #006B98;
+  text-decoration: underline;
+}
+
+a:visited {
+  color: #7DD3FC;
+}
+
+a:active {
+  color: #004D6E;
+}
+
+a:focus {
+  color: #006B98;
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Link Styles for Light Backgrounds */
+a.light-bg {
+  color: #0090C1;
+}
+
+a.light-bg:hover {
+  color: #006B98;
+}
+
+a.light-bg:visited {
+  color: #0090C1;
+}
+
+a.light-bg:active {
+  color: #004D6E;
+}
+
+a.light-bg:focus {
+  color: #006B98;
+}
+
+/* Button Styles */
+.button.dark {
+  display: inline-block;
+  background-color: #0F182A;
+  color: #F9FAFC;
+  font-weight: bold;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid #F9FAFC;
+  transition: 0.2s all;
+}
+
+.button.dark:hover {
+  background-color: #0a0f21;
+}
+
+.button.dark:active,
+.button.dark:focus {
+  background-color: #050a15;
+  outline: none;
+}
+
+.button.light {
+  display: inline-block;
+  background-color: #F9FAFC;
+  color: #0F182A;
+  font-weight: bold;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid #0F182A;
+  transition: 0.2s all;
+}
+
+.button.light:hover {
+  background-color: #e5e7ea;
+}
+
+.button.light:active,
+.button.light:focus {
+  background-color: #d1d3d6;
+  outline: none;
+}
+
+.button.ghost {
+  display: inline-block;
+  background-color: transparent;
+  color: #0F182A;
+  font-weight: bold;
+  padding: 0.625rem;
+  border-radius: 0.25rem;
+  border: 0.125rem solid #0F182A;
+  transition: 0.2s all;
+}
+
+.button.ghost:hover {
+  background-color: #0F182A;
+  color: #F9FAFC;
+}
+
+.button.ghost:active,
+.button.ghost:focus {
+  background-color: #050a15;
+  color: #F9FAFC;
+  outline: none;
+}
+
+/* Image Styles */
+img {
+  width: 100%;
+  height: auto; /* Maintain image aspect ratio */
+}
