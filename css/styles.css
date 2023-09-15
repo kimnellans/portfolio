@@ -26,7 +26,7 @@ a {
   transition: 0.3s ease;
 }
 
-a:hover { color: #006B98; text-decoration: underline; }
+a:hover { color: #7DD3FC; text-decoration: underline; }
 a:visited { color: #7DD3FC; }
 a:active { color: #004D6E; }
 a:focus { color: #006B98; text-decoration: underline; outline: none; }
