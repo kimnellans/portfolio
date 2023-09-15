@@ -279,17 +279,26 @@ footer p {
 /* End of Footer Styles */
 
 /* For nav menu items uppercase */
-.nav-link {
+header .nav-link {
   text-transform: uppercase;
-  color: #333; /* dark color */
+  color: #333 !important; /* dark color */
 }
 
-.nav-link:hover {
-  color: #007BFF; /* Bootstrap's link blue color */
-  text-decoration: none; /* No underline on hover */
+header .nav-link:hover {
+  color: #007BFF !important; /* Bootstrap's link blue color */
+  text-decoration: none !important; /* No underline on hover */
 }
 
 /* Logo hover color */
-.logo:hover img {
-  filter: brightness(0.5); /* Darken the logo on hover; adjust value as needed */
+header .logo:hover img {
+  filter: brightness(0.5) !important; /* Darken the logo on hover; adjust value as needed */
+}
+
+/* Adjust nav and social icon alignment */
+header .nav {
+  justify-content: center;
+}
+
+header .social-icons {
+  margin-left: auto;
 }
