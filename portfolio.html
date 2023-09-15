@@ -23,29 +23,44 @@
 
 <body>
 
-    <header>
-        <div class="container">
-            <a href="index.html">
-                <img src="assets/kimn.svg" alt="Kim Nellans Logo">
+    <header class="header bg-light">
+        <div class="container d-flex justify-content-between align-items-center">
+            
+            <!-- Logo aligned left -->
+            <a href="index.html" class="logo">
+                <img src="assets/kimn.svg" alt="Kim Nellans Logo" style="max-width: 150px;"> <!-- adjust max-width as per your needs -->
             </a>
+            
+            <!-- Navigation centered -->
             <nav>
-                <ul>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="files/Resume_Kim%20Nellans.pdf" target="_blank" rel="noopener noreferrer">RESUME</a>
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
                     </li>
                 </ul>
             </nav>
+            
+            <!-- Social icons aligned right -->
             <div class="social-icons">
-                <a href="https://www.linkedin.com/feed/" rel="noopener noreferrer" target="_blank"><img
-                        src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/indiatraveladventure/" rel="noopener noreferrer" target="_blank"><img
-                        src="img/footer/instagram.svg" alt="Instagram"></a>
-                <a href="https://github.com/kimnellans" rel="noopener noreferrer" target="_blank"><img
-                        src="img/footer/git.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/feed/" class="mx-2">
+                    <img src="img/footer/linked-in.svg" alt="LinkedIn" style="max-width: 24px;"> <!-- adjust max-width as per your needs -->
+                </a>
+                <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
+                    <img src="img/footer/instagram.svg" alt="Instagram" style="max-width: 24px;">
+                </a>
+                <a href="https://github.com/kimnellans" class="mx-2">
+                    <img src="img/footer/git.svg" alt="GitHub" style="max-width: 24px;">
+                </a>
             </div>
         </div>
     </header>
+    
 
     <section class="hero">
         <div class="container">

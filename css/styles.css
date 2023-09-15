@@ -17,7 +17,10 @@ body {
   color: #333333;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
 }
@@ -67,95 +70,72 @@ a:focus {
   outline: none;
 }
 
-/* Link Styles for Light Backgrounds */
-a.light-bg {
-  color: #0090C1;
-}
+/* Button Styles integrated with Bootstrap */
 
-a.light-bg:hover {
-  color: #006B98;
-}
-
-a.light-bg:visited {
-  color: #0090C1;
-}
-
-a.light-bg:active {
-  color: #004D6E;
-}
-
-a.light-bg:focus {
-  color: #006B98;
-}
-
-/* Button Styles */
-.button.dark {
-  display: inline-block;
+.btn-custom.dark {
   background-color: #0F182A;
   color: #F9FAFC;
-  font-weight: bold;
-  padding: 0.625rem;
-  border-radius: 0.25rem;
   border: 0.125rem solid #F9FAFC;
   transition: 0.2s all;
 }
 
-.button.dark:hover {
+.btn-custom.dark:hover {
   background-color: #0a0f21;
+  text-decoration: none;
+  /* to override Bootstrap's hover effect on <a> tags */
 }
 
-.button.dark:active,
-.button.dark:focus {
+.btn-custom.dark:active,
+.btn-custom.dark:focus {
   background-color: #050a15;
+  box-shadow: none;
+  /* to override Bootstrap's focus shadow */
   outline: none;
 }
 
-.button.light {
-  display: inline-block;
+.btn-custom.light {
   background-color: #F9FAFC;
   color: #0F182A;
-  font-weight: bold;
-  padding: 0.625rem;
-  border-radius: 0.25rem;
   border: 0.125rem solid #0F182A;
   transition: 0.2s all;
 }
 
-.button.light:hover {
+.btn-custom.light:hover {
   background-color: #e5e7ea;
+  text-decoration: none;
 }
 
-.button.light:active,
-.button.light:focus {
+.btn-custom.light:active,
+.btn-custom.light:focus {
   background-color: #d1d3d6;
+  box-shadow: none;
   outline: none;
 }
 
-.button.ghost {
-  display: inline-block;
+.btn-custom.ghost {
   background-color: transparent;
   color: #0F182A;
-  font-weight: bold;
-  padding: 0.625rem;
-  border-radius: 0.25rem;
   border: 0.125rem solid #0F182A;
   transition: 0.2s all;
 }
 
-.button.ghost:hover {
+.btn-custom.ghost:hover {
   background-color: #0F182A;
   color: #F9FAFC;
+  text-decoration: none;
 }
 
-.button.ghost:active,
-.button.ghost:focus {
+.btn-custom.ghost:active,
+.btn-custom.ghost:focus {
   background-color: #050a15;
   color: #F9FAFC;
+  box-shadow: none;
   outline: none;
 }
 
 /* Image Styles */
 img {
   width: 100%;
-  height: auto; /* Maintain image aspect ratio */
+  height: auto;
+  /* Maintain image aspect ratio */
 }
