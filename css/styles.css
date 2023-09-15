@@ -137,7 +137,7 @@ a:focus {
 
 /* Logo Styles */
 .header .logo img {
-  width: auto; 
+  width: auto;
   max-width: 150px;
   height: auto;
   display: block;
@@ -199,7 +199,62 @@ a:focus {
 
 /* Image Styles */
 img {
-width: 100%;
-height: auto;
+  width: 100%;
+  height: auto;
 }
 
+/* Start of Footer Styles */
+
+/* Base footer styles */
+footer {
+  background-color: #0F182A;
+  padding: 2rem 0;
+  color: #F9FAFC;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Footer navigation styles */
+footer nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+}
+
+footer nav ul li a {
+  color: #7DD3FC;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+footer nav ul li a:hover {
+  color: #006B98;
+}
+
+/* Social icons in footer */
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+footer .social-icons a img {
+  width: 36px;
+  /* you can adjust this value if the icons are still too big/small */
+  transition: 0.3s;
+}
+
+footer .social-icons a:hover img {
+  opacity: 0.8;
+}
+
+/* Copyright and other footer text */
+footer p {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 0.9rem;
+}
+
+/* End of Footer Styles */
