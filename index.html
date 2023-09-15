@@ -66,30 +66,30 @@
     <!-- End of Header -->
 
     <main>
+        <!-- Content inside container -->
         <div class="container">
-            <!-- Content goes here -->
-
-
-
-           
-<!-- Hero Section -->
-<section class="hero bg-dark">
-    <div class="container-fluid text-white"> <!-- Change here -->
-        <div class="row">
-            <div class="col-5">
-                <picture>
-                    <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
-                    <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait"
-                         class="hero-image"> <!-- Added a class instead of inline style -->
-                </picture>
-            </div>
-            <div class="col-7">
-                <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant
-                    about pixel-perfect UI, and currently obsessed with design systems.</h1>
-            </div>
+            <!-- Other content goes here -->
         </div>
-    </div>
-</section>
+    
+        <!-- Hero Section (moved outside of the .container) -->
+        <section class="hero bg-dark">
+            <div class="container-fluid text-white"> 
+                <div class="row">
+                    <div class="col-5">
+                        <picture>
+                            <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
+                            <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait" class="hero-image">
+                        </picture>
+                    </div>
+                    <div class="col-7">
+                        <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant
+                            about pixel-perfect UI, and currently obsessed with design systems.</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
 
 
 <!-- Locavore Project -->
