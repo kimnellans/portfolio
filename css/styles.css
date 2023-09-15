@@ -203,6 +203,25 @@ img {
   height: auto;
 }
 
+/* Image Styles */
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Hero Section Styles */
+.hero {
+  padding: 5rem 0;
+  /* Adjust this value based on your design needs */
+}
+
+.hero-left,
+.hero-right {
+  padding: 1rem;
+  /* You can adjust this as well to give space inside each half of the hero */
+}
+
+
 /* Start of Footer Styles */
 
 /* Base footer styles */
