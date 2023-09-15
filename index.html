@@ -5,31 +5,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Kim Nellans</title>
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    
+
+    <!-- Normalize and Bootstrap stylesheets -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-    
-    <!-- Your Styles and Other Resources -->
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
-    <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16">
-</head>
 
+    <!-- Your Styles -->
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicons -->
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+</head>
 
 <body>
     <header class="header bg-light">
         <div class="container d-flex justify-content-between align-items-center">
-            
+
             <!-- Logo aligned left -->
             <a href="index.html" class="logo">
-                <img src="assets/kimn.svg" alt="Kim Nellans Logo" style="max-width: 150px;"> <!-- adjust max-width as per your needs -->
+                <img src="assets/kimn.svg" alt="Kim Nellans Logo" class="logo-img">
             </a>
-            
+
             <!-- Navigation centered -->
             <nav>
                 <ul class="nav justify-content-center">
@@ -44,75 +49,73 @@
                     </li>
                 </ul>
             </nav>
-            
+
             <!-- Social icons aligned right -->
             <div class="social-icons">
                 <a href="https://www.linkedin.com/feed/" class="mx-2">
-                    <img src="img/footer/linked-in.svg" alt="LinkedIn" style="max-width: 24px;"> <!-- adjust max-width as per your needs -->
+                    <img src="img/footer/linked-in.svg" alt="Kim Nellans' LinkedIn Profile" class="social-icon">
                 </a>
                 <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
-                    <img src="img/footer/instagram.svg" alt="Instagram" style="max-width: 24px;">
+                    <img src="img/footer/instagram.svg" alt="Kim Nellans' Instagram Profile" class="social-icon">
                 </a>
                 <a href="https://github.com/kimnellans" class="mx-2">
-                    <img src="img/footer/git.svg" alt="GitHub" style="max-width: 24px;">
+                    <img src="img/footer/git.svg" alt="Kim Nellans' GitHub Profile" class="social-icon">
                 </a>
             </div>
         </div>
     </header>
-    
-
-    <section class="hero">
-        <div class="container">
-            <div class="hero-left">
-                <picture>
-                    <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
-                    <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait">
-                </picture>
-            </div>
-            <div class="hero-right">
-                <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant about
-                    pixel-perfect UI, and currently obsessed with design systems.</h1>
-            </div>
-        </div> <!-- Closing the container div -->
-    </section>
 
     <main>
         <div class="container">
-            <section class="project" id="green-yogini">
-                <div class="project-content">
-                    <h2>Green Yogini</h2>
-                    <h4>How Might We Transform Our Old Clothes into Stylish, Eco-Friendly Wear?</h4>
-                    <a href="case-studies/green-yogini.html">Read the Case Study</a>
+
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="row">
+                    <div class="col-4 text-center"> <!-- 1/3 column for the image -->
+                        <picture>
+                            <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
+                            <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait">
+                        </picture>
+                    </div>
+                    <div class="col-8 text-center"> <!-- 2/3 column for the heading -->
+                        <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant about pixel-perfect UI, and currently obsessed with design systems.</h1>
+                    </div>
                 </div>
-                <picture>
-                    <source srcset="img/green-yogini/home-page/GY@1X.jpg" media="(max-width:767px)">
-                    <img src="img/green-yogini/home-page/GY@2X.jpg" alt="Green Yogini Project Image">
-                </picture>
             </section>
 
-            <section class="project" id="locavore">
-                <div class="project-content">
-                    <h2>Locavore</h2>
-                    <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
-                    <a href="case-studies/locavore.html">Read the Case Study</a>
+            <!-- Locavore Project -->
+            <article class="project" id="locavore">
+                <div class="row">
+                    <div class="col-4">
+                        <h2>Locavore</h2>
+                        <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
+                        <a href="case-studies/locavore.html">Read the Case Study</a>
+                    </div>
+                    <div class="col-8">
+                        <picture>
+                            <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
+                            <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
+                        </picture>
+                    </div>
                 </div>
-                <picture>
-                    <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
-                    <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
-                </picture>
-            </section>
+            </article>
 
-            <section class="project" id="yuj">
-                <div class="project-content">
-                    <h2>YUJ</h2>
-                    <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
-                    <a href="case-studies/yuj.html">Read the Case Study</a>
+            <!-- YUJ Project -->
+            <article class="project" id="yuj">
+                <div class="row">
+                    <div class="col-4">
+                        <h2>YUJ</h2>
+                        <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
+                        <a href="case-studies/yuj.html">Read the Case Study</a>
+                    </div>
+                    <div class="col-8">
+                        <picture>
+                            <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
+                            <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
+                        </picture>
+                    </div>
                 </div>
-                <picture>
-                    <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
-                    <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
-                </picture>
-            </section>
+            </article>
         </div> <!-- Closing the container div -->
     </main>
 
@@ -127,23 +130,36 @@
                 </ul>
             </nav>
             <div class="social-icons">
-                <a href="https://www.linkedin.com/feed/"><img src="img/footer/linked-in.svg" alt="LinkedIn"></a>
-                <a href="https://www.instagram.com/indiatraveladventure/"><img src="img/footer/instagram.svg"
-                        alt="Instagram"></a>
-                <a href="https://github.com/kimnellans"><img src="img/footer/git.svg" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/feed/">
+                    <img src="img/footer/linked-in.svg" alt="Kim Nellans' LinkedIn Profile">
+                </a>
+                <a href="https://www.instagram.com/indiatraveladventure/">
+                    <img src="img/footer/instagram.svg" alt="Kim Nellans' Instagram Profile">
+                </a>
+                <a href="https://github.com/kimnellans">
+                    <img src="img/footer/git.svg" alt="Kim Nellans' GitHub Profile">
+                </a>
             </div>
-            <p>I live and work on the traditional lands of the Tongva, Chumash, and Kizh peoples, past and present. With
-                gratitude, I acknowledge their stewardship of this beautiful region and strive to honor their legacy in
-                my daily life.</p>
-            <p>© 2023 kim n. All rights reserved. Made with love by me 💛</p>
-        </div> <!-- Closing the container div -->
+            <p>&copy; <span id="currentYear"></span> Kim Nellans. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+
+    <!-- JS snippet to display the current year in the footer -->
+    <script>
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+    </script>
+
+    <!-- JQuery, Popper, and Bootstrap JS libraries -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD5tr4yHLz4tEeLJkFk4Ck4S"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD5tr4yHLz4tEeLJkFk4Ck4S"
         crossorigin="anonymous"></script>
-    </body>
-    
-    </html>
+
+</body>
+
+</html>
