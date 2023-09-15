@@ -119,20 +119,21 @@ a:focus {
 
 /* Hero Section Styles */
 .hero.bg-dark {
-  width: 100vw;
-  overflow-x: hidden;
-  padding: 5rem 0;
+  width: 100%;
+  overflow-x: hidden;  /* Prevent horizontal scroll if any overflow occurs */
+  padding: 5rem 20px;  /* Top-bottom padding is 5rem; left-right padding is 20px */
 }
 
 .hero.bg-dark .container {
   width: 100%;
-  padding: 0 15px;
+  padding: 0 15px;  /* The inner container still has its padding */
 }
 
 .hero-image {
   border: 4px solid white;
   object-fit: cover;
 }
+
 
 /* Footer Styles */
 footer {
