@@ -74,7 +74,7 @@ a:focus { color: #006B98; text-decoration: underline; outline: none; }
 .header .social-icons a:hover img, footer .social-icons a:hover img {
   fill: #7DD3FC; 
   /* Uncomment the filter below if fill doesn't work */
-  /* filter: brightness(0) saturate(100%) invert(29%) sepia(94%) saturate(1318%) hue-rotate(186deg) brightness(93%) contrast(88%); */
+ filter: brightness(0) saturate(100%) invert(29%) sepia(94%) saturate(1318%) hue-rotate(186deg) brightness(93%) contrast(88%);
 }
 
 /* Button Styles */
