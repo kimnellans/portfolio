@@ -17,44 +17,63 @@ h1 {
   font-weight: 700;
   line-height: 1.3;
 }
+
 h2 {
   font-size: 2.25rem;
   font-weight: 700;
+  background-color: #CFD8E0;  /* Highlight for h2 */
+  display: inline-block;  /* To wrap highlight tightly */
 }
+
 h3 {
   font-size: 1.75rem;
   font-weight: 400;
 }
+
 h4 {
   font-size: 1.35rem;
   font-weight: 400;
+  font-style: italic;  /* Make h4 italic */
 }
 
 img {
   width: 100%;
   height: auto;
-  display: block;  /* Ensures no margins around the image */
+  display: block;
 }
 
 /* Link Styles */
 a {
   color: #7dd3fc;
   text-decoration: none;
-  transition: color 0.3s ease;  /* Targeted just the color for transition */
+  transition: color 0.3s ease;
 }
 
 a:hover, a:focus {
   color: #006B98;
   text-decoration: underline;
 }
+
 a:visited {
   color: #7DD3FC;
 }
+
 a:active {
   color: #004D6E;
 }
+
 a:focus {
   outline: none;
+}
+
+/* Project styles */
+.project {
+  background-color: #F9FAFB;  /* Light background */
+}
+
+.project .container {
+  margin-top: 20px;
+  margin-bottom: 20px;  /* Margin for the container */
 }
 
 /* Header Styles */
