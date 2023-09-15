@@ -7,10 +7,8 @@
     <title>Home | Kim Nellans</title>
 
     <!-- Normalize and Bootstrap stylesheets -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
-    <link rel="stylesheet" type="text/css"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -29,13 +27,9 @@
 <body>
     <header class="header bg-light">
         <div class="container d-flex justify-content-between align-items-center">
-
-            <!-- Logo aligned left -->
             <a href="index.html" class="logo">
-                <img src="assets/kimn.svg" alt="Kim Nellans Logo" class="logo-img">
+                <img src="assets/kimn.svg" alt="Kim Nellans Logo" style="max-width: 150px;">
             </a>
-
-            <!-- Navigation centered -->
             <nav>
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -49,17 +43,15 @@
                     </li>
                 </ul>
             </nav>
-
-            <!-- Social icons aligned right -->
             <div class="social-icons">
                 <a href="https://www.linkedin.com/feed/" class="mx-2">
-                    <img src="img/footer/linked-in.svg" alt="Kim Nellans' LinkedIn Profile" class="social-icon">
+                    <img src="img/footer/linked-in.svg" alt="LinkedIn" style="max-width: 24px;">
                 </a>
                 <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
-                    <img src="img/footer/instagram.svg" alt="Kim Nellans' Instagram Profile" class="social-icon">
+                    <img src="img/footer/instagram.svg" alt="Instagram" style="max-width: 24px;">
                 </a>
                 <a href="https://github.com/kimnellans" class="mx-2">
-                    <img src="img/footer/git.svg" alt="Kim Nellans' GitHub Profile" class="social-icon">
+                    <img src="img/footer/git.svg" alt="GitHub" style="max-width: 24px;">
                 </a>
             </div>
         </div>
@@ -71,20 +63,20 @@
             <!-- Hero Section -->
             <section class="hero">
                 <div class="row">
-                    <div class="col-4 text-center"> <!-- 1/3 column for the image -->
+                    <div class="col-4 text-center">
                         <picture>
                             <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
                             <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait">
                         </picture>
                     </div>
-                    <div class="col-8 text-center"> <!-- 2/3 column for the heading -->
+                    <div class="col-8 text-center">
                         <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant about pixel-perfect UI, and currently obsessed with design systems.</h1>
                     </div>
                 </div>
             </section>
 
             <!-- Locavore Project -->
-            <article class="project" id="locavore">
+            <section class="project" id="locavore">
                 <div class="row">
                     <div class="col-4">
                         <h2>Locavore</h2>
@@ -98,10 +90,10 @@
                         </picture>
                     </div>
                 </div>
-            </article>
+            </section>
 
             <!-- YUJ Project -->
-            <article class="project" id="yuj">
+            <section class="project" id="yuj">
                 <div class="row">
                     <div class="col-4">
                         <h2>YUJ</h2>
@@ -115,8 +107,26 @@
                         </picture>
                     </div>
                 </div>
-            </article>
-        </div> <!-- Closing the container div -->
+            </section>
+
+            <!-- Green Yogini Project -->
+            <section class="project" id="green-yogini">
+                <div class="row">
+                    <div class="col-4">
+                        <h2>Green Yogini</h2>
+                        <h4>How Might We Live a More Sustainable Yoga Lifestyle?</h4>
+                        <a href="case-studies/green-yogini.html">Read the Case Study</a>
+                    </div>
+                    <div class="col-8">
+                        <picture>
+                            <source srcset="img/green-yogini/GreenYogini@1X.jpg" media="(max-width:767px)">
+                            <img src="img/green-yogini/GreenYogini@2X.jpg" alt="Green Yogini Project Image">
+                        </picture>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
 
     <footer>
@@ -126,39 +136,25 @@
                     <li><a href="blog.html">BLOG</a></li>
                     <li><a href="about.html">ABOUT</a></li>
                     <li><a href="files/Resume_KimNellans.pdf" target="_blank">RESUME</a></li>
-                    <li><a href="mailto:knellans@me.com">GET IN TOUCH</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
                 </ul>
             </nav>
             <div class="social-icons">
                 <a href="https://www.linkedin.com/feed/">
-                    <img src="img/footer/linked-in.svg" alt="Kim Nellans' LinkedIn Profile">
+                    <img src="img/footer/linked-in.svg" alt="LinkedIn">
                 </a>
                 <a href="https://www.instagram.com/indiatraveladventure/">
-                    <img src="img/footer/instagram.svg" alt="Kim Nellans' Instagram Profile">
+                    <img src="img/footer/instagram.svg" alt="Instagram">
                 </a>
                 <a href="https://github.com/kimnellans">
-                    <img src="img/footer/git.svg" alt="Kim Nellans' GitHub Profile">
+                    <img src="img/footer/git.svg" alt="GitHub">
                 </a>
             </div>
-            <p>&copy; <span id="currentYear"></span> Kim Nellans. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- JS snippet to display the current year in the footer -->
-    <script>
-        document.getElementById("currentYear").textContent = new Date().getFullYear();
-    </script>
-
-    <!-- JQuery, Popper, and Bootstrap JS libraries -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
-        integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD5tr4yHLz4tEeLJkFk4Ck4S"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
-        integrity="sha384-pzjw8f+ua7Kw1TIq0v8FqFjcJ6pajs/rfdfs3SO+kD5tr4yHLz4tEeLJkFk4Ck4S"
-        crossorigin="anonymous"></script>
+    <!-- Bootstrap and JS libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 
