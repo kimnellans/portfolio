@@ -277,3 +277,19 @@ footer p {
 }
 
 /* End of Footer Styles */
+
+/* For nav menu items uppercase */
+.nav-link {
+  text-transform: uppercase;
+  color: #333; /* dark color */
+}
+
+.nav-link:hover {
+  color: #007BFF; /* Bootstrap's link blue color */
+  text-decoration: none; /* No underline on hover */
+}
+
+/* Logo hover color */
+.logo:hover img {
+  filter: brightness(0.5); /* Darken the logo on hover; adjust value as needed */
+}
