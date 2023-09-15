@@ -133,9 +133,73 @@ a:focus {
   outline: none;
 }
 
+/* Header Styles */
+
+/* Logo Styles */
+.header .logo img {
+  width: auto; 
+  max-width: 150px;
+  height: auto;
+  display: block;
+  margin-right: auto;
+}
+
+/* Navigation Styles */
+.header .nav-center ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  padding: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.header .nav-center ul li {
+  margin: 0 15px;
+}
+
+.header .nav-center ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #7DD3FC;
+  transition: 0.3s ease;
+}
+
+.header .nav-center ul li a:hover {
+  color: #006B98;
+  text-decoration: underline;
+}
+
+.header .nav-center ul li a:visited {
+  color: #7DD3FC;
+}
+
+.header .nav-center ul li a:active {
+  color: #004D6E;
+}
+
+.header .nav-center ul li a:focus {
+  color: #006B98;
+  outline: none;
+  text-decoration: underline;
+}
+
+/* Social Icons Styles */
+.header .social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.header .social-icons a img {
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
 /* Image Styles */
 img {
-  width: 100%;
-  height: auto;
-  /* Maintain image aspect ratio */
+width: 100%;
+height: auto;
 }
+
