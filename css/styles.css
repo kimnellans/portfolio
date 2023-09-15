@@ -67,42 +67,45 @@ a:focus {
 }
 
 /* Project styles */
-
 .project {
+  margin: 40px 0;
   background-color: #F9FAFB;
-  margin: 40px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.project .container {
-  margin: 0 auto; /* centers the content horizontally */
+.container.card-style {
+  margin: 0 40px;
+  padding: 40px 0;
+  background-color: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project h4 {
+  font-style: italic;
+  margin: 15px 0; /* provides some spacing between elements */
+}
+
+.project a {
+  text-decoration: underline;
+  color: #7dd3fc; /* using the previously defined link color */
+}
+
+.project a:hover {
+  color: #006B98; /* using the previously defined link hover color */
 }
 
 .project h2 {
   font-size: 2.25rem;
   font-weight: 700;
   position: relative;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #CFD8E0 50%);
-  -webkit-background-clip: text; /* this will ensure the background only applies to the text */
-  color: transparent; /* makes the text transparent, revealing the background gradient */
 }
 
-.project h4 {
-  font-style: italic;
-  margin-bottom: 20px; /* to provide some spacing between h4 and the link */
+.project h2 span {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #CFD8E0 100%);
+  -webkit-background-clip: text;
+  color: inherit;
+  padding: 0 5px; /* Provide slight padding for the background effect */
 }
-
-.project a {
-  text-decoration: underline;
-  transition: color 0.3s ease;
-}
-
-.project a:hover, 
-.project a:focus {
-  color: #006B98;
-}
-
 
 
 /* Header Styles */
