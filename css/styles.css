@@ -12,12 +12,18 @@ h1, h2, h3, h4 {
   line-height: 1.4;
 }
 
-h1 { font-size: 2.75rem; font-weight: 700; }
+h1 { 
+  font-size: 2.75rem; 
+  font-weight: 700; 
+  line-height: 1.3;  /* Adjusted line height */
+}
+
 h2 { font-size: 2.25rem; font-weight: 700; }
 h3 { font-size: 1.75rem; font-weight: 400; }
 h4 { font-size: 1.35rem; font-weight: 400; }
 
 img { width: 100%; height: auto; }
+
 
 /* Link Styles */
 a {
@@ -70,12 +76,6 @@ a:focus { color: #006B98; text-decoration: underline; outline: none; }
   transition: fill 0.3s ease, filter 0.3s ease;
 }
 
-/* Apply hover effect on SVG images */
-.header .social-icons a:hover img, footer .social-icons a:hover img {
-  fill: #7DD3FC; 
-  /* Uncomment the filter below if fill doesn't work */
- filter: brightness(0) saturate(100%) invert(29%) sepia(94%) saturate(1318%) hue-rotate(186deg) brightness(93%) contrast(88%);
-}
 
 /* Button Styles */
 .btn-custom {
@@ -89,11 +89,21 @@ a:focus { color: #006B98; text-decoration: underline; outline: none; }
   outline: none;
 }
 
-/* ( ... rest of the btn-custom styles remain unchanged ... ) */
 
 /* Hero Section Styles */
-.hero { padding: 5rem 0; }
+.hero.bg-dark {
+  width: 100vw; 
+  overflow-x: hidden; 
+  padding: 5rem 0;
+}
+
 .hero-left, .hero-right { padding: 1rem; }
+
+.hero-image {
+  border: 4px solid white;
+  object-fit: cover; 
+}
+
 
 /* Footer Styles */
 footer {

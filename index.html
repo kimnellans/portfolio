@@ -74,13 +74,13 @@
            
 <!-- Hero Section -->
 <section class="hero bg-dark">
-    <div class="container text-white">
+    <div class="container-fluid text-white"> <!-- Change here -->
         <div class="row">
             <div class="col-5">
                 <picture>
                     <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
                     <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait"
-                         style="border: 4px solid white;">
+                         class="hero-image"> <!-- Added a class instead of inline style -->
                 </picture>
             </div>
             <div class="col-7">
@@ -90,6 +90,7 @@
         </div>
     </div>
 </section>
+
 
 <!-- Locavore Project -->
 <section class="project" id="locavore">
