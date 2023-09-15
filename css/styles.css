@@ -21,7 +21,7 @@ img { width: 100%; height: auto; }
 
 /* Link Styles */
 a {
-  color: #7DD3FC;
+  color: #7DD3FC!important;
   text-decoration: none;
   transition: 0.3s ease;
 }
