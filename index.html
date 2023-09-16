@@ -36,35 +36,36 @@
                 <img src="assets/kimn.svg" alt="Kim Nellans Logo">
             </a>
 
-            <!-- Navigation -->
-            <nav>
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
-                    </li>
-                </ul>
-            </nav>
+            <!-- Button to Toggle Offcanvas Menu -->
+            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
+                ☰
+            </button>
 
-            <!-- Social Icons -->
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/feed/" class="mx-2">
-                    <img src="img/footer/linked-in.svg" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
-                    <img src="img/footer/instagram.svg" alt="Instagram">
-                </a>
-                <a href="https://github.com/kimnellans" class="mx-2">
-                    <img src="img/footer/git.svg" alt="GitHub">
-                </a>
+            <!-- Offcanvas Menu Structure -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </header>
+
     <!-- End of Header -->
 
     <main>
@@ -90,65 +91,65 @@
             </div>
         </section>
 
- <!-- Locavore Project -->
-<section class="project" id="locavore">
-    <h2 class="visually-hidden">Locavore Project</h2>
-    <div class="container card-style">
-        <div class="row">
-            <div class="col-5 d-flex flex-column justify-content-center">
-                <h2><span>Locavore</span></h2>
-                <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
-                <a href="case-studies/locavore.html">Read the Case Study</a>
+        <!-- Locavore Project -->
+        <section class="project" id="locavore">
+            <h2 class="visually-hidden">Locavore Project</h2>
+            <div class="container card-style">
+                <div class="row">
+                    <div class="col-5 d-flex flex-column justify-content-center">
+                        <h2><span>Locavore</span></h2>
+                        <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
+                        <a href="case-studies/locavore.html">Read the Case Study</a>
+                    </div>
+                    <div class="col-7">
+                        <picture>
+                            <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
+                            <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
+                        </picture>
+                    </div>
+                </div>
             </div>
-            <div class="col-7">
-                <picture>
-                    <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
-                    <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
-                </picture>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- YUJ Project -->
-<section class="project" id="yuj">
-    <h2 class="visually-hidden">YUJ Project</h2>
-    <div class="container card-style">
-        <div class="row">
-            <div class="col-5 d-flex flex-column justify-content-center">
-                <h2><span>YUJ</span></h2>
-                <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
-                <a href="case-studies/yuj.html">Read the Case Study</a>
+        <!-- YUJ Project -->
+        <section class="project" id="yuj">
+            <h2 class="visually-hidden">YUJ Project</h2>
+            <div class="container card-style">
+                <div class="row">
+                    <div class="col-5 d-flex flex-column justify-content-center">
+                        <h2><span>YUJ</span></h2>
+                        <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
+                        <a href="case-studies/yuj.html">Read the Case Study</a>
+                    </div>
+                    <div class="col-7">
+                        <picture>
+                            <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
+                            <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
+                        </picture>
+                    </div>
+                </div>
             </div>
-            <div class="col-7">
-                <picture>
-                    <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
-                    <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
-                </picture>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
-<!-- Green Yogini Project -->
-<section class="project" id="green-yogini">
-    <h2 class="visually-hidden">Green Yogini Project</h2>
-    <div class="container card-style">
-        <div class="row">
-            <div class="col-5 d-flex flex-column justify-content-center">
-                <h2><span>Green Yogini</span></h2>
-                <h4>How Might We Help Yoginis Find Eco-friendly Products?</h4>
-                <a href="case-studies/green-yogini.html">Read the Case Study</a>
+        <!-- Green Yogini Project -->
+        <section class="project" id="green-yogini">
+            <h2 class="visually-hidden">Green Yogini Project</h2>
+            <div class="container card-style">
+                <div class="row">
+                    <div class="col-5 d-flex flex-column justify-content-center">
+                        <h2><span>Green Yogini</span></h2>
+                        <h4>How Might We Help Yoginis Find Eco-friendly Products?</h4>
+                        <a href="case-studies/green-yogini.html">Read the Case Study</a>
+                    </div>
+                    <div class="col-7">
+                        <picture>
+                            <source srcset="img/green-yogini/home-page/GY@1X.jpg" media="(max-width:767px)">
+                            <img src="img/green-yogini/home-page/GY@2X.jpg" alt="Green Yogini Project Image">
+                        </picture>
+                    </div>
+                </div>
             </div>
-            <div class="col-7">
-                <picture>
-                    <source srcset="img/green-yogini/home-page/GY@1X.jpg" media="(max-width:767px)">
-                    <img src="img/green-yogini/home-page/GY@2X.jpg" alt="Green Yogini Project Image">
-                </picture>
-            </div>
-        </div>
-    </div>
-</section>
+        </section>
 
     </main>
 

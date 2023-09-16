@@ -109,44 +109,10 @@ a:focus {
   max-width: 150px;
 }
 
-.header .nav ul {
-  display: flex;
-  justify-content: center;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.header .nav ul li {
-  margin: 0 15px;
-}
-.header .nav ul li a {
-  text-transform: uppercase;
-  font-weight: bold;
-}
-.header .nav-link {
-  color: #333;
-}
-.header .nav-link:hover {
-  color: #7DD3FC;
-  text-decoration: none;
-}
 .header .logo:hover img {
   filter: brightness(0.8);
 }
 
-.header .social-icons {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.header .social-icons a img, footer .social-icons a img {
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  transition: 0.3s;
-}
 
 /* Button Styles */
 .btn-custom {
@@ -218,30 +184,33 @@ footer section p {  /* Targeting the acknowledgment text specifically */
   margin-bottom: 5px;  /* Reducing the gap between the nav links */
 }
 
+/* Offcanvas Menu Styles */
+.offcanvas {
+  width: 250px; /* Width of the offcanvas menu */
+}
+
+.offcanvas-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.offcanvas .nav-link {
+  color: #333; /* Set the color of the nav links */
+}
+
+.offcanvas .nav-link:hover {
+  color: #7DD3FC; /* Set the hover color of the nav links */
+  text-decoration: none; /* Remove the underline on hover */
+}
+
 /* Media Queries for Extra Small Devices (<576px) */
 @media (max-width: 575.98px) {
-  .header .logo img {
-    max-width: 120px; /* Slightly reduce the logo size */
-  }
-
-  .header .nav ul {
-    flex-direction: column; /* Stack the nav items vertically */
-    align-items: center; /* Center align the nav items */
-  }
-
-  .header .nav ul li {
-    margin: 5px 0; /* Adjust the margin for vertical stacking */
-  }
-
-  .header .social-icons a img {
-    width: 20px; /* Slightly reduce the social icon size */
-    height: 20px;
-  }
+.header .logo img {
+  max-width: 120px; /* Slightly reduce the logo size */
+}
 }
 
 /* Media Queries for Small Devices (≥576px) */
 @media (min-width: 576px) {
-  /* Adjustments for small devices can be added here if needed */
+/* Adjustments for small devices can be added here if needed */
 }
-
-/* ... other styles ... */
