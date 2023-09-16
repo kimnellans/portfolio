@@ -267,5 +267,37 @@ header .navbar .navbar-toggler {
   margin-top: 3rem;
 }
 
-/* Bootstrap already provides styling for the .btn and .btn-primary classes. 
- If you want to customize the button further, you can add additional styles here. */
+/* Ensure the image takes up the full width of its container */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add some top margin for spacing */
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Button Styles */
+.btn-custom {
+border-width: 0.125rem;
+transition: 0.2s all;
+border-radius: 8px; /* 8px corner radius */
+}
+
+.btn-custom.dark, .btn-custom.light, .btn-custom.ghost {
+text-decoration: none;
+box-shadow: none;
+outline: none;
+}
+
+.btn-custom.dark:hover {
+/* You can adjust the hover styles as needed. 
+   For example, you might want to change the background color, 
+   border color, or add a shadow. */
+background-color: #333; /* Darker shade for hover */
+color: #fff; /* White text on hover */
+}
+
+/* Assuming you have specific styles for .btn-custom.dark, 
+ if not, you can add them here. */
