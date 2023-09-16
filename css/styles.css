@@ -14,15 +14,14 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 2.75rem;
-  font-weight: 700;
-  line-height: 1.3;
+  font-weight: 400; /* Updated font weight */
 }
 
 h2 {
   font-size: 2.25rem;
   font-weight: 700;
-  background-color: #CFD8E0; /* Highlight for h2 */
-  display: inline-block; /* To wrap highlight tightly */
+  background-color: #CFD8E0;
+  display: inline-block;
 }
 
 h3 {
@@ -33,13 +32,27 @@ h3 {
 h4 {
   font-size: 1.35rem;
   font-weight: 400;
-  font-style: italic; /* Make h4 italic */
+  font-style: italic;
 }
 
 img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  padding-top: 80%; /* for 5:4 aspect ratio */
+}
+
+.image-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* Link Styles */
@@ -74,36 +87,26 @@ a:focus {
 }
 
 .container.card-style {
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 40px 20px; /* Add padding for spacing */
+  margin: 0 auto;
+  padding: 40px 20px;
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project h4 {
   font-style: italic;
-  margin: 15px 0; /* Provides spacing between elements */
+  margin: 15px 0;
 }
 
 .project a {
   text-decoration: underline;
-  color: #7dd3fc; /* Using the previously defined link color */
-}
-
-.project a:hover {
-  color: #006B98; /* Using the previously defined link hover color */
-}
-
-.project h2 {
-  font-size: 2.25rem;
-  font-weight: 700;
 }
 
 /* Header Styles */
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between; /* Add space between logo and nav */
+  justify-content: space-between;
 }
 
 .header .logo img {
@@ -119,6 +122,7 @@ a:focus {
   border-width: 0.125rem;
   transition: 0.2s all;
 }
+
 .btn-custom.dark, .btn-custom.light, .btn-custom.ghost {
   text-decoration: none;
   box-shadow: none;
@@ -128,24 +132,24 @@ a:focus {
 /* Hero Section Styles */
 .hero.bg-dark {
   width: 100%;
-  padding: 5rem 0; /* Remove left-right padding to center content */
-  text-align: left; /* Left-align text on small screens */
+  padding: 5rem 0;
+  text-align: left;
 }
 
 .hero.bg-dark .container {
   width: 100%;
-  max-width: 1200px; /* Set a maximum width for the inner container */
-  margin: 0 auto; /* Center the inner container */
-  padding: 0 20px; /* Adjust inner container padding for spacing */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .hero-image {
   border: 4px solid white;
   object-fit: cover;
-  margin-top: 20px; /* Add top margin for spacing */
+  margin-top: 20px;
 }
 
-/* Existing Footer Styles */
+/* Footer Styles */
 footer {
   background-color: #0F182A;
   padding: 2rem 0;
@@ -166,14 +170,12 @@ footer p {
   font-size: 0.9rem;
 }
 
-/* Updated Footer Styles */
-
 footer .row {
   align-items: center;
 }
 
 footer section p {
-  text-align: left; /* Left-align the acknowledgment text */
+  text-align: left;
 }
 
 .footer-nav ul {
@@ -183,50 +185,47 @@ footer section p {
 }
 
 .footer-nav ul li:not(:last-child) {
-  margin-bottom: 5px; /* Reduce the gap between the nav links */
+  margin-bottom: 5px;
 }
 
-/* End Footer Styles */
+/* Media Queries */
 
-/* Begin Media Queries */
-
-/* Media Queries for Extra Small Devices (<576px) */
 @media (max-width: 575.98px) {
   .header .logo img {
-    max-width: 120px; /* Slightly reduce the logo size */
+    max-width: 120px;
   }
   .navbar-toggler {
-    display: block; /* Ensure the hamburger menu is visible */
+    display: block;
   }
   h1 {
-    font-size: 1.5rem; /* Adjusted font size for h1 */
+    font-size: 1.5rem;
   }
   .hero-image {
-    max-width: 90%; /* Adjusted image width */
-    margin: 0 auto; /* Center the image */
+    max-width: 90%;
+    margin: 0 auto;
   }
 }
 
-/* Media Queries for Small Devices (≥576px) and up to Large Devices (<992px) */
 @media (min-width: 576px) and (max-width: 991.98px) {
   .navbar-toggler {
-    display: block; /* Ensure the hamburger menu is visible */
+    display: block;
   }
   .row > div {
-    flex: 0 0 100%; /* Make it one column layout */
-    max-width: 100%; /* Make it one column layout */
-    text-align: left; /* Left-align text on larger screens */
+    flex: 0 0 100%;
+    max-width: 100%;
+    text-align: left;
   }
 }
 
-/* Media Queries for Large Devices (≥992px) */
 @media (min-width: 992px) {
   .navbar-toggler {
-    display: none; /* Hide the hamburger menu */
+    display: none;
+  }
+  h1 {
+    font-size: 2.5rem; /* Updated font size for h1 */
   }
 }
 
-/* Media Queries for Extra Large Devices (≥1200px) */
-@media (min-width: 1200px) {
-  /* Add your styles for extra-large devices here */
+.nav-link {
+  text-transform: capitalize; /* Capitalize nav menu items */
 }
