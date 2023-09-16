@@ -194,51 +194,37 @@ footer {
 footer nav ul, footer .social-icons {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 20px;
   padding: 0;
 }
 
 footer .social-icons {
   margin-top: 1rem;
-  justify-content: center; /* centering social icons, as they were initially */
 }
+
 footer .social-icons a:hover img {
   opacity: 0.8;
 }
 
 footer p {
+  text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
 }
 
-/* New Modifications */
-footer nav ul {
-  justify-content: flex-end; /* right-aligns the links */
-  flex-direction: column; /* makes the links stack vertically */
+/* Additional Footer Styles */
+
+footer .row {
+  align-items: center;
 }
 
-/* 20px left padding for left-aligned text */
-.pl-20 {
-  padding-left: 20px !important;
+.footer-nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 }
 
-/* 20px right padding for right-aligned nav */
-.pr-20 {
-  padding-right: 20px !important;
-}
-
-/* For the centered copyright info */
-.text-center p {
-  text-align: center;
-}
-
-/* For the left-aligned acknowledgment text */
-.text-left p {
-  text-align: left;
-}
-
-/* Center the copyright info underneath the two columns */
-footer .copyright {
-  text-align: center;
-  margin-top: 2rem;
+.footer-nav ul li:not(:last-child) {
+  margin-bottom: 10px;
 }
