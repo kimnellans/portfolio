@@ -184,6 +184,10 @@ footer section p {  /* Targeting the acknowledgment text specifically */
   margin-bottom: 5px;  /* Reducing the gap between the nav links */
 }
 
+/* End Footer Styles */
+
+/* Begin Media Queries */
+
 /* Media Queries for Extra Small Devices (<576px) */
 @media (max-width: 575.98px) {
   .header .logo img {
@@ -192,12 +196,23 @@ footer section p {  /* Targeting the acknowledgment text specifically */
   .navbar-toggler {
       display: block; /* Ensure the hamburger menu is visible */
   }
+  h1 {
+      font-size: 1.5rem; /* Adjusted font size for h1 */
+  }
+  .hero-image {
+      max-width: 90%; /* Adjusted image width */
+      margin: 0 auto; /* Center the image */
+  }
 }
 
 /* Media Queries for Small Devices (≥576px) and up to Large Devices (<992px) */
 @media (min-width: 576px) and (max-width: 991.98px) {
   .navbar-toggler {
       display: block; /* Ensure the hamburger menu is visible */
+  }
+  .row > div {
+      flex: 0 0 100%; /* Make it one column layout */
+      max-width: 100%; /* Make it one column layout */
   }
 }
 
@@ -206,5 +221,10 @@ footer section p {  /* Targeting the acknowledgment text specifically */
   .navbar-toggler {
       display: none; /* Hide the hamburger menu */
   }
+}
+
+/* Media Queries for Extra Large Devices (≥1200px) */
+@media (min-width: 1200px) {
+  /* Add your styles for extra-large devices here */
 }
 
