@@ -200,15 +200,18 @@ footer nav ul {
 }
 
 footer p {
-  text-align: center;
   margin-top: 1rem;
   font-size: 0.9rem;
 }
 
-/* Additional Footer Styles */
+/* Updated Footer Styles */
 
 footer .row {
   align-items: center;
+}
+
+footer section p {  /* Targeting the acknowledgment text specifically */
+  text-align: left;
 }
 
 .footer-nav ul {
@@ -218,5 +221,5 @@ footer .row {
 }
 
 .footer-nav ul li:not(:last-child) {
-  margin-bottom: 10px;
+  margin-bottom: 5px;  /* Reducing the gap between the nav links */
 }
