@@ -13,9 +13,11 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.75rem;
-  font-weight: 400; /* Updated font weight */
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 1.5; /* Adjust as needed */
 }
+
 
 h2 {
   font-size: 2.25rem;
@@ -149,6 +151,12 @@ a:focus {
   margin-top: 20px;
 }
 
+.hero.bg-dark .row {
+  display: flex;
+  align-items: center; /* Vertically aligns the child items to the center */
+}
+
+
 /* Footer Styles */
 footer {
   background-color: #0F182A;
@@ -226,6 +234,20 @@ footer section p {
   }
 }
 
-.nav-link {
-  text-transform: capitalize; /* Capitalize nav menu items */
+.nav .nav-link {
+  text-transform: capitalize;
+}
+
+.hero.bg-dark .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h1 {
+  line-height: 1.5; /* Adjust as needed */
+}
+
+.hero.bg-dark .row {
+  display: flex;
+  align-items: center; /* Vertically aligns the child items to the center */
 }
