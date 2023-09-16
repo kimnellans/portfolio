@@ -191,20 +191,12 @@ footer {
   font-family: 'Roboto', sans-serif;
 }
 
-footer nav ul, footer .social-icons {
+footer nav ul {
   list-style: none;
   display: flex;
   justify-content: center;
   gap: 20px;
   padding: 0;
-}
-
-footer .social-icons {
-  margin-top: 1rem;
-}
-
-footer .social-icons a:hover img {
-  opacity: 0.8;
 }
 
 footer p {
