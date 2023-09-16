@@ -254,3 +254,18 @@ header .navbar .navbar-toggler {
   color: #fff; /* White color for the icon */
   display: block; /* Ensure it's displayed */
 }
+
+
+/* Ensure the image takes up the full width of its container */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Add some top margin for spacing */
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Bootstrap already provides styling for the .btn and .btn-primary classes. 
+ If you want to customize the button further, you can add additional styles here. */
