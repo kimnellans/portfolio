@@ -298,6 +298,62 @@ outline: none;
 background-color: #333; /* Darker shade for hover */
 color: #fff; /* White text on hover */
 }
+/* Ensure the image takes up the full width of its container */
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
 
-/* Assuming you have specific styles for .btn-custom.dark, 
- if not, you can add them here. */
+/* Add some top margin for spacing */
+.mt-5 {
+  margin-top: 3rem;
+}
+
+/* Italicize h2 */
+h2 {
+  font-style: italic;
+}
+
+/* Button Styles */
+.btn-custom {
+border-width: 0.125rem;
+transition: 0.2s all;
+border-radius: 8px; /* 8px corner radius */
+background-color: #333; /* Dark default */
+color: #fff; /* White text default */
+}
+
+.btn-custom.dark, .btn-custom.light, .btn-custom.ghost {
+text-decoration: none;
+box-shadow: none;
+outline: none;
+}
+
+.btn-custom.dark:hover {
+/* Option 1: Ghost with outline on hover */
+background-color: transparent;
+border-color: #333;
+color: #333;
+
+/* Option 2: Darker shade on hover (comment out Option 1 and uncomment this option if preferred) */
+/* background-color: #222; */
+/* color: #fff; */
+}
+
+/* Padding between columns */
+.col-md-5 {
+  padding-right: 30px;
+}
+
+.col-md-7 {
+  padding-left: 30px;
+}
+
+/* Margin left and right */
+.container {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+
+
