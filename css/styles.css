@@ -217,3 +217,31 @@ footer section p {  /* Targeting the acknowledgment text specifically */
 .footer-nav ul li:not(:last-child) {
   margin-bottom: 5px;  /* Reducing the gap between the nav links */
 }
+
+/* Media Queries for Extra Small Devices (<576px) */
+@media (max-width: 575.98px) {
+  .header .logo img {
+    max-width: 120px; /* Slightly reduce the logo size */
+  }
+
+  .header .nav ul {
+    flex-direction: column; /* Stack the nav items vertically */
+    align-items: center; /* Center align the nav items */
+  }
+
+  .header .nav ul li {
+    margin: 5px 0; /* Adjust the margin for vertical stacking */
+  }
+
+  .header .social-icons a img {
+    width: 20px; /* Slightly reduce the social icon size */
+    height: 20px;
+  }
+}
+
+/* Media Queries for Small Devices (≥576px) */
+@media (min-width: 576px) {
+  /* Adjustments for small devices can be added here if needed */
+}
+
+/* ... other styles ... */
