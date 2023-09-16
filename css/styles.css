@@ -248,3 +248,9 @@ footer section p {
 
 
 
+header .navbar .navbar-toggler {
+  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
+  border: 1px solid #333; /* Dark border */
+  color: #fff; /* White color for the icon */
+  display: block; /* Ensure it's displayed */
+}
