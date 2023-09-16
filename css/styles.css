@@ -101,10 +101,9 @@ a:focus {
 
 .project h2 span {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, #CFD8E0 100%);
-  -webkit-background-clip: text;
+  -webkit-background-clip: text; /* stylelint-disable-line */
   padding: 0 5px; /* Provide slight padding for the background effect */
 }
-
 
 /* Header Styles */
 .header .container {
@@ -215,6 +214,7 @@ footer p {
 /* New Modifications */
 footer nav ul {
   justify-content: flex-end; /* right-aligns the links */
+  flex-direction: column; /* makes the links stack vertically */
 }
 
 /* 20px left padding for left-aligned text */
@@ -237,3 +237,8 @@ footer nav ul {
   text-align: left;
 }
 
+/* Center the copyright info underneath the two columns */
+footer .copyright {
+  text-align: center;
+  margin-top: 2rem;
+}
