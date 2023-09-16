@@ -27,46 +27,73 @@
 </head>
 
 <body>
-    <!-- Start of Header -->
-    <header class="header bg-white my-4">
-        <div class="container d-flex justify-content-between align-items-center">
+    
+<!-- Start of Header -->
+<header class="header bg-white my-4">
+    <div class="container d-flex justify-content-between align-items-center">
 
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <img src="assets/kimn.svg" alt="Kim Nellans Logo">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <img src="assets/kimn.svg" alt="Kim Nellans Logo">
+        </a>
+
+        <!-- Hamburger Button (visible on xs to md devices) -->
+        <button class="navbar-toggler d-none d-lg-block" type="button" data-bs-toggle="offcanvas" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Regular Navbar (hidden on lg and xl devices) -->
+        <nav class="d-lg-none">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Social Icons (hidden on lg and xl devices) -->
+        <div class="social-icons d-lg-none">
+            <a href="https://www.linkedin.com/feed/" class="mx-2">
+                <img src="img/footer/linked-in.svg" alt="LinkedIn">
             </a>
+            <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
+                <img src="img/footer/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://github.com/kimnellans" class="mx-2">
+                <img src="img/footer/git.svg" alt="GitHub">
+            </a>
+        </div>
 
-            <!-- Button to Toggle Offcanvas Menu -->
-            <button class="btn btn-outline-secondary" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasMenu" aria-controls="offcanvasMenu">
-                ☰
-            </button>
-
-            <!-- Offcanvas Menu Structure -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
-                        </li>
-                    </ul>
-                </div>
+        <!-- Offcanvas Menu Structure -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
             </div>
         </div>
-    </header>
+    </div>
+</header>
+<!-- End of Header -->
 
-    <!-- End of Header -->
 
     <main>
         <!-- Content inside container -->

@@ -184,33 +184,39 @@ footer section p {  /* Targeting the acknowledgment text specifically */
   margin-bottom: 5px;  /* Reducing the gap between the nav links */
 }
 
-/* Offcanvas Menu Styles */
-.offcanvas {
-  width: 250px; /* Width of the offcanvas menu */
-}
-
-.offcanvas-title {
-  font-size: 1.5rem;
-  font-weight: bold;
-}
-
-.offcanvas .nav-link {
-  color: #333; /* Set the color of the nav links */
-}
-
-.offcanvas .nav-link:hover {
-  color: #7DD3FC; /* Set the hover color of the nav links */
-  text-decoration: none; /* Remove the underline on hover */
-}
-
 /* Media Queries for Extra Small Devices (<576px) */
 @media (max-width: 575.98px) {
-.header .logo img {
-  max-width: 120px; /* Slightly reduce the logo size */
-}
+  .header .logo img {
+      max-width: 120px; /* Slightly reduce the logo size */
+  }
+
+  .navbar-toggler {
+      display: block; /* Show the hamburger button */
+  }
+
+  .header nav, .header .social-icons {
+      display: none; /* Hide the regular navbar and social icons */
+  }
 }
 
-/* Media Queries for Small Devices (≥576px) */
-@media (min-width: 576px) {
-/* Adjustments for small devices can be added here if needed */
+/* Media Queries for Small Devices (≥576px) and up to Large Devices (<992px) */
+@media (min-width: 576px) and (max-width: 991.98px) {
+  .navbar-toggler {
+      display: block; /* Show the hamburger button */
+  }
+
+  .header nav, .header .social-icons {
+      display: none; /* Hide the regular navbar and social icons */
+  }
+}
+
+/* Media Queries for Large Devices (≥992px) */
+@media (min-width: 992px) {
+  .navbar-toggler {
+      display: none; /* Hide the hamburger button */
+  }
+
+  .header nav, .header .social-icons {
+      display: flex; /* Show the regular navbar and social icons */
+  }
 }
