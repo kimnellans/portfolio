@@ -244,6 +244,6 @@ footer section p {
 /* Capitalize footer links and adjust spacing */
 .footer-nav ul li a {
   text-transform: uppercase;
-  line-height: 1.4; /* Adjust as needed for desired spacing */
+  line-height: 1rem; /* Adjust as needed for desired spacing */
   margin-bottom: 5px; /* Adjust as needed for desired spacing */
 }
