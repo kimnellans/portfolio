@@ -113,7 +113,6 @@ a:focus {
   filter: brightness(0.8);
 }
 
-
 /* Button Styles */
 .btn-custom {
   border-width: 0.125rem;
@@ -129,18 +128,21 @@ a:focus {
 .hero.bg-dark {
   width: 100%;
   overflow-x: hidden;  /* Prevent horizontal scroll if any overflow occurs */
-  padding: 5rem 25px;  /* Top-bottom padding is 5rem; left-right padding is 25px */
+  padding: 5rem 0;  /* Remove left-right padding to center content */
+  text-align: center;  /* Center the text */
 }
 
 .hero.bg-dark .container {
   width: 100%;
+  max-width: 1200px;  /* Set a maximum width for the inner container */
+  margin: 0 auto;  /* Center the inner container */
   padding: 0 20px;  /* The inner container has its padding adjusted to 20px for more space between the image and the text */
 }
 
 .hero-image {
   border: 4px solid white;
   object-fit: cover;
-  margin-right: 20px;  /* Additional space between the image and the text */
+  margin-top: 20px;  /* Add some top margin for spacing */
 }
 
 /* Existing Footer Styles */
@@ -227,4 +229,3 @@ footer section p {  /* Targeting the acknowledgment text specifically */
 @media (min-width: 1200px) {
   /* Add your styles for extra-large devices here */
 }
-
