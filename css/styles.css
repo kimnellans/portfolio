@@ -189,21 +189,22 @@ footer section p {  /* Targeting the acknowledgment text specifically */
   .header .logo img {
       max-width: 120px; /* Slightly reduce the logo size */
   }
+  .navbar-toggler {
+      display: block; /* Ensure the hamburger menu is visible */
+  }
 }
 
 /* Media Queries for Small Devices (≥576px) and up to Large Devices (<992px) */
 @media (min-width: 576px) and (max-width: 991.98px) {
-  /* No need for specific styles here since Bootstrap classes handle the visibility */
+  .navbar-toggler {
+      display: block; /* Ensure the hamburger menu is visible */
+  }
 }
 
 /* Media Queries for Large Devices (≥992px) */
 @media (min-width: 992px) {
-  /* No need for specific styles here since Bootstrap classes handle the visibility */
-}
-
-/* Force display the hamburger button on smaller screens */
-@media (max-width: 991.98px) {
   .navbar-toggler {
-      display: block !important;
+      display: none; /* Hide the hamburger menu */
   }
 }
+
