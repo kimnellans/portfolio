@@ -119,6 +119,11 @@ a:focus {
   filter: brightness(0.8);
 }
 
+nav.d-none.d-lg-flex a.nav-link {
+  text-transform: uppercase;
+}
+
+
 /* Button Styles */
 .btn-custom {
   border-width: 0.125rem;
@@ -195,6 +200,13 @@ footer section p {
   margin-bottom: 5px;
 }
 
+/* Capitalize footer links and adjust spacing */
+.footer-nav ul li a {
+  text-transform: uppercase;
+  line-height: 1rem; /* Adjust as needed for desired spacing */
+  margin-bottom: 5px; /* Adjust as needed for desired spacing */
+}
+
 /* Media Queries */
 @media (max-width: 575.98px) {
   .header .logo img {
@@ -232,18 +244,7 @@ footer section p {
   }
 }
 
-.nav .nav-link {
-  text-transform: capitalize;
-}
 
-.hero.bg-dark .container-fluid {
-  padding-left: 0;
-  padding-right: 0;
-}
 
-/* Capitalize footer links and adjust spacing */
-.footer-nav ul li a {
-  text-transform: uppercase;
-  line-height: 1rem; /* Adjust as needed for desired spacing */
-  margin-bottom: 5px; /* Adjust as needed for desired spacing */
-}
+
+
