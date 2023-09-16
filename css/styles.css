@@ -21,8 +21,8 @@ h1 {
 h2 {
   font-size: 2.25rem;
   font-weight: 700;
-  background-color: #CFD8E0;  /* Highlight for h2 */
-  display: inline-block;  /* To wrap highlight tightly */
+  background-color: #CFD8E0; /* Highlight for h2 */
+  display: inline-block; /* To wrap highlight tightly */
 }
 
 h3 {
@@ -33,7 +33,7 @@ h3 {
 h4 {
   font-size: 1.35rem;
   font-weight: 400;
-  font-style: italic;  /* Make h4 italic */
+  font-style: italic; /* Make h4 italic */
 }
 
 img {
@@ -74,24 +74,24 @@ a:focus {
 }
 
 .container.card-style {
-  margin: 0 40px;
-  padding: 40px 0;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 40px 20px; /* Add padding for spacing */
   background-color: #FFFFFF;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .project h4 {
   font-style: italic;
-  margin: 15px 0; /* provides some spacing between elements */
+  margin: 15px 0; /* Provides spacing between elements */
 }
 
 .project a {
   text-decoration: underline;
-  color: #7dd3fc; /* using the previously defined link color */
+  color: #7dd3fc; /* Using the previously defined link color */
 }
 
 .project a:hover {
-  color: #006B98; /* using the previously defined link hover color */
+  color: #006B98; /* Using the previously defined link hover color */
 }
 
 .project h2 {
@@ -103,6 +103,7 @@ a:focus {
 .header .container {
   display: flex;
   align-items: center;
+  justify-content: space-between; /* Add space between logo and nav */
 }
 
 .header .logo img {
@@ -127,22 +128,21 @@ a:focus {
 /* Hero Section Styles */
 .hero.bg-dark {
   width: 100%;
-  overflow-x: hidden;  /* Prevent horizontal scroll if any overflow occurs */
-  padding: 5rem 0;  /* Remove left-right padding to center content */
-  text-align: center;  /* Center the text */
+  padding: 5rem 0; /* Remove left-right padding to center content */
+  text-align: left; /* Left-align text on small screens */
 }
 
 .hero.bg-dark .container {
   width: 100%;
-  max-width: 1200px;  /* Set a maximum width for the inner container */
-  margin: 0 auto;  /* Center the inner container */
-  padding: 0 20px;  /* The inner container has its padding adjusted to 20px for more space between the image and the text */
+  max-width: 1200px; /* Set a maximum width for the inner container */
+  margin: 0 auto; /* Center the inner container */
+  padding: 0 20px; /* Adjust inner container padding for spacing */
 }
 
 .hero-image {
   border: 4px solid white;
   object-fit: cover;
-  margin-top: 20px;  /* Add some top margin for spacing */
+  margin-top: 20px; /* Add top margin for spacing */
 }
 
 /* Existing Footer Styles */
@@ -172,8 +172,8 @@ footer .row {
   align-items: center;
 }
 
-footer section p {  /* Targeting the acknowledgment text specifically */
-  text-align: left;
+footer section p {
+  text-align: left; /* Left-align the acknowledgment text */
 }
 
 .footer-nav ul {
@@ -183,7 +183,7 @@ footer section p {  /* Targeting the acknowledgment text specifically */
 }
 
 .footer-nav ul li:not(:last-child) {
-  margin-bottom: 5px;  /* Reducing the gap between the nav links */
+  margin-bottom: 5px; /* Reduce the gap between the nav links */
 }
 
 /* End Footer Styles */
@@ -193,35 +193,36 @@ footer section p {  /* Targeting the acknowledgment text specifically */
 /* Media Queries for Extra Small Devices (<576px) */
 @media (max-width: 575.98px) {
   .header .logo img {
-      max-width: 120px; /* Slightly reduce the logo size */
+    max-width: 120px; /* Slightly reduce the logo size */
   }
   .navbar-toggler {
-      display: block; /* Ensure the hamburger menu is visible */
+    display: block; /* Ensure the hamburger menu is visible */
   }
   h1 {
-      font-size: 1.5rem; /* Adjusted font size for h1 */
+    font-size: 1.5rem; /* Adjusted font size for h1 */
   }
   .hero-image {
-      max-width: 90%; /* Adjusted image width */
-      margin: 0 auto; /* Center the image */
+    max-width: 90%; /* Adjusted image width */
+    margin: 0 auto; /* Center the image */
   }
 }
 
 /* Media Queries for Small Devices (≥576px) and up to Large Devices (<992px) */
 @media (min-width: 576px) and (max-width: 991.98px) {
   .navbar-toggler {
-      display: block; /* Ensure the hamburger menu is visible */
+    display: block; /* Ensure the hamburger menu is visible */
   }
   .row > div {
-      flex: 0 0 100%; /* Make it one column layout */
-      max-width: 100%; /* Make it one column layout */
+    flex: 0 0 100%; /* Make it one column layout */
+    max-width: 100%; /* Make it one column layout */
+    text-align: left; /* Left-align text on larger screens */
   }
 }
 
 /* Media Queries for Large Devices (≥992px) */
 @media (min-width: 992px) {
   .navbar-toggler {
-      display: none; /* Hide the hamburger menu */
+    display: none; /* Hide the hamburger menu */
   }
 }
 
