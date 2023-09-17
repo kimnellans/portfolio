@@ -110,7 +110,7 @@ a:focus {
 }
 
 .header .logo {
-  margin-right: 50px; /* Added this line to push the nav menu 20px to the right */
+  margin-right: 60px; /* Added this line to push the nav menu 20px to the right */
 }
 
 .header .logo img {
