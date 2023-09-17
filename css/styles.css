@@ -109,6 +109,10 @@ a:focus {
   justify-content: space-between;
 }
 
+.header .logo {
+  margin-right: 20px; /* Added this line to push the nav menu 20px to the right */
+}
+
 .header .logo img {
   max-width: 150px;
 }
@@ -120,6 +124,7 @@ a:focus {
 nav.d-none.d-lg-flex a.nav-link {
   text-transform: uppercase;
 }
+
 
 /* Button Styles */
 .btn-custom {
