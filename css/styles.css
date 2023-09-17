@@ -173,6 +173,16 @@ nav.d-none.d-lg-flex a.nav-link {
   align-items: center;
 }
 
+/* Padding between columns */
+.col-md-5 {
+  padding-right: 30px; /* This will add 30px padding to the right side of the image */
+}
+
+.col-md-7 {
+  padding-left: 30px; /* This will ensure that the text on the right column also has a consistent padding */
+}
+
+
 /* Footer Styles */
 footer {
   background-color: #0F182A;
