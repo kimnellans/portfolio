@@ -21,7 +21,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
   font-weight: 300;
-  font-style: italic; /* Italicized h2 */
+  font-style: italic;
 }
 
 h3 {
@@ -110,7 +110,7 @@ a:focus {
 }
 
 .header .logo {
-  margin-right: 60px; /* Added this line to push the nav menu 20px to the right */
+  margin-right: 60px;
 }
 
 .header .logo img {
@@ -125,30 +125,28 @@ nav.d-none.d-lg-flex a.nav-link {
   text-transform: uppercase;
 }
 
-
 /* Button Styles */
 .btn-custom {
   border-width: 0.125rem;
   transition: 0.2s all;
-  background-color: #333; /* Dark default */
-  color: #fff; /* White text default */
+  background-color: #333;
+  color: #fff;
   padding: 15px 25px;
+  margin-top: 20px;
 }
 
 .btn-custom.dark, .btn-custom.light, .btn-custom.ghost {
   text-decoration: none;
   box-shadow: none;
   outline: none;
-  color: #fff; /* Explicitly set text color to white */
+  color: #fff;
 }
 
 .btn-custom.dark:hover {
-  /* Ghost with outline on hover */
   background-color: transparent;
   border-color: #333;
-  color: #333; /* Dark text on hover */
+  color: #333;
 }
-
 
 /* Hero Section Styles */
 .hero.bg-dark {
@@ -200,10 +198,6 @@ footer .row {
   align-items: center;
 }
 
-footer section p {
-  text-align: left;
-}
-
 .footer-nav ul {
   display: flex;
   flex-direction: column;
@@ -214,11 +208,10 @@ footer section p {
   margin-bottom: 5px;
 }
 
-/* Capitalize footer links and adjust spacing */
 .footer-nav ul li a {
   text-transform: uppercase;
-  line-height: 1rem; /* Adjust as needed for desired spacing */
-  margin-bottom: 5px; /* Adjust as needed for desired spacing */
+  line-height: 1rem;
+  margin-bottom: 5px;
 }
 
 /* Media Queries */
@@ -259,60 +252,4 @@ footer section p {
 }
 
 header .navbar .navbar-toggler {
-  background-color: rgba(0, 0, 0, 0.1); /* Semi-transparent black background */
-  border: 1px solid #333; /* Dark border */
-  color: #fff; /* White color for the icon */
-  display: block; /* Ensure it's displayed */
-}
-
-/* Padding between columns */
-.col-md-5 {
-  padding-right: 30px;
-}
-
-.col-md-7 {
-  padding-left: 30px;
-}
-
-/* Margin left and right */
-.container {
-  margin-left: 40px; /* Increased margin to 40px */
-  margin-right: 40px; /* Increased margin to 40px */
-}
-/* Scale down the image by 20% */
-picture img {
-  transform: scale(0.8);
-}
-
-/* Add padding to the top of the image */
-picture {
-  padding-top: 20px;
-}
-
-/* Add padding to the top of the button */
-.btn-custom {
-  margin-top: 20px;
-}
-
-/* Adjust padding between logo and nav items (assuming a class name for the logo and nav items) */
-.logo {
-  margin-bottom: 20px; /* Adjust as needed */
-}
-
-.nav-items {
-  margin-top: 20px; /* Adjust as needed */
-}
-
-/* Make the image wider */
-picture img {
-  width: 110%; /* Adjust this value as needed */
-  margin-left: -5%; /* To keep the image centered */
-}
-
-/* Left-right margin align the text */
-.header .logo h1, .header .logo h2 {
-  text-align: center; /* Center the text */
-  max-width: 80%; /* Adjust this value as needed */
-  margin-left: auto;
-  margin-right: auto;
-}
+  background-color: rgba(0, 0, 0, 0.1);
