@@ -302,3 +302,17 @@ picture {
 .nav-items {
   margin-top: 20px; /* Adjust as needed */
 }
+
+/* Make the image wider */
+picture img {
+  width: 110%; /* Adjust this value as needed */
+  margin-left: -5%; /* To keep the image centered */
+}
+
+/* Left-right margin align the text */
+.header .logo h1, .header .logo h2 {
+  text-align: center; /* Center the text */
+  max-width: 80%; /* Adjust this value as needed */
+  margin-left: auto;
+  margin-right: auto;
+}
