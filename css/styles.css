@@ -274,3 +274,26 @@ header .navbar .navbar-toggler {
   margin-left: 40px; /* Increased margin to 40px */
   margin-right: 40px; /* Increased margin to 40px */
 }
+/* Scale down the image by 20% */
+picture img {
+  transform: scale(0.8);
+}
+
+/* Add padding to the top of the image */
+picture {
+  padding-top: 20px;
+}
+
+/* Add padding to the top of the button */
+.btn-custom {
+  margin-top: 20px;
+}
+
+/* Adjust padding between logo and nav items (assuming a class name for the logo and nav items) */
+.logo {
+  margin-bottom: 20px; /* Adjust as needed */
+}
+
+.nav-items {
+  margin-top: 20px; /* Adjust as needed */
+}
