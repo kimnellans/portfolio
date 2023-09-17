@@ -127,21 +127,23 @@ nav.d-none.d-lg-flex a.nav-link {
   transition: 0.2s all;
   background-color: #333; /* Dark default */
   color: #fff; /* White text default */
-  padding: 15px 25px; /* 15px top/bottom, 25px left/right */
+  padding: 15px 25px;
 }
 
 .btn-custom.dark, .btn-custom.light, .btn-custom.ghost {
   text-decoration: none;
   box-shadow: none;
   outline: none;
+  color: #fff; /* Explicitly set text color to white */
 }
 
 .btn-custom.dark:hover {
   /* Ghost with outline on hover */
   background-color: transparent;
   border-color: #333;
-  color: #fff; /* White text on hover */
+  color: #333; /* Dark text on hover */
 }
+
 
 /* Hero Section Styles */
 .hero.bg-dark {
