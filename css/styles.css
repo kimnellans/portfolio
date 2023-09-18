@@ -324,3 +324,23 @@ header .navbar .navbar-toggler {
   font-weight: 700;
 }
 
+/* Three Images in a Row */
+.three-col .container {
+  display: flex;
+  justify-content: space-between; /* Distributes space evenly between the images */
+  align-items: center; /* Aligns the images vertically in the center */
+  flex-wrap: wrap; /* Allows the images to wrap to the next line on smaller screens */
+}
+
+.three-col figure {
+  flex: 1; /* Each image takes up an equal amount of space */
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+  max-width: calc(33.33% - 10px); /* Each image takes up roughly a third of the container width minus a little space for aesthetics */
+}
+
+.three-col img {
+  width: 100%; /* Makes sure the image takes up the full width of its container */
+  height: auto; /* Maintains the image's aspect ratio */
+  display: block; /* Removes any default inline spacing */
+}
