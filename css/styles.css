@@ -279,16 +279,21 @@ header .navbar .navbar-toggler {
 .hero span, /* This targets the LOCAVORE text */
 .hero h1 {
   position: absolute; /* Using absolute positioning to overlay the text on the image */
-  top: 50%; /* This will position the text in the center of the .hero section */
   left: 50%; /* This will position the text in the center of the .hero section */
-  transform: translate(-50%, -50%); /* This will perfectly center the text */
+  transform: translateX(-50%); /* This will center the text horizontally */
   text-align: center; /* Center-aligning the text */
   z-index: 2; /* This ensures the text stays on top of the image */
   color: #fff; /* Making the text white for better visibility on the darkened image */
 }
 
+.hero span {
+  bottom: 50%; /* Positioning the LOCAVORE text just above the vertical center of the .hero section */
+  transform: translate(-50%, 20px); /* Centering the text horizontally and moving it 20px down */
+}
+
 .hero h1 {
-  margin-top: 20px; /* Adding a top margin of 20px to the h1 to create the desired spacing */
+  top: 50%; /* Positioning the h1 just below the vertical center of the .hero section */
+  transform: translate(-50%, -20px); /* Centering the text horizontally and moving it 20px up */
 }
 
 /* 2. Apply a dark opacity of 75% to the image in the .hero section */
