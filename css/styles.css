@@ -363,3 +363,21 @@ h2, .two-col p:contains("Project Title:"), .two-col p:contains("My Role:"), .two
   font-style: italic;
   font-weight: 400; /* Ensure the paragraph is not bold */
 }
+
+h2 {
+  font-weight: bold;
+}
+
+h3.light-weight {
+  font-weight: 300;
+}
+
+p.highlighted-line {
+  background-color: #FFFFB3; /* Pale yellow background */
+  display: inline-block; /* To wrap the background around the text */
+  margin: 0; /* To remove default paragraph margins */
+}
+
+p.light-weight {
+  font-weight: 300;
+}
