@@ -13,14 +13,13 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.5rem; /* Increased font size */
-  font-weight: 700; /* Bold font weight */
+  font-size: 2.5rem;
+  font-weight: 700;
 }
 
 h2 {
   font-size: 1.75rem;
   font-weight: 300;
-  font-style: italic;
 }
 
 h3 {
@@ -324,60 +323,31 @@ h2, .two-col p:contains("Project Title:"), .two-col p:contains("My Role:"), .two
   font-weight: 700;
 }
 
-
-
 .two-col p span {
-  font-weight: 700; /* This will make the text inside the <span> tags bold */
-}
-
-/* ... [rest of your CSS] ... */
-
-.bold-title {
   font-weight: 700;
 }
 
-.highlighted-quote {
-  background-color: #FFFFB3; /* Pale yellow background */
-  font-size: 1.5rem; /* Increase font size */
-  font-family: 'Georgia', serif; /* Different font for the quote */
-  padding: 10px; /* Padding around the quote for better presentation */
-  margin: 20px 0; /* Margin around the quote for spacing */
+/* Specific styles for headers and paragraphs */
+h2:not(.no-italic) {
+    font-style: italic;
 }
 
-.highlighted-quote cite {
-  display: block; /* Display the quoter on a new line */
-  text-align: right; /* Align the quoter to the right */
-  margin-top: 10px; /* Space between the quote and the quoter */
-  font-size: 1rem; /* Font size for the quoter */
+h3.italic-header {
+    font-style: italic;
+    font-weight: 300;
 }
 
-.italic-title {
-  font-style: italic;
+.quote-line {
+    background-color: #FFFFB3;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.bold-intro {
-  font-weight: 700;
+h2.bold-header {
+    font-weight: 700;
 }
 
-.italic-paragraph {
-  font-style: italic;
-  font-weight: 400; /* Ensure the paragraph is not bold */
-}
-
-h2 {
-  font-weight: bold;
-}
-
-h3.light-weight {
-  font-weight: 300;
-}
-
-p.highlighted-line {
-  background-color: #FFFFB3; /* Pale yellow background */
-  display: inline-block; /* To wrap the background around the text */
-  margin: 0; /* To remove default paragraph margins */
-}
-
-p.light-weight {
-  font-weight: 300;
+p.italic-content {
+    font-style: italic;
+    font-weight: 300;
 }
