@@ -319,3 +319,15 @@ header .navbar .navbar-toggler {
   height: auto;
   display: block; /* Display block to remove any default margins/paddings */
 }
+/* Two Column Layout Adjustments */
+.two-col .container > div {
+  display: flex; /* Use flexbox to align content vertically */
+  flex-direction: column; /* Stack children vertically */
+  justify-content: center; /* Center-align children vertically */
+}
+
+.two-col img {
+  max-height: 100%; /* Limit the height of the image to its container's height */
+  width: auto; /* Adjust the width while maintaining the aspect ratio */
+  margin: 0 auto; /* Center the image horizontally */
+}
