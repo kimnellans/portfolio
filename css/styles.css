@@ -302,3 +302,20 @@ header .navbar .navbar-toggler {
   z-index: 1; /* This ensures the image stays below the text */
 }
 
+/* Two Column Layout */
+.two-col .container {
+  display: flex; /* Use flexbox to create a flexible layout */
+  flex-wrap: wrap; /* Allow the items to wrap if necessary */
+  gap: 20px; /* Add a gap between the columns */
+}
+
+.two-col .container > div {
+  flex: 1; /* Each child div will take up equal space */
+  width: 50%; /* Each column will take up half of the container's width */
+}
+
+.two-col img {
+  width: 100%; /* Make the image responsive */
+  height: auto;
+  display: block; /* Display block to remove any default margins/paddings */
+}
