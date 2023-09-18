@@ -286,12 +286,12 @@ header .navbar .navbar-toggler {
   color: #fff; /* Making the text white for better visibility on the darkened image */
 }
 
-.hero span {
-  bottom: calc(50% + 20px); /* Positioning the LOCAVORE text just above the vertical center of the .hero section and adding 20px margin */
+.hero h1 {
+  top: 50%; /* Positioning the h1 at the vertical center of the .hero section */
 }
 
-.hero h1 {
-  top: 50%; /* Positioning the h1 just below the vertical center of the .hero section */
+.hero span {
+  bottom: calc(50% + 1.5rem + 20px); /* Positioning the LOCAVORE text just above the h1 with a margin of 20px */
 }
 
 /* 2. Apply a dark opacity of 75% to the image in the .hero section */
