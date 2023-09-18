@@ -324,27 +324,3 @@ header .navbar .navbar-toggler {
   font-weight: 700;
 }
 
-/* Specific styles for headers and paragraphs */
-h2.no-italic {
-    font-style: normal;
-}
-
-h3.italic-header {
-    font-style: italic;
-    font-weight: 300;
-}
-
-.quote-line {
-    background-color: #FFFFB3;
-    display: block;
-    margin-bottom: 5px;
-}
-
-h2.bold-header {
-    font-weight: 700;
-}
-
-p.italic-content {
-    font-style: italic;
-    font-weight: 300;
-}
