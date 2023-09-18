@@ -291,7 +291,7 @@ header .navbar .navbar-toggler {
 }
 
 .hero span {
-  bottom: calc(50% + 1.5rem + 20px); /* Positioning the LOCAVORE text just above the h1 with a margin of 20px */
+  bottom: calc(50% + 1.5rem + 8px); /* Positioning the LOCAVORE text just above the h1 with a reduced margin of 8px */
 }
 
 /* 2. Apply a dark opacity of 75% to the image in the .hero section */
