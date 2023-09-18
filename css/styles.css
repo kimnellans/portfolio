@@ -13,9 +13,8 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-  font-size: 2.25rem;
-  font-weight: 400;
-  line-height: 1.5;
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: 700; /* Bold font weight */
 }
 
 h2 {
@@ -175,11 +174,11 @@ nav.d-none.d-lg-flex a.nav-link {
 
 /* Padding between columns */
 .col-md-5 {
-  padding-right: 30px; /* This will add 30px padding to the right side of the image */
+  padding-right: 30px;
 }
 
 .col-md-7 {
-  padding-left: 30px; /* This will ensure that the text on the right column also has a consistent padding */
+  padding-left: 30px;
 }
 
 /* Footer Styles */
@@ -255,9 +254,6 @@ footer .row {
   .navbar-toggler {
     display: none;
   }
-  h1 {
-    font-size: 2.5rem;
-  }
 }
 
 header .navbar .navbar-toggler {
@@ -299,14 +295,15 @@ header .navbar .navbar-toggler {
 
 /* Two Column Layout */
 .two-col {
-  background-color: #F9FAFB; /* Light background color */
-  padding: 40px 0; /* Padding for the section */
+  background-color: #F9FAFB;
+  padding: 40px 0;
 }
 
 .two-col .container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  align-items: flex-start;
 }
 
 .two-col .container > div {
@@ -323,7 +320,6 @@ header .navbar .navbar-toggler {
   margin: 0 auto;
 }
 
-h1 {
-  font-size: 2.5rem; /* Increased font size */
-  font-weight: 700; /* Bold font weight */
+h2, .two-col p:contains("Project Title:"), .two-col p:contains("My Role:"), .two-col p:contains("Timeline:"), .two-col p:contains("Objective:"), .two-col p:contains("Constraints:") {
+  font-weight: 700;
 }
