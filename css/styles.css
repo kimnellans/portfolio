@@ -287,13 +287,11 @@ header .navbar .navbar-toggler {
 }
 
 .hero span {
-  bottom: 50%; /* Positioning the LOCAVORE text just above the vertical center of the .hero section */
-  transform: translate(-50%, -50px); /* Centering the text horizontally and moving it 20px down */
+  bottom: calc(50% + 20px); /* Positioning the LOCAVORE text just above the vertical center of the .hero section and adding 20px margin */
 }
 
 .hero h1 {
   top: 50%; /* Positioning the h1 just below the vertical center of the .hero section */
-  transform: translate(-50%, -20px); /* Centering the text horizontally and moving it 20px up */
 }
 
 /* 2. Apply a dark opacity of 75% to the image in the .hero section */
