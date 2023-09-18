@@ -323,3 +323,9 @@ header .navbar .navbar-toggler {
 h2, .two-col p:contains("Project Title:"), .two-col p:contains("My Role:"), .two-col p:contains("Timeline:"), .two-col p:contains("Objective:"), .two-col p:contains("Constraints:") {
   font-weight: 700;
 }
+
+
+
+.two-col p span {
+  font-weight: 700; /* This will make the text inside the <span> tags bold */
+}
