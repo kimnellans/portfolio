@@ -345,18 +345,21 @@ header .navbar .navbar-toggler {
   display: block; /* Removes any default inline spacing */
 }
 .parallax {
-  /* Define the height of the parallax container */
-  height: 500px; /* Adjust this value based on your design needs */
-  overflow: hidden; /* Hide anything that goes outside the container */
-  position: relative; /* Set to relative so we can absolutely position child elements */
-  background-attachment: fixed; /* This is what gives the parallax effect when scrolling */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
-  background-size: cover; /* Cover the entire width of the container */
-  background-image: url('img/locavore/project-page/bfm/farmer1x.png'); /* Default background image */
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
 }
 
-.container img {
-  /* Hide the original image, we're using the background image for the parallax effect */
-  display: none;
+.parallax img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  height: auto;
+  transform-origin: 50% 0;
+  transform: translateZ(-1px) scale(2);
 }
