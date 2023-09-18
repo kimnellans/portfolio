@@ -298,6 +298,11 @@ header .navbar .navbar-toggler {
 }
 
 /* Two Column Layout */
+.two-col {
+  background-color: #F9FAFB; /* Light background color */
+  padding: 40px 0; /* Padding for the section */
+}
+
 .two-col .container {
   display: flex;
   flex-wrap: wrap;
@@ -316,4 +321,9 @@ header .navbar .navbar-toggler {
   max-height: 100%;
   width: auto;
   margin: 0 auto;
+}
+
+h1 {
+  font-size: 2.5rem; /* Increased font size */
+  font-weight: 700; /* Bold font weight */
 }
