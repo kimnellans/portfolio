@@ -288,10 +288,11 @@ header .navbar .navbar-toggler {
 
 .hero h1 {
   top: 50%; /* Positioning the h1 at the vertical center of the .hero section */
+  transform: translate(-50%, -10px); /* Adjusting the vertical position of the h1 */
 }
 
 .hero span {
-  bottom: calc(50% + 1.5rem); /* Positioning the LOCAVORE text directly above the h1 without any margin */
+  bottom: calc(50% + 20px + 1.5rem); /* Positioning the LOCAVORE text 20px above the h1 */
 }
 
 /* 2. Apply a dark opacity of 75% to the image in the .hero section */
@@ -300,3 +301,4 @@ header .navbar .navbar-toggler {
   filter: brightness(0.25); /* This will darken the image to 25% of its original brightness, which is equivalent to a 75% dark opacity */
   z-index: 1; /* This ensures the image stays below the text */
 }
+
