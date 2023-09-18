@@ -263,3 +263,35 @@ footer .row {
 
 header .navbar .navbar-toggler {
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+
+/* 1. Overlay the h1 and the eyebrow text "LOCAVORE" on top of the image in the .hero section */
+
+.hero {
+  position: relative; /* This will allow us to position the h1 and LOCAVORE text absolutely within this container */
+}
+
+.hero span, /* This targets the LOCAVORE text */
+.hero h1 {
+  position: absolute; /* This will take the h1 and LOCAVORE text out of the normal flow and position them on top of the image */
+  z-index: 2; /* This ensures the text stays on top of the image */
+  color: #fff; /* Making the text white for better visibility on the darkened image */
+}
+
+.hero span {
+  top: 10%; /* Positioning the LOCAVORE text towards the top of the image */
+  left: 5%; /* A little padding from the left */
+}
+
+.hero h1 {
+  top: 20%; /* Positioning the h1 a bit below the LOCAVORE text */
+  left: 5%; /* A little padding from the left */
+}
+
+/* 2. Apply a dark opacity of 75% to the image in the .hero section */
+
+.hero img {
+  filter: brightness(0.25); /* This will darken the image to 25% of its original brightness, which is equivalent to a 75% dark opacity */
+  z-index: 1; /* This ensures the image stays below the text */
+}
