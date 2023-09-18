@@ -20,6 +20,7 @@ h1 {
 h2 {
   font-size: 1.75rem;
   font-weight: 300;
+  font-style: italic; /* Default to italic */
 }
 
 h3 {
@@ -319,17 +320,13 @@ header .navbar .navbar-toggler {
   margin: 0 auto;
 }
 
-h2, .two-col p:contains("Project Title:"), .two-col p:contains("My Role:"), .two-col p:contains("Timeline:"), .two-col p:contains("Objective:"), .two-col p:contains("Constraints:") {
-  font-weight: 700;
-}
-
 .two-col p span {
   font-weight: 700;
 }
 
 /* Specific styles for headers and paragraphs */
-h2:not(.no-italic) {
-    font-style: italic;
+h2.no-italic {
+    font-style: normal;
 }
 
 h3.italic-header {
