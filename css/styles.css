@@ -329,3 +329,37 @@ h2, .two-col p:contains("Project Title:"), .two-col p:contains("My Role:"), .two
 .two-col p span {
   font-weight: 700; /* This will make the text inside the <span> tags bold */
 }
+
+/* ... [rest of your CSS] ... */
+
+.bold-title {
+  font-weight: 700;
+}
+
+.highlighted-quote {
+  background-color: #FFFFB3; /* Pale yellow background */
+  font-size: 1.5rem; /* Increase font size */
+  font-family: 'Georgia', serif; /* Different font for the quote */
+  padding: 10px; /* Padding around the quote for better presentation */
+  margin: 20px 0; /* Margin around the quote for spacing */
+}
+
+.highlighted-quote cite {
+  display: block; /* Display the quoter on a new line */
+  text-align: right; /* Align the quoter to the right */
+  margin-top: 10px; /* Space between the quote and the quoter */
+  font-size: 1rem; /* Font size for the quoter */
+}
+
+.italic-title {
+  font-style: italic;
+}
+
+.bold-intro {
+  font-weight: 700;
+}
+
+.italic-paragraph {
+  font-style: italic;
+  font-weight: 400; /* Ensure the paragraph is not bold */
+}
