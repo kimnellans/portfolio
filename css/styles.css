@@ -180,47 +180,6 @@ nav.d-none.d-lg-flex a.nav-link {
   padding-left: 30px;
 }
 
-/* Footer Styles */
-footer {
-  background-color: #0F182A;
-  padding: 2rem 0;
-  color: #F9FAFC;
-  font-family: 'Roboto', sans-serif;
-}
-
-footer nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  padding: 0;
-}
-
-footer p {
-  margin-top: 1rem;
-  font-size: 0.9rem;
-}
-
-footer .row {
-  align-items: center;
-}
-
-.footer-nav ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.footer-nav ul li:not(:last-child) {
-  margin-bottom: 5px;
-}
-
-.footer-nav ul li a {
-  text-transform: uppercase;
-  line-height: 1rem;
-  margin-bottom: 5px;
-}
-
 /* Media Queries */
 @media (max-width: 575.98px) {
   .header .logo img {
@@ -294,7 +253,7 @@ header .navbar .navbar-toggler {
 
 /* Two Column Layout */
 .two-col {
-  padding: 40px 0;
+  padding: 30px 0;
 }
 
 .two-col .container {
@@ -346,6 +305,7 @@ header .navbar .navbar-toggler {
 /* Default background color for sections */
 section {
     background-color: #fff;
+    padding: 30px 0;
 }
 
 /* Alternate background color for every other section */
