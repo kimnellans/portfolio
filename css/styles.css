@@ -241,13 +241,9 @@ nav.d-none.d-lg-flex a.nav-link {
 }
 
 /* Logo Styles */
-/* Hover effect */
-.logo:hover img {
-  filter: brightness(1.2); /* Adjust brightness to make it slightly lighter */
-}
-/* Change the color to #7dd3fc on hover */
-.logo:hover img {
-  filter: hue-rotate(180deg); /* Rotate the hue to the desired color */
+/* Hover effect on the logo text */
+.logo:hover .logo-text {
+  color: #7dd3fc; /* Change the text color to the desired color */
 }
 
 
