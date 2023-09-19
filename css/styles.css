@@ -546,9 +546,9 @@ footer .row {
 
 nav a {
   transition: 0.3s;
+  padding: 5px 10px;
   text-decoration: none;
-  padding-bottom: 5px;
 }
 nav a:hover {
-  text-decoration: underline;
+  background-color: #7DD3FC;
 }
