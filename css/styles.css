@@ -7,10 +7,7 @@ body {
   color: #333333;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
 }
@@ -20,13 +17,12 @@ h1 {
   font-weight: 700;
 }
 
-h2 {
+h2, h3 {
   font-size: 1.75rem;
   font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75rem;
   font-weight: 300;
   font-style: italic;
 }
@@ -64,8 +60,7 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover,
-a:focus {
+a:hover, a:focus {
   color: #006B98;
   text-decoration: underline;
 }
@@ -137,9 +132,7 @@ nav.d-none.d-lg-flex a.nav-link {
   margin-top: 20px;
 }
 
-.btn-custom.dark,
-.btn-custom.light,
-.btn-custom.ghost {
+.btn-custom.dark, .btn-custom.light, .btn-custom.ghost {
   text-decoration: none;
   box-shadow: none;
   outline: none;
@@ -151,8 +144,6 @@ nav.d-none.d-lg-flex a.nav-link {
   border-color: #333;
   color: #333;
 }
-
-
 
 /* Hero Section Styles */
 .hero.bg-dark {
@@ -182,14 +173,11 @@ nav.d-none.d-lg-flex a.nav-link {
 /* Padding between columns */
 .col-md-5 {
   padding-right: 30px;
-  /* This adds 30px padding to the right side of the image */
 }
 
 .col-md-7 {
   padding-left: 30px;
-  /* This ensures that the text on the right column also has a consistent padding */
 }
-
 
 /* Hero Text Overlay */
 .hero {
@@ -201,8 +189,7 @@ nav.d-none.d-lg-flex a.nav-link {
   height: 100vh;
 }
 
-.hero span,
-.hero h1 {
+.hero span, .hero h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -255,8 +242,6 @@ nav.d-none.d-lg-flex a.nav-link {
   font-weight: 700;
 }
 
-
-
 /* Media Queries */
 @media (max-width: 575.98px) {
   .header .logo img {
@@ -299,43 +284,6 @@ header .navbar .navbar-toggler {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-/* Hero Section Styles */
-.hero.bg-dark {
-  width: 100%;
-  padding: 5rem 0;
-  text-align: left;
-}
-
-.hero.bg-dark .container {
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.hero-image {
-  border: 4px solid white;
-  object-fit: cover;
-  margin-top: 20px;
-}
-
-.hero.bg-dark .row {
-  display: flex;
-  align-items: center;
-}
-
-/* Padding between columns */
-.col-md-5 {
-  padding-right: 30px;
-  /* This adds 30px padding to the right side of the image */
-}
-
-.col-md-7 {
-  padding-left: 30px;
-  /* This ensures that the text on the right column also has a consistent padding */
-}
-
-
 /* Three Images in a Row */
 .three-col .container {
   display: flex;
@@ -356,7 +304,6 @@ header .navbar .navbar-toggler {
   height: auto;
   display: block;
 }
-
 
 /* Footer Styles */
 footer {
@@ -398,7 +345,6 @@ footer .row {
   line-height: 1rem;
   margin-bottom: 5px;
 }
-
 
 .visually-hidden {
   position: absolute !important;
