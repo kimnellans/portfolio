@@ -219,6 +219,10 @@ nav.d-none.d-lg-flex a.nav-link {
   align-items: center;
 }
 
+.hero.bg-dark .row {
+  display: flex;
+  align-items: center;
+}
 
 
 
