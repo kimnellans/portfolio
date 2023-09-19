@@ -241,9 +241,33 @@ nav.d-none.d-lg-flex a.nav-link {
 }
 
 /* Logo Styles */
-.logo:hover .logo-svg path:nth-child(1) {
-  fill: #7dd3fc;
+.logo {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  transition: transform 0.3s ease; /* smooth transition for hover effect */
 }
+
+.logo svg {
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+  fill: currentColor; /* inherit color from parent */
+}
+
+/* Hover effect (optional) */
+.logo:hover {
+  transform: scale(1.05); /* slightly enlarges the logo on hover */
+}
+
+/* Specific color styles, if needed */
+.logo svg path:nth-child(1) {
+  fill: #0F182A;
+}
+
+.logo svg path:nth-child(2) {
+  fill: #7DD3FC;
+}
+
 
 
 /* Hero Section Styles */
