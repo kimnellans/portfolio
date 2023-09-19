@@ -20,19 +20,17 @@ h1 {
 h2 {
   font-size: 1.75rem;
   font-weight: 700;
-  /* font-style: italic; /* Default to italic */
 }
 
 h3 {
   font-size: 1.75rem;
   font-weight: 300;
-  font-style: italic; /* Default to italic */
+  font-style: italic;
 }
 
 h4 {
   font-size: 1.35rem;
   font-weight: 400;
- /* font-style: italic;*/
 }
 
 img {
@@ -296,7 +294,6 @@ header .navbar .navbar-toggler {
 
 /* Two Column Layout */
 .two-col {
-  background-color: #F9FAFB;
   padding: 40px 0;
 }
 
@@ -328,20 +325,30 @@ header .navbar .navbar-toggler {
 /* Three Images in a Row */
 .three-col .container {
   display: flex;
-  justify-content: space-between; /* Distributes space evenly between the images */
-  align-items: center; /* Aligns the images vertically in the center */
-  flex-wrap: wrap; /* Allows the images to wrap to the next line on smaller screens */
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .three-col figure {
-  flex: 1; /* Each image takes up an equal amount of space */
-  margin: 0; /* Removes any default margin */
-  padding: 0; /* Removes any default padding */
-  max-width: calc(33.33% - 10px); /* Each image takes up roughly a third of the container width minus a little space for aesthetics */
+  flex: 1;
+  margin: 0;
+  padding: 0;
+  max-width: calc(33.33% - 10px);
 }
 
 .three-col img {
-  width: 100%; /* Makes sure the image takes up the full width of its container */
-  height: auto; /* Maintains the image's aspect ratio */
-  display: block; /* Removes any default inline spacing */
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Default background color for sections */
+section {
+    background-color: #fff;
+}
+
+/* Alternate background color for every other section */
+section:nth-of-type(odd) {
+    background-color: #F9FAFB;
 }
