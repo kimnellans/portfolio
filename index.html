@@ -5,29 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | Kim Nellans</title>
+
+    <!-- Normalize and Bootstrap stylesheets -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
+    <!-- Your Styles -->
     <link rel="stylesheet" href="css/styles.css">
+
+    <!-- Favicons -->
     <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
 </head>
 
 <body>
-    <header class="header bg-white my-4" style="display: none;">
+
+    <!-- Start of Header -->
+    <header class="header bg-white my-4">
         <div class="container d-flex justify-content-between align-items-center">
+
+            <!-- Logo -->
             <a href="index.html" class="logo">
                 <img src="assets/kimn.svg" alt="Kim Nellans Logo">
             </a>
+
+            <!-- Hamburger Button (visible on xs to md devices) -->
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Regular Navbar (hidden on xs to md devices) -->
             <nav class="d-none d-lg-flex">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -41,6 +57,8 @@
                     </li>
                 </ul>
             </nav>
+
+            <!-- Social Icons (hidden on xs to md devices) -->
             <div class="social-icons d-none d-lg-flex">
                 <a href="https://www.linkedin.com/feed/" class="mx-2">
                     <img src="img/footer/linked-in.svg" alt="LinkedIn">
@@ -52,10 +70,14 @@
                     <img src="img/footer/git.svg" alt="GitHub">
                 </a>
             </div>
+
+            <!-- Offcanvas Toggle Button -->
             <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
                 data-bs-target="#offcanvasMenu" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Offcanvas Menu Structure -->
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
                 <div class="offcanvas-header">
                     <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
@@ -78,84 +100,87 @@
             </div>
         </div>
     </header>
+    <!-- End of Header -->
+
+
     <main>
         <!-- Content inside container -->
         <div class="container">
-        </div>
-
-        <!-- Hero Section -->
-        <section class="hero bg-dark">
-            <div class="container-fluid text-white">
-                <div class="row">
-                    <div class="col-5">
-                        <picture>
-                            <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
-                            <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait" class="hero-image">
-                        </picture>
+            <!-- Hero Section -->
+            <section class="hero bg-dark">
+                <div class="container-fluid text-white">
+                    <div class="row">
+                        <div class="col-12 col-lg-5">
+                            <picture>
+                                <source srcset="img/hero/KimNellans@1X.jpg" media="(max-width:767px)">
+                                <img src="img/hero/KimNellans@2X.jpg" alt="Kim Nellans Portrait" class="hero-image">
+                            </picture>
+                        </div>
+                        <div class="col-12 col-lg-7 text-left"> <!-- Add text-left class here -->
+                            <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant
+                                about
+                                pixel-perfect UI, and currently obsessed with design systems.</h1>
+                        </div>
                     </div>
-                    <div class="col-7">
-                        <h1>Kim Nellans is a product designer who delights in crafting user stories, is vigilant about
-                            pixel-perfect UI, and currently obsessed with design systems.</h1>
+                </div>
+            </section>
+
+
+            <section class="project" id="locavore">
+                <h2 class="visually-hidden">Locavore Project</h2>
+                <div class="container card-style">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 d-flex flex-column justify-content-center order-2 order-lg-1">
+                            <h2><span>Locavore</span></h2>
+                            <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
+                            <a href="case-studies/locavore.html">Read the Case Study</a>
+                        </div>
+                        <div class="col-12 col-lg-7 order-1 order-lg-2">
+                            <picture>
+                                <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
+                                <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
+                            </picture>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-
-    <section class="project" id="locavore">
-        <h2 class="visually-hidden">Locavore Project</h2>
-        <div class="container card-style">
-            <div class="row">
-                <div class="col-12 col-lg-5 d-flex flex-column justify-content-center order-2 order-lg-1">
-                    <h2><span>Locavore</span></h2>
-                    <h4>How Might We Enjoy Fresh Farmers Market Produce When We Can't Get There?</h4>
-                    <a href="case-studies/locavore.html">Read the Case Study</a>
+            </section>
+            <section class="project" id="yuj">
+                <h2 class="visually-hidden">YUJ Project</h2>
+                <div class="container card-style">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 d-flex flex-column justify-content-center order-2 order-lg-1">
+                            <h2><span>YUJ</span></h2>
+                            <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
+                            <a href="case-studies/yuj.html">Read the Case Study</a>
+                        </div>
+                        <div class="col-12 col-lg-7 order-1 order-lg-2">
+                            <picture>
+                                <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
+                                <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-12 col-lg-7 order-1 order-lg-2">
-                    <picture>
-                        <source srcset="img/locavore/home-page/LOCAVORE@1X.jpg" media="(max-width:767px)">
-                        <img src="img/locavore/home-page/LOCAVORE@2X.jpg" alt="Locavore Project Image">
-                    </picture>
+            </section>
+            <section class="project" id="green-yogini">
+                <h2 class="visually-hidden">Green Yogini Project</h2>
+                <div class="container card-style">
+                    <div class="row">
+                        <div class="col-12 col-lg-5 d-flex flex-column justify-content-center order-2 order-lg-1">
+                            <h2><span>Green Yogini</span></h2>
+                            <h4>How Might We Help Yoginis Find Eco-friendly Products?</h4>
+                            <a href="case-studies/green-yogini.html">Read the Case Study</a>
+                        </div>
+                        <div class="col-12 col-lg-7 order-1 order-lg-2">
+                            <picture>
+                                <source srcset="img/green-yogini/home-page/GY@1X.jpg" media="(max-width:767px)">
+                                <img src="img/green-yogini/home-page/GY@2X.jpg" alt="Green Yogini Project Image">
+                            </picture>
+                        </div>
+                    </div>
                 </div>
-            </div>
+            </section>
         </div>
-    </section>
-    <section class="project" id="yuj">
-        <h2 class="visually-hidden">YUJ Project</h2>
-        <div class="container card-style">
-            <div class="row">
-                <div class="col-12 col-lg-5 d-flex flex-column justify-content-center order-2 order-lg-1">
-                    <h2><span>YUJ</span></h2>
-                    <h4>How Might We Find and Connect with Yoga Enthusiasts Around Us?</h4>
-                    <a href="case-studies/yuj.html">Read the Case Study</a>
-                </div>
-                <div class="col-12 col-lg-7 order-1 order-lg-2">
-                    <picture>
-                        <source srcset="img/yuj/YUJ@1X.jpg" media="(max-width:767px)">
-                        <img src="img/yuj/YUJ@2X.jpg" alt="YUJ Project Image">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="project" id="green-yogini">
-        <h2 class="visually-hidden">Green Yogini Project</h2>
-        <div class="container card-style">
-            <div class="row">
-                <div class="col-12 col-lg-5 d-flex flex-column justify-content-center order-2 order-lg-1">
-                    <h2><span>Green Yogini</span></h2>
-                    <h4>How Might We Help Yoginis Find Eco-friendly Products?</h4>
-                    <a href="case-studies/green-yogini.html">Read the Case Study</a>
-                </div>
-                <div class="col-12 col-lg-7 order-1 order-lg-2">
-                    <picture>
-                        <source srcset="img/green-yogini/home-page/GY@1X.jpg" media="(max-width:767px)">
-                        <img src="img/green-yogini/home-page/GY@2X.jpg" alt="Green Yogini Project Image">
-                    </picture>
-                </div>
-            </div>
-        </div>
-    </section>
-    </div>
     </main>
     <footer>
         <div class="container">
