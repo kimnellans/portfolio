@@ -302,16 +302,6 @@ header .navbar .navbar-toggler {
   display: block;
 }
 
-/* Default background color for sections */
-section {
-    background-color: #fff;
-    padding: 30px 0;
-}
-
-/* Alternate background color for every other section */
-section:nth-of-type(odd) {
-    background-color: #F9FAFB;
-}
 
 /* Footer Styles */
 footer {
