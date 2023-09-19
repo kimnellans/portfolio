@@ -544,13 +544,15 @@ footer .row {
 
 
 
-.navbar .navbar-nav .nav-link {
-  text-decoration: none;
-  transition: color 0.3s;
-  padding: 5px 10px; /* Adjust this value as needed */
+nav a {
+  position: relative;
+  text-decoration: none!important; /* Removes the default underline */
+  padding: 2px 5px; /* Adjust this value as needed */
+  transition: background-color 0.3s ease;
 }
 
-.navbar .navbar-nav .nav-link:hover {
-  color: #FF7F50;
-  background-color: #FFFFE0 !important;
+nav a:hover {
+  background-color: #FFFFE0; /* Pale yellow background */
 }
+
+
