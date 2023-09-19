@@ -174,7 +174,7 @@ nav.d-none.d-lg-flex a.nav-link {
   padding-left: 30px;
 }
 
-/* Hero Text Overlay */
+/* Hero Text Overlay 
 .hero {
   display: flex;
   justify-content: center;
@@ -183,7 +183,7 @@ nav.d-none.d-lg-flex a.nav-link {
   position: relative;
   height: 100vh;
 }
-
+*/
 .hero span, .hero h1 {
   position: absolute;
   left: 50%;
@@ -267,13 +267,13 @@ nav.d-none.d-lg-flex a.nav-link {
   .navbar-toggler {
     display: block;
   }
-  /*
+
   .row>div {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: left;
   }
-  */
+
 }
 
 @media (min-width: 992px) {
