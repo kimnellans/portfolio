@@ -19,13 +19,13 @@ h1 {
 
 h2 {
   font-size: 1.75rem;
-  font-weight: 300;
+  font-weight: 700;
   /* font-style: italic; /* Default to italic */
 }
 
 h3 {
   font-size: 1.75rem;
-  font-weight: 400;
+  font-weight: 300;
   font-style: italic; /* Default to italic */
 }
 
