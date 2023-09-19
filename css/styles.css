@@ -165,11 +165,6 @@ nav.d-none.d-lg-flex a.nav-link {
   margin-top: 20px;
 }
 
-.hero.bg-dark .row {
-  display: flex;
-  align-items: center;
-}
-
 /* Padding between columns */
 .col-md-5 {
   padding-right: 30px;
