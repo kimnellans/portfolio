@@ -241,11 +241,9 @@ nav.d-none.d-lg-flex a.nav-link {
 }
 
 /* Logo Styles */
-/* Hover effect on the logo text */
-.logo:hover .logo-text {
-  color: #7dd3fc; /* Change the text color to the desired color */
+.logo:hover .logo-svg path:nth-child(1) {
+  fill: #7dd3fc;
 }
-
 
 
 /* Hero Section Styles */
