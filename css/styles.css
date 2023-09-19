@@ -165,27 +165,23 @@ nav.d-none.d-lg-flex a.nav-link {
   margin-top: 20px;
 }
 
+.hero-overlay {
+    position: relative;
+}
+
 .hero-overlay h1, .hero-overlay span {
   position: absolute;
   left: 50%;
-  transform: translateX(-50%);
-  text-align: center;
-  z-index: 2;
-  color: #fff;
-}
-
-.hero-overlay h1 {
   top: 50%;
-  transform: translate(-50%, -10px);
-}
-
-.hero-overlay span {
-  bottom: calc(50% + 20px + 1.5rem);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+  color: #fff;
 }
 
 .hero-overlay img {
   filter: brightness(0.25);
-  z-index: 1;
+  z-index: 2;
 }
 
 .hero-overlay.bg-dark .row, .hero.bg-dark .row {
