@@ -220,24 +220,6 @@ nav.d-none.d-lg-flex a.nav-link {
 }
 
 
-.hero.bg-dark .row {
-  display: flex;
-  align-items: center; /* This will vertically center the content */
-  justify-content: space-between; /* This will space out the columns */
-}
-
-
-
-.hero h1 {
-  position: relative; /* Changed from absolute to relative */
-  left: 0; /* Reset left positioning */
-  transform: none; /* Reset transform */
-  text-align: center; /* Center the text */
-  margin: 0 auto; /* Center the block */
-}
-
-
-
 
 
 /* Two Column Layout */
