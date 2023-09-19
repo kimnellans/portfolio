@@ -540,3 +540,15 @@ footer .row {
       max-width: 100%;
   }
 }
+
+
+
+
+nav a {
+  transition: 0.3s;
+  text-decoration: none;
+  padding-bottom: 5px;
+}
+nav a:hover {
+  text-decoration: underline;
+}
