@@ -245,7 +245,7 @@ nav.d-none.d-lg-flex a.nav-link {
   display: inline-block;
   margin: 0;
   padding: 0;
-  transition: transform 0.3s ease; /* smooth transition for hover effect */
+  transition: transform 0.3s ease, color 0.3s ease; /* smooth transition for hover effect and color */
 }
 
 .logo svg {
@@ -254,18 +254,19 @@ nav.d-none.d-lg-flex a.nav-link {
   fill: currentColor; /* inherit color from parent */
 }
 
-/* Hover effect (optional) */
-.logo:hover {
-  transform: scale(1.05); /* slightly enlarges the logo on hover */
-}
-
-/* Specific color styles, if needed */
+/* Default colors */
 .logo svg path:nth-child(1) {
   fill: #0F182A;
 }
 
 .logo svg path:nth-child(2) {
   fill: #7DD3FC;
+}
+
+/* Hover effect (optional) */
+.logo:hover {
+  transform: scale(1.05); /* slightly enlarges the logo on hover */
+  color: #7DD3FC;
 }
 
 
