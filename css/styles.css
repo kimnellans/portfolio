@@ -182,7 +182,7 @@ nav.d-none.d-lg-flex a.nav-link {
 .hero-overlay span {
   position: absolute;
   left: 50%;
-  bottom: calc(50% + 15px + 1.5rem); /* Adjusted this line */
+  bottom: calc(50% + 40px + 1.5rem); /* Adjusted spacing to 40px */
   transform: translateX(-50%);
   text-align: center;
   z-index: 3;
@@ -198,6 +198,39 @@ nav.d-none.d-lg-flex a.nav-link {
   display: flex;
   align-items: center;
 }
+
+/* Responsive margin for small devices */
+@media (max-width: 576px) {
+  .hero.bg-dark {
+    margin: 20px 0;
+  }
+  .hero-overlay h1 {
+    font-size: 1.5rem; /* Adjusted font size for h1 on small devices */
+  }
+  .hero-overlay span {
+    font-size: 1rem; /* Adjusted font size for span on small devices */
+  }
+}
+
+/* Adjustments for larger devices if needed */
+@media (min-width: 577px) and (max-width: 768px) {
+  .hero-overlay h1 {
+    font-size: 2rem; /* Adjusted font size for h1 on medium devices */
+  }
+  .hero-overlay span {
+    font-size: 1.2rem; /* Adjusted font size for span on medium devices */
+  }
+}
+
+@media (min-width: 769px) {
+  .hero-overlay h1 {
+    font-size: 2.5rem; /* Adjusted font size for h1 on large devices */
+  }
+  .hero-overlay span {
+    font-size: 1.4rem; /* Adjusted font size for span on large devices */
+  }
+}
+
 
 /* Responsive margin for small devices */
 @media (max-width: 576px) {
