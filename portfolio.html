@@ -28,77 +28,79 @@
 
 <body>
 
-<!-- Start of Header -->
-<header class="header bg-white my-4">
-    <div class="container d-flex justify-content-between align-items-center">
+    <!-- Start of Header -->
+    <header class="header bg-white my-4">
+        <div class="container d-flex justify-content-between align-items-center">
 
-        <!-- Logo -->
-        <a href="index.html" class="logo">
-            <img src="assets/kimn.svg" alt="Kim Nellans Logo">
-        </a>
-
-        <!-- Hamburger Button (visible on xs to md devices) -->
-        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Regular Navbar (hidden on xs to md devices) -->
-        <nav class="d-none d-lg-flex">
-            <ul class="nav justify-content-center">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
-                </li>
-            </ul>
-        </nav>
-
-        <!-- Social Icons (hidden on xs to md devices) -->
-        <div class="social-icons d-none d-lg-flex">
-            <a href="https://www.linkedin.com/feed/" class="mx-2">
-                <img src="img/footer/linked-in.svg" alt="LinkedIn">
+            <!-- Logo -->
+            <a href="index.html" class="logo">
+                <img src="assets/kimn.svg" alt="Kim Nellans Logo">
             </a>
-            <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
-                <img src="img/footer/instagram.svg" alt="Instagram">
-            </a>
-            <a href="https://github.com/kimnellans" class="mx-2">
-                <img src="img/footer/git.svg" alt="GitHub">
-            </a>
+
+            <!-- Hamburger Button (visible on xs to md devices) -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Regular Navbar (hidden on xs to md devices) -->
+            <nav class="d-none d-lg-flex">
+                <ul class="nav justify-content-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Social Icons (hidden on xs to md devices) -->
+            <div class="social-icons d-none d-lg-flex">
+                <a href="https://www.linkedin.com/feed/" class="mx-2">
+                    <img src="img/footer/linked-in.svg" alt="LinkedIn">
+                </a>
+                <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
+                    <img src="img/footer/instagram.svg" alt="Instagram">
+                </a>
+                <a href="https://github.com/kimnellans" class="mx-2">
+                    <img src="img/footer/git.svg" alt="GitHub">
+                </a>
+            </div>
+
+            <!-- Offcanvas Toggle Button -->
+            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasMenu" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu Structure -->
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-
-        <!-- Offcanvas Toggle Button -->
-<button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-</button>
-
-<!-- Offcanvas Menu Structure -->
-<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-    <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-    </div>
-    <div class="offcanvas-body">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
-            </li>
-        </ul>
-    </div>
-</div>
-</div>
-</header>
-<!-- End of Header -->
+    </header>
+    <!-- End of Header -->
 
 
     <section class="hero">
@@ -120,11 +122,14 @@
         <div class="container">
             <div>
                 <h2 class="no-italic" style="font-size: 2rem;">Bridging the Gap: Locavore's Mission</h2>
-                <p><span>Project Title:</span> Bridging the Gap: Locavore's Mission - Connecting Local Farmers and Patrons in Boise, Idaho</p>
+                <p><span>Project Title:</span> Bridging the Gap: Locavore's Mission - Connecting Local Farmers and
+                    Patrons in Boise, Idaho</p>
                 <p><span>My Role:</span> Product Designer- Responsible for the entire UX / UI process.</p>
                 <p><span>Timeline:</span> 3 Months (June - August 2023)</p>
-                <p><span>Objective:</span> To foster community engagement by making fresh, locally sourced food accessible to all in Boise, Idaho.</p>
-                <p><span>Constraints:</span> Limited by the conceptual nature of the project, with constraints on metrics and outcomes.</p>
+                <p><span>Objective:</span> To foster community engagement by making fresh, locally sourced food
+                    accessible to all in Boise, Idaho.</p>
+                <p><span>Constraints:</span> Limited by the conceptual nature of the project, with constraints on
+                    metrics and outcomes.</p>
                 <a href="#">Jump To Full Prototype👇</a>
             </div>
             <div>
@@ -132,42 +137,50 @@
             </div>
         </div>
     </section>
-    
+
     <section class="two-col">
         <div class="container">
             <!-- First Column -->
             <div>
                 <h2 class="bold-header" style="font-size: 2rem;">Introduction: Connecting Farmers and Patrons</h2>
                 <h3 class="italic-header">Bridging the Gap with Digital Solutions</h3>
-                <p class="quote-line">“I love supporting local farmers, but without a car, it's been nearly impossible to get</p>
+                <p class="quote-line">“I love supporting local farmers, but without a car, it's been nearly impossible
+                    to get</p>
                 <p class="quote-line">fresh produce from the market.”</p>
                 <cite>- BFM MARKET PATRON</cite>
             </div>
-            
+
             <!-- Second Column -->
             <div>
-                <h3>In the heart of Boise, Idaho, an established tradition, the Boise Farmers Market (BFM), thrives as a community pillar. It connects local farmers to their patrons, providing fresh, locally-grown produce directly to consumers. When the pandemic emerged, accessibility became a growing issue, rendering a chunk of the population unable to participate in this vibrant exchange.</h2>
-                <p>The BFM's response? An online ordering and drive-thru option, a timely solution that preserved the connection between farmers and patrons. Yet, a significant problem remained. Those unable to visit the market or align their schedules with the restrictive pickup window found themselves excluded from this local food-centric experience. People without transportation, mobility issues, or schedule conflicts were particularly affected.</p>
-                <p>This led to the realization that while the drive-thru option improved accessibility for some, it still left out those with various limitations. The challenge became: How to evolve this local staple into a platform accessible to everyone, with a focus on delivery to address these issues?</p>
+                <h3>In the heart of Boise, Idaho, an established tradition, the Boise Farmers Market (BFM), thrives as a
+                    community pillar. It connects local farmers to their patrons, providing fresh, locally-grown produce
+                    directly to consumers. When the pandemic emerged, accessibility became a growing issue, rendering a
+                    chunk of the population unable to participate in this vibrant exchange.</h3>
+                    <p>The BFM's response? An online ordering and drive-thru option, a timely solution that preserved
+                        the connection between farmers and patrons. Yet, a significant problem remained. Those unable to
+                        visit the market or align their schedules with the restrictive pickup window found themselves
+                        excluded from this local food-centric experience. People without transportation, mobility
+                        issues, or schedule conflicts were particularly affected.</p>
+                    <p>This led to the realization that while the drive-thru option improved accessibility for some, it
+                        still left out those with various limitations. The challenge became: How to evolve this local
+                        staple into a platform accessible to everyone, with a focus on delivery to address these issues?
+                    </p>
             </div>
         </div>
     </section>
-    
-    
-<!-- Full Width Image: Farmer -->
-<div class="container">   
-    <img src="img/locavore/project-page/bfm/farmer1x.png" 
-         srcset="img/locavore/project-page/bfm/farmer-mobile1x.png 480w,
+
+
+    <!-- Full Width Image: Farmer -->
+    <div class="container">
+        <img src="img/locavore/project-page/bfm/farmer1x.png" srcset="img/locavore/project-page/bfm/farmer-mobile1x.png 480w,
                  img/locavore/project-page/bfm/farmer-mobile2x.png 960w,
                  img/locavore/project-page/bfm/farmer-tablet1x.png 768w,
                  img/locavore/project-page/bfm/farmer-tablet2x.png 1536w,
                  img/locavore/project-page/bfm/farmer1.5x.png 2880w,
-                 img/locavore/project-page/bfm/farmer1x.png 1920w" 
-         sizes="(max-width: 480px) 480px, 
+                 img/locavore/project-page/bfm/farmer1x.png 1920w" sizes="(max-width: 480px) 480px, 
                 (max-width: 768px) 768px, 
-                1920px"
-         alt="BFM farmer holding produce">
-</div>
+                1920px" alt="BFM farmer holding produce">
+    </div>
 
 
     <!-- Two Column Section: Challenge and Understanding -->

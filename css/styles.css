@@ -7,7 +7,10 @@ body {
   color: #333333;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
 }
@@ -61,7 +64,8 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #006B98;
   text-decoration: underline;
 }
@@ -133,7 +137,9 @@ nav.d-none.d-lg-flex a.nav-link {
   margin-top: 20px;
 }
 
-.btn-custom.dark, .btn-custom.light, .btn-custom.ghost {
+.btn-custom.dark,
+.btn-custom.light,
+.btn-custom.ghost {
   text-decoration: none;
   box-shadow: none;
   outline: none;
@@ -185,12 +191,15 @@ nav.d-none.d-lg-flex a.nav-link {
   .header .logo img {
     max-width: 120px;
   }
+
   .navbar-toggler {
     display: block;
   }
+
   h1 {
     font-size: 1.5rem;
   }
+
   .hero-image {
     max-width: 90%;
     margin: 0 auto;
@@ -201,7 +210,8 @@ nav.d-none.d-lg-flex a.nav-link {
   .navbar-toggler {
     display: block;
   }
-  .row > div {
+
+  .row>div {
     flex: 0 0 100%;
     max-width: 100%;
     text-align: left;
@@ -228,7 +238,8 @@ header .navbar .navbar-toggler {
   height: 100vh;
 }
 
-.hero span, .hero h1 {
+.hero span,
+.hero h1 {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
@@ -263,7 +274,7 @@ header .navbar .navbar-toggler {
   align-items: flex-start;
 }
 
-.two-col .container > div {
+.two-col .container>div {
   flex: 1;
   width: 50%;
   display: flex;
