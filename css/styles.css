@@ -547,15 +547,12 @@ footer .row {
 nav a {
   position: relative;
   text-decoration: none!important; /* Removes the default underline */
-  padding: 0 2px; /* Slight padding to give room for the background */
+  padding: 5px 10px; /* Adjust this value as needed */
   transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #FFF9B0; /* Pale yellow background */
+  background-color: #FFFFE0; /* Pale yellow background */
 }
 
-/* If you have links that are already styled by Bootstrap or other CSS, 
-you might need to add more specific selectors or use !important 
-(though it's generally advised to avoid !important if possible). */
 
