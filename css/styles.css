@@ -169,11 +169,21 @@ nav.d-none.d-lg-flex a.nav-link {
     position: relative;
 }
 
-.hero-overlay h1, .hero-overlay span {
+.hero-overlay h1 {
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 3;
+  color: #fff;
+}
+
+.hero-overlay span {
+  position: absolute;
+  left: 50%;
+  bottom: calc(50% + 15px + 1.5rem); /* Adjusted this line */
+  transform: translateX(-50%);
   text-align: center;
   z-index: 3;
   color: #fff;
@@ -188,6 +198,14 @@ nav.d-none.d-lg-flex a.nav-link {
   display: flex;
   align-items: center;
 }
+
+/* Responsive margin for small devices */
+@media (max-width: 576px) {
+  .hero.bg-dark {
+    margin: 20px 0;
+  }
+}
+
 
 /* Two Column Layout */
 .two-col {
