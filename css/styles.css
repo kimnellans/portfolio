@@ -182,12 +182,12 @@ nav.d-none.d-lg-flex a.nav-link {
 /* Padding between columns */
 .col-md-5 {
   padding-right: 30px;
-  /* This will add 30px padding to the right side of the image */
+  /* This adds 30px padding to the right side of the image */
 }
 
 .col-md-7 {
   padding-left: 30px;
-  /* This will ensure that the text on the right column also has a consistent padding */
+  /* This ensures that the text on the right column also has a consistent padding */
 }
 
 
@@ -327,12 +327,12 @@ header .navbar .navbar-toggler {
 /* Padding between columns */
 .col-md-5 {
   padding-right: 30px;
-  /* This will add 30px padding to the right side of the image */
+  /* This adds 30px padding to the right side of the image */
 }
 
 .col-md-7 {
   padding-left: 30px;
-  /* This will ensure that the text on the right column also has a consistent padding */
+  /* This ensures that the text on the right column also has a consistent padding */
 }
 
 
