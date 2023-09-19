@@ -336,3 +336,32 @@ footer .row {
   width: 1px !important;
   overflow: hidden;
 }
+
+/* New Media Queries */
+
+/* Adjusting for iPad/tablet size and smaller */
+@media (max-width: 767px) {
+  /* Adjusting the two-column layout to a single column */
+  .two-col .container > div {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+
+  /* Adjusting images to center and have some margin for better spacing */
+  .two-col img {
+      margin: 20px auto;
+  }
+
+  /* Adjusting the three-column image layout to a single column */
+  .three-col figure {
+      flex: 0 0 100%;
+      max-width: 100%;
+      margin-bottom: 20px; /* Adding some margin for spacing between images */
+  }
+
+  /* Adjusting the footer to stack the acknowledgement and navigation sections */
+  footer .row > div {
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+}
