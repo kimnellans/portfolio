@@ -71,75 +71,64 @@ h4 {
 /* Responsive font sizes */
 @media (max-width: 576px) { /* Small devices */
   h1 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
-  h2 {
-    font-size: 1.3rem;
-  }
-  h3 {
-    font-size: 1.1rem;
+  h2, h3 {
+    font-size: 1rem;
   }
   h4 {
-    font-size: 1rem;
+    font-size: 0.9rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) { /* Medium devices */
+  h1 {
+    font-size: 1.8rem;
+  }
+  h2, h3 {
+    font-size: 1.4rem;
+  }
+  h4 {
+    font-size: 1.1rem;
   }
   p {
     font-size: 0.9rem;
   }
 }
 
-@media (min-width: 577px) and (max-width: 768px) { /* Medium devices */
+@media (min-width: 769px) and (max-width: 992px) { /* Large devices */
   h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
-  h2 {
-    font-size: 1.8rem;
-  }
-  h3 {
+  h2, h3 {
     font-size: 1.6rem;
   }
   h4 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
   p {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 992px) { /* Large devices */
-  h1 {
-    font-size: 2.5rem;
-  }
-  h2 {
-    font-size: 2.3rem;
-  }
-  h3 {
-    font-size: 2.1rem;
-  }
-  h4 {
-    font-size: 1.9rem;
-  }
-  p {
-    font-size: 1.7rem;
+    font-size: 1rem;
   }
 }
 
 @media (min-width: 993px) { /* Extra large devices */
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
-  h2 {
-    font-size: 2.8rem;
-  }
-  h3 {
-    font-size: 2.6rem;
+  h2, h3 {
+    font-size: 1.75rem;
   }
   h4 {
-    font-size: 2.4rem;
+    font-size: 1.35rem;
   }
   p {
-    font-size: 2.2rem;
+    font-size: 1.1rem;
   }
 }
+
 
 
 img {
