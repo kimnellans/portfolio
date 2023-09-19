@@ -245,13 +245,13 @@ nav.d-none.d-lg-flex a.nav-link {
   display: inline-block;
   margin: 0;
   padding: 0;
-  transition: transform 0.3s ease, color 0.3s ease; /* smooth transition for hover effect and color */
+  transition: transform 0.3s ease;
 }
 
 .logo svg {
   width: 100%;
-  height: auto; /* maintain aspect ratio */
-  fill: currentColor; /* inherit color from parent */
+  height: auto;
+  transition: fill 0.3s ease; /* add transition for color change */
 }
 
 /* Default colors */
@@ -263,12 +263,14 @@ nav.d-none.d-lg-flex a.nav-link {
   fill: #7DD3FC;
 }
 
-/* Hover effect (optional) */
+/* Hover effect */
 .logo:hover {
   transform: scale(1.05); /* slightly enlarges the logo on hover */
-  color: #7DD3FC;
 }
 
+.logo:hover svg path:nth-child(1) {
+  fill: #7DD3FC; /* change first path color on hover */
+}
 
 
 /* Hero Section Styles */
