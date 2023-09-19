@@ -547,12 +547,12 @@ footer .row {
 nav a {
   position: relative;
   text-decoration: none!important; /* Removes the default underline */
-  padding: 2px 5px; /* Adjust this value as needed */
-  transition: background-color 0.3s ease;
+  padding: 2px 5px; /* Adjust as needed */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for color */
 }
 
 nav a:hover {
   background-color: #FFFFE0; /* Pale yellow background */
+  color: red; /* Text color changes to red on hover */
 }
-
 
