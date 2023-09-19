@@ -152,6 +152,8 @@ nav.d-none.d-lg-flex a.nav-link {
   color: #333;
 }
 
+
+
 /* Hero Section Styles */
 .hero.bg-dark {
   width: 100%;
@@ -180,11 +182,80 @@ nav.d-none.d-lg-flex a.nav-link {
 /* Padding between columns */
 .col-md-5 {
   padding-right: 30px;
+  /* This will add 30px padding to the right side of the image */
 }
 
 .col-md-7 {
   padding-left: 30px;
+  /* This will ensure that the text on the right column also has a consistent padding */
 }
+
+
+/* Hero Text Overlay */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  height: 100vh;
+}
+
+.hero span,
+.hero h1 {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  z-index: 2;
+  color: #fff;
+}
+
+.hero h1 {
+  top: 50%;
+  transform: translate(-50%, -10px);
+}
+
+.hero span {
+  bottom: calc(50% + 20px + 1.5rem);
+}
+
+.hero img {
+  filter: brightness(0.25);
+  z-index: 1;
+}
+
+/* Two Column Layout */
+.two-col {
+  padding: 30px 0;
+}
+
+.two-col .container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.two-col .container>div {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.two-col img {
+  max-height: 100%;
+  width: auto;
+  margin: 0 auto;
+}
+
+.two-col p span {
+  font-weight: 700;
+}
+
+
 
 /* Media Queries */
 @media (max-width: 575.98px) {
@@ -255,11 +326,13 @@ header .navbar .navbar-toggler {
 
 /* Padding between columns */
 .col-md-5 {
-  padding-right: 30px; /* This will add 30px padding to the right side of the image */
+  padding-right: 30px;
+  /* This will add 30px padding to the right side of the image */
 }
 
 .col-md-7 {
-  padding-left: 30px; /* This will ensure that the text on the right column also has a consistent padding */
+  padding-left: 30px;
+  /* This will ensure that the text on the right column also has a consistent padding */
 }
 
 
