@@ -558,3 +558,13 @@ nav a:hover {
 /* If you have links that are already styled by Bootstrap or other CSS, 
 you might need to add more specific selectors or use !important 
 (though it's generally advised to avoid !important if possible). */
+
+
+.navbar .navbar-nav .nav-link {
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.navbar .navbar-nav .nav-link:hover {
+  color: #FF7F50;
+}
