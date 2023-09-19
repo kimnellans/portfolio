@@ -66,8 +66,6 @@ h4 {
   font-weight: 400;
 }
 
-/* ... [rest of your code remains unchanged] ... */
-
 /* Responsive font sizes */
 @media (max-width: 576px) { /* Small devices */
   h1 {
@@ -128,8 +126,6 @@ h4 {
     font-size: 1.1rem;
   }
 }
-
-
 
 img {
   width: 100%;
@@ -243,6 +239,18 @@ nav.d-none.d-lg-flex a.nav-link {
   border-color: #333;
   color: #333;
 }
+
+/* Logo Styles */
+/* Hover effect */
+.logo:hover img {
+  filter: brightness(1.2); /* Adjust brightness to make it slightly lighter */
+}
+/* Change the color to #7dd3fc on hover */
+.logo:hover img {
+  filter: hue-rotate(180deg); /* Rotate the hue to the desired color */
+}
+
+
 
 /* Hero Section Styles */
 .hero.bg-dark {
