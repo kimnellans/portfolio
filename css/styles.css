@@ -546,7 +546,7 @@ footer .row {
 
 nav a {
   position: relative;
-  text-decoration: none; /* Removes the default underline */
+  text-decoration: none!important; /* Removes the default underline */
   padding: 0 2px; /* Slight padding to give room for the background */
   transition: background-color 0.3s ease;
 }
@@ -559,12 +559,3 @@ nav a:hover {
 you might need to add more specific selectors or use !important 
 (though it's generally advised to avoid !important if possible). */
 
-
-.navbar .navbar-nav .nav-link {
-  text-decoration: none;
-  transition: color 0.3s;
-}
-
-.navbar .navbar-nav .nav-link:hover {
-  color: #FF7F50;
-}
