@@ -547,11 +547,13 @@ nav a {
   text-decoration: none !important;
   padding: 5px 10px; /* Regular padding for menu items */
   color: #21252A; 
-  transition: color 1s ease, background-color 0.3s ease, padding 0.3s ease; /* Added transitions for background and padding */
+  transition: color 1s ease, background-color 0.3s ease;
+  border: solid transparent; /* invisible border that takes up space */
+  border-width: 2px 5px; /* same as the reduced padding you wanted on hover */
 }
 
 nav a:hover {
   color: #21252A!important; /* Temporary red color for testing hover */
   background-color: #FFFFE0; /* Pale yellow background on hover */
-  padding: 2px 5px; /* Adjusted padding for hover effect */
+  border-color: #FFFFE0; /* Border takes the color of the background on hover */
 }
