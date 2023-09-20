@@ -7,7 +7,10 @@ body {
   color: #333333;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
 }
@@ -17,7 +20,8 @@ h1 {
   font-weight: 700;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 1.75rem;
   font-weight: 700;
 }
@@ -41,7 +45,10 @@ body {
   color: #333333;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Roboto', sans-serif;
   line-height: 1.4;
 }
@@ -51,7 +58,8 @@ h1 {
   font-weight: 700;
 }
 
-h2, h3 {
+h2,
+h3 {
   font-size: 1.75rem;
   font-weight: 700;
 }
@@ -67,61 +75,85 @@ h4 {
 }
 
 /* Responsive font sizes */
-@media (max-width: 576px) { /* Small devices */
+@media (max-width: 576px) {
+
+  /* Small devices */
   h1 {
     font-size: 1.2rem;
   }
-  h2, h3 {
+
+  h2,
+  h3 {
     font-size: 1rem;
   }
+
   h4 {
     font-size: 0.9rem;
   }
+
   p {
     font-size: 0.8rem;
   }
 }
 
-@media (min-width: 577px) and (max-width: 768px) { /* Medium devices */
+@media (min-width: 577px) and (max-width: 768px) {
+
+  /* Medium devices */
   h1 {
     font-size: 1.8rem;
   }
-  h2, h3 {
+
+  h2,
+  h3 {
     font-size: 1.4rem;
   }
+
   h4 {
     font-size: 1.1rem;
   }
+
   p {
     font-size: 0.9rem;
   }
 }
 
-@media (min-width: 769px) and (max-width: 992px) { /* Large devices */
+@media (min-width: 769px) and (max-width: 992px) {
+
+  /* Large devices */
   h1 {
     font-size: 2.2rem;
   }
-  h2, h3 {
+
+  h2,
+  h3 {
     font-size: 1.6rem;
   }
+
   h4 {
     font-size: 1.3rem;
   }
+
   p {
     font-size: 1rem;
   }
 }
 
-@media (min-width: 993px) { /* Extra large devices */
+@media (min-width: 993px) {
+
+  /* Extra large devices */
   h1 {
     font-size: 2.5rem;
   }
-  h2, h3 {
+
+  h2,
+  h3 {
     font-size: 1.75rem;
   }
+
   h4 {
     font-size: 1.35rem;
   }
+
   p {
     font-size: 1.1rem;
   }
@@ -155,7 +187,8 @@ a {
   transition: color 0.3s ease;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #006B98;
   text-decoration: underline;
 }
@@ -227,7 +260,9 @@ nav.d-none.d-lg-flex a.nav-link {
   margin-top: 20px;
 }
 
-.btn-custom.dark, .btn-custom.light, .btn-custom.ghost {
+.btn-custom.dark,
+.btn-custom.light,
+.btn-custom.ghost {
   text-decoration: none;
   box-shadow: none;
   outline: none;
@@ -251,7 +286,8 @@ nav.d-none.d-lg-flex a.nav-link {
 .logo svg {
   width: 100%;
   height: auto;
-  transition: fill 0.3s ease; /* add transition for color change */
+  transition: fill 0.3s ease;
+  /* add transition for color change */
 }
 
 
@@ -266,11 +302,13 @@ nav.d-none.d-lg-flex a.nav-link {
 
 /* Hover effect */
 .logo:hover {
-  transform: scale(1.05); /* slightly enlarges the logo on hover */
+  transform: scale(1.05);
+  /* slightly enlarges the logo on hover */
 }
 
 .logo:hover svg path:nth-child(1) {
-  fill: #7DD3FC; /* change first path color on hover */
+  fill: #7DD3FC;
+  /* change first path color on hover */
 }
 
 
@@ -295,7 +333,7 @@ nav.d-none.d-lg-flex a.nav-link {
 }
 
 .hero-overlay {
-    position: relative;
+  position: relative;
 }
 
 .hero-overlay h1 {
@@ -311,7 +349,8 @@ nav.d-none.d-lg-flex a.nav-link {
 .hero-overlay span {
   position: absolute;
   left: 50%;
-  bottom: calc(50% + 40px + 1.5rem); /* Adjusted spacing to 40px */
+  bottom: calc(50% + 40px + 1.5rem);
+  /* Adjusted spacing to 40px */
   transform: translateX(-50%);
   text-align: center;
   z-index: 3;
@@ -323,7 +362,8 @@ nav.d-none.d-lg-flex a.nav-link {
   z-index: 2;
 }
 
-.hero-overlay.bg-dark .row, .hero.bg-dark .row {
+.hero-overlay.bg-dark .row,
+.hero.bg-dark .row {
   display: flex;
   align-items: center;
 }
@@ -333,30 +373,40 @@ nav.d-none.d-lg-flex a.nav-link {
   .hero.bg-dark {
     margin: 20px 0;
   }
+
   .hero-overlay h1 {
-    font-size: 1.5rem; /* Adjusted font size for h1 on small devices */
+    font-size: 1.5rem;
+    /* Adjusted font size for h1 on small devices */
   }
+
   .hero-overlay span {
-    font-size: 1rem; /* Adjusted font size for span on small devices */
+    font-size: 1rem;
+    /* Adjusted font size for span on small devices */
   }
 }
 
 /* Adjustments for larger devices if needed */
 @media (min-width: 577px) and (max-width: 768px) {
   .hero-overlay h1 {
-    font-size: 2rem; /* Adjusted font size for h1 on medium devices */
+    font-size: 2rem;
+    /* Adjusted font size for h1 on medium devices */
   }
+
   .hero-overlay span {
-    font-size: 1.2rem; /* Adjusted font size for span on medium devices */
+    font-size: 1.2rem;
+    /* Adjusted font size for span on medium devices */
   }
 }
 
 @media (min-width: 769px) {
   .hero-overlay h1 {
-    font-size: 2.5rem; /* Adjusted font size for h1 on large devices */
+    font-size: 2.5rem;
+    /* Adjusted font size for h1 on large devices */
   }
+
   .hero-overlay span {
-    font-size: 1.4rem; /* Adjusted font size for span on large devices */
+    font-size: 1.4rem;
+    /* Adjusted font size for span on large devices */
   }
 }
 
@@ -517,28 +567,30 @@ footer .row {
 
 /* Adjusting for iPad/tablet size and smaller */
 @media (max-width: 767px) {
+
   /* Adjusting the two-column layout to a single column */
-  .two-col .container > div {
-      flex: 0 0 100%;
-      max-width: 100%;
+  .two-col .container>div {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 
   /* Adjusting images to center and have some margin for better spacing */
   .two-col img {
-      margin: 20px auto;
+    margin: 20px auto;
   }
 
   /* Adjusting the three-column image layout to a single column */
   .three-col figure {
-      flex: 0 0 100%;
-      max-width: 100%;
-      margin-bottom: 20px; /* Adding some margin for spacing between images */
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 20px;
+    /* Adding some margin for spacing between images */
   }
 
   /* Adjusting the footer to stack the acknowledgement and navigation sections */
-  footer .row > div {
-      flex: 0 0 100%;
-      max-width: 100%;
+  footer .row>div {
+    flex: 0 0 100%;
+    max-width: 100%;
   }
 }
 
@@ -546,15 +598,21 @@ footer .row {
 nav a {
   position: relative;
   text-decoration: none !important;
-  padding: 5px 10px; /* Regular padding for menu items */
-  color: #21252A; 
+  padding: 5px 10px;
+  /* Regular padding for menu items */
+  color: #21252A;
   transition: color 1s ease, background-color 0.3s ease;
-  border: solid transparent; /* invisible border that takes up space */
-  border-width: 2px 5px; /* same as the reduced padding you wanted on hover */
+  border: solid transparent;
+  /* invisible border that takes up space */
+  border-width: 2px 5px;
+  /* same as the reduced padding you wanted on hover */
 }
 
 nav a:hover {
-  color: #21252A!important; /* Temporary red color for testing hover */
-  background-color: #FFFFE0; /* Pale yellow background on hover */
-  border-color: #FFFFE0; /* Border takes the color of the background on hover */
+  color: #21252A !important;
+  /* Temporary red color for testing hover */
+  background-color: #FFFFE0;
+  /* Pale yellow background on hover */
+  border-color: #FFFFE0;
+  /* Border takes the color of the background on hover */
 }
