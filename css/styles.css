@@ -553,12 +553,11 @@ nav a {
 nav a::before {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  width: calc(100% - 10px); /* Adjust for smaller horizontal padding */
-  height: calc(100% - 6px); /* Adjust for smaller vertical padding */
+  top: 2px; /* This value and the bottom value dictate the vertical size of the highlight */
+  left: 5px; /* This value and the right value dictate the horizontal size of the highlight */
+  right: 5px;
+  bottom: 2px;
   background-color: transparent;
-  transform: translate(-50%, -50%);
   transition: background-color 0.3s ease;
   z-index: -1;
 }
@@ -570,3 +569,4 @@ nav a:hover {
 nav a:hover::before {
   background-color: #FFFFE0;
 }
+
