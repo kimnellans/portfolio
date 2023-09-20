@@ -547,7 +547,7 @@ nav a {
   text-decoration: none !important;
   padding: 5px 10px; /* Distance between menu items */
   color: #21252A; 
-  transition: color 0.3s ease;
+  transition: color 1s ease;
 }
 
 nav a::before {
