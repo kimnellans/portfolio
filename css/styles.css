@@ -545,28 +545,13 @@ footer .row {
 nav a {
   position: relative;
   text-decoration: none !important;
-  padding: 5px 10px; /* Distance between menu items */
+  padding: 5px 10px; /* Regular padding for menu items */
   color: #21252A; 
-  transition: color 1s ease;
-}
-
-nav a::before {
-  content: "";
-  position: absolute;
-  top: 2px; /* This value and the bottom value dictate the vertical size of the highlight */
-  left: 5px; /* This value and the right value dictate the horizontal size of the highlight */
-  right: 5px;
-  bottom: 2px;
-  background-color: transparent;
-  transition: background-color 0.3s ease;
-  z-index: -1;
+  transition: color 1s ease, background-color 0.3s ease, padding 0.3s ease; /* Added transitions for background and padding */
 }
 
 nav a:hover {
-  color: #21252A!important;
+  color: red !important; /* Temporary red color for testing hover */
+  background-color: #FFFFE0; /* Pale yellow background on hover */
+  padding: 2px 5px; /* Adjusted padding for hover effect */
 }
-
-nav a:hover::before {
-  background-color: #FFFFE0;
-}
-
