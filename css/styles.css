@@ -249,7 +249,7 @@ nav.d-none.d-lg-flex a.nav-link {
 }
 
 .logo svg {
-  width: 90%;
+  width: 100%;
   height: auto;
   transition: fill 0.3s ease; /* add transition for color change */
 }
