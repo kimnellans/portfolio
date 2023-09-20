@@ -542,17 +542,30 @@ footer .row {
 }
 
 
-
-
 nav a {
   position: relative;
-  text-decoration: none!important; /* Removes the default underline */
-  padding: 2px 5px!important; /* Adjust as needed */
-  transition: background-color 0.3s ease, color 0.3s ease; /* Added transition for color */
+  text-decoration: none!important;
+  padding: 5px 10px; /* Spacing between menu items */
+  transition: color 0.3s ease;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: calc(100% - 6px); /* Adjusted width for smaller horizontal padding */
+  height: calc(100% - 6px); /* Adjusted height for smaller vertical padding */
+  background-color: #FFFFE0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 nav a:hover {
-  background-color: #FFFFE0; /* Pale yellow background */
-  color: #21252A!important; /* Text color changes to red on hover */
+  color: red!important;
 }
 
+nav a:hover::before {
+  opacity: 1;
+}
