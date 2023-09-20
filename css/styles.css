@@ -553,6 +553,6 @@ nav a {
 
 nav a:hover {
   background-color: #FFFFE0; /* Pale yellow background */
-  color: red; /* Text color changes to red on hover */
+  color: red!important; /* Text color changes to red on hover */
 }
 
