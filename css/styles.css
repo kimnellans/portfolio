@@ -544,8 +544,9 @@ footer .row {
 
 nav a {
   position: relative;
-  text-decoration: none!important;
-  padding: 5px 10px; /* Spacing between menu items */
+  text-decoration: none !important;
+  padding: 5px 10px; /* Distance between menu items */
+  color: #21252A; 
   transition: color 0.3s ease;
 }
 
@@ -554,18 +555,18 @@ nav a::before {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: calc(100% - 6px); /* Adjusted width for smaller horizontal padding */
-  height: calc(100% - 6px); /* Adjusted height for smaller vertical padding */
-  background-color: #FFFFE0;
+  width: calc(100% - 10px); /* Adjust for smaller horizontal padding */
+  height: calc(100% - 6px); /* Adjust for smaller vertical padding */
+  background-color: transparent;
   transform: translate(-50%, -50%);
-  opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: background-color 0.3s ease;
+  z-index: -1;
 }
 
 nav a:hover {
-  color: red!important;
+  color: #21252A!important;
 }
 
 nav a:hover::before {
-  opacity: 1;
+  background-color: #FFFFE0;
 }
