@@ -28,24 +28,64 @@
 
 <body>
 
-    <!-- Start of Header -->
-    <header class="header bg-white my-4">
-        <div class="container d-flex justify-content-between align-items-center">
+  <!-- Start of Header -->
+  <header class="header bg-white my-4">
+    <div class="container d-flex justify-content-between align-items-center">
 
-            <!-- Logo -->
-            <a href="index.html" class="logo">
-                <img src="assets/kimn.svg" alt="Kim Nellans Logo">
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+            <svg xmlns="http://www.w3.org/2000/svg" width="190" height="50" fill="none">
+                <path fill="#0F182A"
+                    d="M.776 49v-4.093H4.73c.706 0 1.058-.212 1.058-1.624V8.135c0-1.482-.282-1.905-1.058-1.905H.635V2.136h4.023c3.176 0 6.352-.353 7.834-.635v31.83L25.69 20.205c.424-.423.565-1.341-.705-1.341h-3.882V14.77h16.303v4.093h-3.105c-1.34 0-2.047.494-2.753 1.13l-7.904 7.622 10.234 16.021c.564.918 1.2 1.27 1.905 1.27h2.823V49h-15.95v-4.093h3.246c1.2 0 .847-.847.565-1.341l-7.481-11.717-6.494 6.494v4.94c0 1.412.353 1.623.988 1.623h3.812V49H.776ZM48.608 9.9c-2.682 0-4.517-2.047-4.517-4.588 0-2.47 1.835-4.517 4.517-4.517 2.611 0 4.517 2.047 4.517 4.517 0 2.54-1.906 4.588-4.517 4.588ZM40.35 49v-4.093h4.023c.636 0 .989-.283.989-1.624V21.686c0-2.188-.353-2.823-1.553-2.823H40.35V14.77h3.812c3.246 0 6.422-.353 7.904-.636v29.15c0 1.34.353 1.623.988 1.623h3.882V49H40.35Zm19.16 0v-4.093h3.952c.706 0 1.059-.212 1.059-1.624V20.77c0-1.482-.283-1.906-1.059-1.906H59.51V14.77h3.74c3.247 0 6.423-.353 7.835-.636v6.846c2.117-4.587 5.434-7.058 10.516-7.058 5.505 0 8.963 2.612 10.092 8.117 1.906-5.293 5.435-8.117 11.011-8.117 7.481 0 11.08 4.165 11.08 13.128v16.233c0 1.412.353 1.623 1.059 1.623h3.953V49h-16.304v-4.093h3.599c.636 0 .989-.212.989-1.624v-15.81c0-6.07-1.977-8.751-6.705-8.751-5.153 0-7.835 4.235-7.835 11.787v12.774c0 1.412.353 1.623.988 1.623h4.023V49H81.248v-4.093h3.529c.635 0 1.058-.212 1.058-1.624V26.627c0-5.223-2.329-7.905-6.704-7.905-5.153 0-7.905 4.235-7.905 11.787v12.774c0 1.412.353 1.623 1.058 1.623h3.741V49H59.51Zm89.461-34.866v7.976c2.258-5.364 6.493-8.188 12.068-8.188 7.199 0 10.87 4.094 10.87 12.21v17.151c0 1.412.352 1.623 1.058 1.623h3.953V49h-16.375v-4.093h3.67c.636 0 .989-.212.989-1.624V26.344c0-5.293-1.977-7.693-6.635-7.693-5.787 0-9.528 4.87-9.528 13.904v10.728c0 1.412.353 1.623 1.059 1.623h3.74V49h-16.515v-4.093h3.952c.706 0 1.059-.212 1.059-1.624V20.77c0-1.482-.282-1.906-1.059-1.906h-3.952V14.77h3.811c3.176 0 6.352-.353 7.835-.636Z" />
+                <path fill="#7DD3FC"
+                    d="M184.672 49.847c-2.611 0-4.446-1.906-4.446-4.517 0-2.611 1.835-4.517 4.446-4.517 2.612 0 4.517 1.905 4.517 4.517 0 2.611-1.905 4.517-4.517 4.517Z" />
+            </svg>
+        </a>
+
+        <!-- Hamburger Button (visible on xs to md devices) -->
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasMenu" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Regular Navbar (hidden on xs to md devices) -->
+        <nav class="navbar navbar-expand-lg d-none d-lg-flex">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="bubbles.html">Bubbles</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Social Icons (hidden on xs to md devices) -->
+        <div class="social-icons d-none d-lg-flex">
+            <a href="https://www.linkedin.com/feed/" class="mx-2">
+                <img src="img/footer/linked-in.svg" alt="LinkedIn">
             </a>
+            <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
+                <img src="img/footer/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://github.com/kimnellans" class="mx-2">
+                <img src="img/footer/git.svg" alt="GitHub">
+            </a>
+        </div>
 
-            <!-- Hamburger Button (visible on xs to md devices) -->
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Regular Navbar (hidden on xs to md devices) -->
-            <nav class="d-none d-lg-flex">
-                <ul class="nav justify-content-center">
+        <!-- Offcanvas Menu Structure -->
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
@@ -55,52 +95,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="bubbles.html">Bubbles</a>
+                    </li>
                 </ul>
-            </nav>
-
-            <!-- Social Icons (hidden on xs to md devices) -->
-            <div class="social-icons d-none d-lg-flex">
-                <a href="https://www.linkedin.com/feed/" class="mx-2">
-                    <img src="img/footer/linked-in.svg" alt="LinkedIn">
-                </a>
-                <a href="https://www.instagram.com/indiatraveladventure/" class="mx-2">
-                    <img src="img/footer/instagram.svg" alt="Instagram">
-                </a>
-                <a href="https://github.com/kimnellans" class="mx-2">
-                    <img src="img/footer/git.svg" alt="GitHub">
-                </a>
-            </div>
-
-            <!-- Offcanvas Toggle Button -->
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasMenu" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <!-- Offcanvas Menu Structure -->
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasMenu" aria-labelledby="offcanvasMenuLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasMenuLabel">Menu</h5>
-                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
-                        aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="files/Resume_KimNellans.pdf" target="_blank">Resume</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
         </div>
-    </header>
-    <!-- End of Header -->
+    </div>
+</header>
+<!-- End of Header -->
 
     <main>
         <section class="hero-overlay bg-dark">
