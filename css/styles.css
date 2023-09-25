@@ -610,29 +610,31 @@ nav a:hover {
   position: absolute;
   opacity: 0;
   transform: scale(0);
-  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  transition: opacity 0.3s ease-out;
   --x: 0px;
   --y: 0px;
 }
 
 .yuj-link:hover .yuj-emoji {
-  opacity: 0.8; /* Slightly transparent for a more ethereal feel */
+  opacity: 1;
   transform: scale(1) translate(var(--x), var(--y));
+  transition: opacity 0.3s ease-out, transform 0s;
+  animation: float 2s infinite alternate;
 }
 
-/* Gentle floating positions */
-.yuj-link .yuj-emoji:nth-child(5) { top: 10%; left: -10%; --x: -10px; --y: -10px; }
-.yuj-link .yuj-emoji:nth-child(6) { top: 90%; right: -10%; --x: 10px; --y: 10px; }
-.yuj-link .yuj-emoji:nth-child(7) { top: -10%; left: 20%; --x: -10px; --y: -10px; }
-.yuj-link .yuj-emoji:nth-child(8) { bottom: -10%; left: 70%; --x: 10px; --y: 10px; }
-.yuj-link .yuj-emoji:nth-child(9) { top: 5%; left: 10%; --x: -10px; --y: -10px; }
-.yuj-link .yuj-emoji:nth-child(10) { top: 15%; left: -15%; --x: -15px; --y: -15px; }
-.yuj-link .yuj-emoji:nth-child(11) { top: 85%; right: -15%; --x: 15px; --y: 15px; }
-.yuj-link .yuj-emoji:nth-child(12) { top: -15%; left: 25%; --x: -15px; --y: -15px; }
-.yuj-link .yuj-emoji:nth-child(13) { bottom: -15%; left: 75%; --x: 15px; --y: 15px; }
-.yuj-link .yuj-emoji:nth-child(14) { top: 7%; left: 15%; --x: -15px; --y: -15px; }
-.yuj-link .yuj-emoji:nth-child(15) { top: 7%; right: 15%; --x: 15px; --y: -15px; }
-.yuj-link .yuj-emoji:nth-child(16) { bottom: 7%; left: 15%; --x: -15px; --y: 15px; }
-.yuj-link .yuj-emoji:nth-child(17) { bottom: 7%; right: 15%; --x: 15px; --y: 15px; }
-.yuj-link .yuj-emoji:nth-child(18) { top: 50%; left: -15%; --x: -15px; --y: 0px; }
-.yuj-link .yuj-emoji:nth-child(19) { top: 50%; right: -15%; --x: 15px; --y: 0px; }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
+}
+
+/* Randomized positioning */
+.yuj-link .yuj-emoji:nth-child(10) { top: 10%; left: -5%; --x: -10px; --y: -10px; }
+.yuj-link .yuj-emoji:nth-child(11) { top: 90%; right: -5%; --x: 10px; --y: 10px; }
+.yuj-link .yuj-emoji:nth-child(12) { top: -5%; left: 20%; --x: -10px; --y: -10px; }
+.yuj-link .yuj-emoji:nth-child(13) { bottom: -5%; left: 70%; --x: 10px; --y: 10px; }
+.yuj-link .yuj-emoji:nth-child(14) { top: 5%; left: 10%; --x: -10px; --y: -10px; }
+.yuj-link .yuj-emoji:nth-child(15) { top: 5%; right: 10%; --x: 10px; --y: -10px; }
+.yuj-link .yuj-emoji:nth-child(16) { bottom: 5%; left: 10%; --x: -10px; --y: 10px; }
+.yuj-link .yuj-emoji:nth-child(17) { bottom: 5%; right: 10%; --x: 10px; --y: 10px; }
+.yuj-link .yuj-emoji:nth-child(18) { top: 50%; left: -5%; --x: -10px; --y: 0px; }
+.yuj-link .yuj-emoji:nth-child(19) { top: 50%; right: -5%; --x: 10px; --y: 0px; }

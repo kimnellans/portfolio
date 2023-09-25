@@ -52,8 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
   
     yujLink.addEventListener('mouseenter', function() {
       yujEmojis.forEach((emoji) => {
-        emoji.style.opacity = '0.8';
-        emoji.style.transform = `scale(1) translate(${emoji.style.getPropertyValue('--x')}, ${emoji.style.getPropertyValue('--y')})`;
+        emoji.style.opacity = '1';
+        emoji.style.animation = 'float 0.5s forwards';
       });
     });
   
@@ -63,20 +63,17 @@ document.addEventListener('DOMContentLoaded', function() {
       const y = e.clientY - rect.top;
   
       yujEmojis.forEach((emoji) => {
-        const dx = (emoji.getAttribute('data-dx') || 0) * (x / rect.width - 0.5);
-        const dy = (emoji.getAttribute('data-dy') || 0) * (y / rect.height - 0.5);
+        const dx = (emoji.getAttribute('data-dx') || 0) * (x / rect.width - 0.5) * 2;
+        const dy = (emoji.getAttribute('data-dy') || 0) * (y / rect.height - 0.5) * 2;
         emoji.style.transform = `translate(${dx}px, ${dy}px)`;
       });
     });
   
     yujLink.addEventListener('mouseleave', function() {
       yujEmojis.forEach((emoji) => {
-        emoji.style.transition = 'none';
         emoji.style.opacity = '0';
+        emoji.style.animation = 'none';
         emoji.style.transform = 'none';
-        setTimeout(() => {
-          emoji.style.transition = 'opacity 0.5s ease-out, transform 0.5s ease-out';
-        }, 10);
       });
     });
   });
