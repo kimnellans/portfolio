@@ -45,20 +45,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   //js for YUJ interaction
-  document.addEventListener('DOMContentLoaded', function() {
-    const yujLink = document.querySelector('.yuj-link');
-    const yujEmojis = document.querySelectorAll('.yuj-emoji');
-  
-    yujLink.addEventListener('mouseenter', function() {
-      yujEmojis.forEach((emoji) => {
-        emoji.style.opacity = '1';
-      });
+  function bubbles() {
+    $.each($(".yuj-link"), function(){
+       var bubblecount = ($(this).width()/50)*10;
+       var emojis = ["🧘", "🕉️", "✨", "🌙", "☮️", "🦄", "🌈", "💎", "❤️", "☀️", "🌒", "🧚‍♀️", "🙏", "📿"];
+       for(var i = 0; i <= bubblecount; i++) {
+          var size = ($.rnd(40,80)/10);
+          var randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+          $(this).append('<span class="yuj-emoji" aria-hidden="true" style="top:' + $.rnd(20,80) + '%; left:' + $.rnd(0,95) + '%;font-size:' + size + 'px;animation-delay: ' + ($.rnd(0,30)/10) + 's;">' + randomEmoji + '</span>');
+       }
     });
-  
-    yujLink.addEventListener('mouseleave', function() {
-      yujEmojis.forEach((emoji) => {
-        emoji.style.opacity = '0';
-      });
-    });
-  });
-  
+ }
+ 
+ jQuery.rnd = function(m,n) {
+       m = parseInt(m);
+       n = parseInt(n);
+       return Math.floor( Math.random() * (n - m + 1) ) + m;
+ }
+ 
+ $(document).ready(function() {
+     bubbles();
+ });
+ 

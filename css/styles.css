@@ -610,48 +610,11 @@ nav a:hover {
   position: absolute;
   opacity: 0;
   transition: opacity 0.3s ease-out;
+  animation: float 2s infinite alternate;
 }
 
-/* Different floating animations */
-@keyframes float1 {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(-10px, -10px); }
+@keyframes float {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(-10px); }
 }
 
-@keyframes float2 {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(10px, -10px); }
-}
-
-@keyframes float3 {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(-10px, 10px); }
-}
-
-@keyframes float4 {
-  0%, 100% { transform: translate(0, 0); }
-  50% { transform: translate(10px, 10px); }
-}
-
-.yuj-link:hover .yuj-emoji:nth-child(odd) {
-  opacity: 1;
-  animation: float1 2s infinite alternate;
-}
-
-.yuj-link:hover .yuj-emoji:nth-child(even) {
-  opacity: 1;
-  animation: float2 2s infinite alternate;
-}
-
-/* More randomized positioning */
-.yuj-link .yuj-emoji:nth-child(2) { top: 5%; left: -10%; }
-.yuj-link .yuj-emoji:nth-child(3) { top: 85%; right: -5%; }
-.yuj-link .yuj-emoji:nth-child(4) { top: -10%; left: 25%; }
-.yuj-link .yuj-emoji:nth-child(5) { bottom: -5%; left: 65%; }
-.yuj-link .yuj-emoji:nth-child(6) { top: 10%; left: 5%; }
-.yuj-link .yuj-emoji:nth-child(7) { top: 15%; right: 5%; }
-.yuj-link .yuj-emoji:nth-child(8) { bottom: 15%; left: 5%; }
-.yuj-link .yuj-emoji:nth-child(9) { bottom: 10%; right: 5%; }
-.yuj-link .yuj-emoji:nth-child(10) { top: 45%; left: -10%; }
-.yuj-link .yuj-emoji:nth-child(11) { top: 55%; right: -10%; }
-/* ... continue for other emojis ... */
