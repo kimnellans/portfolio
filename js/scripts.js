@@ -45,7 +45,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
   //js for YUJ interaction
-
   document.addEventListener('DOMContentLoaded', function() {
     const yujLink = document.querySelector('.yuj-link');
     const yujEmojis = document.querySelectorAll('.yuj-emoji');
@@ -53,7 +52,8 @@ document.addEventListener('DOMContentLoaded', function() {
     yujLink.addEventListener('mouseenter', function() {
       yujEmojis.forEach((emoji) => {
         emoji.style.opacity = '1';
-        emoji.style.animation = 'float 0.5s forwards';
+        // Remove the animation on hover to keep them near the link
+        emoji.style.animationPlayState = 'paused';
       });
     });
   
@@ -72,8 +72,8 @@ document.addEventListener('DOMContentLoaded', function() {
     yujLink.addEventListener('mouseleave', function() {
       yujEmojis.forEach((emoji) => {
         emoji.style.opacity = '0';
-        emoji.style.animation = 'none';
-        emoji.style.transform = 'none';
+        // Resume the floating animation when the mouse leaves
+        emoji.style.animationPlayState = 'running';
       });
     });
   });

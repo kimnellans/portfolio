@@ -611,30 +611,44 @@ nav a:hover {
   opacity: 0;
   transform: scale(0);
   transition: opacity 0.3s ease-out;
-  --x: 0px;
-  --y: 0px;
 }
 
 .yuj-link:hover .yuj-emoji {
   opacity: 1;
-  transform: scale(1) translate(var(--x), var(--y));
-  transition: opacity 0.3s ease-out, transform 0s;
-  animation: float 2s infinite alternate;
+  transform: scale(1) translate(var(--x, 0px), var(--y, 0px));
 }
 
-@keyframes float {
+/* Floating animations */
+@keyframes floatUp {
   0% { transform: translateY(0px); }
   100% { transform: translateY(-10px); }
 }
 
-/* More randomized positioning */
-.yuj-link .yuj-emoji:nth-child(10) { top: 5%; left: -10%; --x: -15px; --y: -15px; }
-.yuj-link .yuj-emoji:nth-child(11) { top: 85%; right: -5%; --x: 15px; --y: 15px; }
-.yuj-link .yuj-emoji:nth-child(12) { top: -10%; left: 25%; --x: -15px; --y: -15px; }
-.yuj-link .yuj-emoji:nth-child(13) { bottom: -5%; left: 65%; --x: 15px; --y: 15px; }
-.yuj-link .yuj-emoji:nth-child(14) { top: 10%; left: 5%; --x: -15px; --y: -15px; }
-.yuj-link .yuj-emoji:nth-child(15) { top: 15%; right: 5%; --x: 15px; --y: -15px; }
-.yuj-link .yuj-emoji:nth-child(16) { bottom: 15%; left: 5%; --x: -15px; --y: 15px; }
-.yuj-link .yuj-emoji:nth-child(17) { bottom: 10%; right: 5%; --x: 15px; --y: 15px; }
-.yuj-link .yuj-emoji:nth-child(18) { top: 45%; left: -10%; --x: -15px; --y: 0px; }
-.yuj-link .yuj-emoji:nth-child(19) { top: 55%; right: -10%; --x: 15px; --y: 0px; }
+@keyframes floatDown {
+  0% { transform: translateY(0px); }
+  100% { transform: translateY(10px); }
+}
+
+@keyframes floatLeft {
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(-10px); }
+}
+
+@keyframes floatRight {
+  0% { transform: translateX(0px); }
+  100% { transform: translateX(10px); }
+}
+
+/* Assign different animations to different emojis for randomness */
+.yuj-link .yuj-emoji:nth-child(10) { top: 5%; left: -10%; animation: floatUp 5s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(11) { top: 85%; right: -5%; animation: floatDown 6s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(12) { top: -10%; left: 25%; animation: floatLeft 4s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(13) { bottom: -5%; left: 65%; animation: floatRight 5.5s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(14) { top: 10%; left: 5%; animation: floatUp 4.5s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(15) { top: 15%; right: 5%; animation: floatDown 5.2s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(16) { bottom: 15%; left: 5%; animation: floatLeft 5.8s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(17) { bottom: 10%; right: 5%; animation: floatRight 4.7s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(18) { top: 45%; left: -10%; animation: floatUp 6.1s infinite alternate; }
+.yuj-link .yuj-emoji:nth-child(19) { top: 55%; right: -10%; animation: floatDown 5.9s infinite alternate; }
+/* ... (repeat for other emojis with different animations and durations) ... */
+
