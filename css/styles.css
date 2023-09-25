@@ -612,18 +612,38 @@ nav a:hover {
   transition: opacity 0.3s ease-out;
 }
 
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
+/* Different floating animations */
+@keyframes float1 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-10px, -10px); }
 }
 
-.yuj-link:hover .yuj-emoji {
+@keyframes float2 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(10px, -10px); }
+}
+
+@keyframes float3 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-10px, 10px); }
+}
+
+@keyframes float4 {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(10px, 10px); }
+}
+
+.yuj-link:hover .yuj-emoji:nth-child(odd) {
   opacity: 1;
-  animation: float 2s infinite;
+  animation: float1 2s infinite alternate;
 }
 
-/* Randomized positioning */
+.yuj-link:hover .yuj-emoji:nth-child(even) {
+  opacity: 1;
+  animation: float2 2s infinite alternate;
+}
+
+/* More randomized positioning */
 .yuj-link .yuj-emoji:nth-child(2) { top: 5%; left: -10%; }
 .yuj-link .yuj-emoji:nth-child(3) { top: 85%; right: -5%; }
 .yuj-link .yuj-emoji:nth-child(4) { top: -10%; left: 25%; }
