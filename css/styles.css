@@ -573,10 +573,17 @@ nav a:hover {
   position: absolute;
   opacity: 0; /* initially hide the emojis */
   transform: scale(0);
-  transition: all 0.3s ease-out; /* smooth transition effect */
+  transition: opacity 0.3s ease-out; /* Only transition the opacity */
   --x: 0px; /* default translation values */
   --y: 0px;
 }
+
+.case-study-link:hover .emoji {
+  opacity: 1; /* show the emojis on hover */
+  transform: scale(1) translate(var(--x), var(--y)); /* scale to original size and apply translation */
+  transition: opacity 0.3s ease-out, transform 0s; /* Add transform 0s to remove the transition for position changes */
+}
+
 
 /* More dramatic positioning and movement */
 .case-study-link .emoji:nth-child(2) { top: 10%; left: -10%; --x: -40px; --y: -40px; }
