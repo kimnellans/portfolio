@@ -558,21 +558,22 @@ nav a:hover {
   text-decoration: none;
   color: #333; /* or any color you prefer */
   overflow: visible; /* allow the emojis to be visible outside the link's boundary */
+  display: inline-block; /* to ensure the relative positioning works correctly */
 }
 
 .emoji {
   position: absolute;
   opacity: 0; /* initially hide the emojis */
   transform: scale(0); /* start with the emojis scaled down to 0 */
-  transition: all 0.2s ease-out; /* faster transition for explosive effect */
+  transition: all 0.3s ease-out; /* smooth transition effect */
 }
 
-/* Position each emoji around the link */
-.case-study-link .emoji:nth-child(2) { top: -20%; left: 50%; transform: translateY(-100%) translateX(-50%); }
-.case-study-link .emoji:nth-child(3) { bottom: -20%; left: 50%; transform: translateY(100%) translateX(-50%); }
-.case-study-link .emoji:nth-child(4) { left: -20%; top: 50%; transform: translateX(-100%) translateY(-50%); }
-.case-study-link .emoji:nth-child(5) { right: -20%; top: 50%; transform: translateX(100%) translateY(-50%); }
-.case-study-link .emoji:nth-child(6) { top: 0; left: -20%; transform: translateX(-100%); }
-.case-study-link .emoji:nth-child(7) { top: 0; right: -20%; transform: translateX(100%); }
-.case-study-link .emoji:nth-child(8) { bottom: 0; left: -20%; transform: translateX(-100%); }
-.case-study-link .emoji:nth-child(9) { bottom: 0; right: -20%; transform: translateX(100%); }
+/* Position each emoji around the link in a circular pattern */
+.case-study-link .emoji:nth-child(2) { top: 0%; left: -10%; }
+.case-study-link .emoji:nth-child(3) { top: 0%; right: -10%; }
+.case-study-link .emoji:nth-child(4) { top: -10%; left: 50%; transform: translateX(-50%); }
+.case-study-link .emoji:nth-child(5) { bottom: -10%; left: 50%; transform: translateX(-50%); }
+.case-study-link .emoji:nth-child(6) { top: -10%; left: 0; }
+.case-study-link .emoji:nth-child(7) { top: -10%; right: 0; }
+.case-study-link .emoji:nth-child(8) { bottom: -10%; left: 0; }
+.case-study-link .emoji:nth-child(9) { bottom: -10%; right: 0; }

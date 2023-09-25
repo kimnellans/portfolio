@@ -9,11 +9,9 @@ document.addEventListener('DOMContentLoaded', function() {
     const emojis = document.querySelectorAll('.emoji');
   
     link.addEventListener('mouseenter', function() {
-      emojis.forEach((emoji, index) => {
-        setTimeout(() => {
-          emoji.style.opacity = '1';
-          emoji.style.transform = 'scale(1)';
-        }, index * 50); // 50ms delay between each emoji animation for a rapid explosion
+      emojis.forEach((emoji) => {
+        emoji.style.opacity = '1';
+        emoji.style.transform = 'scale(1.2)'; // expand the emojis slightly for the "breathe" effect
       });
     });
   
