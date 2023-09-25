@@ -52,28 +52,12 @@ document.addEventListener('DOMContentLoaded', function() {
     yujLink.addEventListener('mouseenter', function() {
       yujEmojis.forEach((emoji) => {
         emoji.style.opacity = '1';
-        // Remove the animation on hover to keep them near the link
-        emoji.style.animationPlayState = 'paused';
-      });
-    });
-  
-    yujLink.addEventListener('mousemove', function(e) {
-      const rect = yujLink.getBoundingClientRect();
-      const x = e.clientX - rect.left;
-      const y = e.clientY - rect.top;
-  
-      yujEmojis.forEach((emoji) => {
-        const dx = (emoji.getAttribute('data-dx') || 0) * (x / rect.width - 0.5) * 2;
-        const dy = (emoji.getAttribute('data-dy') || 0) * (y / rect.height - 0.5) * 2;
-        emoji.style.transform = `translate(${dx}px, ${dy}px)`;
       });
     });
   
     yujLink.addEventListener('mouseleave', function() {
       yujEmojis.forEach((emoji) => {
         emoji.style.opacity = '0';
-        // Resume the floating animation when the mouse leaves
-        emoji.style.animationPlayState = 'running';
       });
     });
   });
