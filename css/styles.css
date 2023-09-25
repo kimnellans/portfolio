@@ -571,12 +571,12 @@ nav a:hover {
   transition: all 0.3s ease-out; /* smooth transition effect */
 }
 
-/* Position each emoji around the link in a tight cluster */
-.case-study-link .emoji:nth-child(2) { top: 50%; left: -5%; transform: translateY(-50%); }
-.case-study-link .emoji:nth-child(3) { top: 50%; right: -5%; transform: translateY(-50%); }
-.case-study-link .emoji:nth-child(4) { top: -5%; left: 50%; transform: translateX(-50%); }
-.case-study-link .emoji:nth-child(5) { bottom: -5%; left: 50%; transform: translateX(-50%); }
-.case-study-link .emoji:nth-child(6) { top: -5%; left: 25%; transform: translateX(-50%); }
-.case-study-link .emoji:nth-child(7) { top: -5%; right: 25%; transform: translateX(50%); }
-.case-study-link .emoji:nth-child(8) { bottom: -5%; left: 25%; transform: translateX(-50%); }
-.case-study-link .emoji:nth-child(9) { bottom: -5%; right: 25%; transform: translateX(50%); }
+/* Adjusted positioning with some randomness */
+.case-study-link .emoji:nth-child(2) { top: 30%; left: -10%; transform: translateY(-30%); }
+.case-study-link .emoji:nth-child(3) { top: 70%; right: -10%; transform: translateY(-70%); }
+.case-study-link .emoji:nth-child(4) { top: -10%; left: 40%; transform: translateX(-40%); }
+.case-study-link .emoji:nth-child(5) { bottom: -10%; left: 60%; transform: translateX(-60%); }
+.case-study-link .emoji:nth-child(6) { top: -10%; left: 20%; transform: translateX(-20%); }
+.case-study-link .emoji:nth-child(7) { top: -10%; right: 20%; transform: translateX(20%); }
+.case-study-link .emoji:nth-child(8) { bottom: -10%; left: 10%; transform: translateX(-10%); }
+.case-study-link .emoji:nth-child(9) { bottom: -10%; right: 10%; transform: translateX(10%); }
