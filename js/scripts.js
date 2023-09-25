@@ -44,15 +44,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
- //js for YUJ interaction
+//js for YUJ interaction
 function bubbles() {
   $.each($(".yuj-link"), function(){
       var bubblecount = ($(this).width()/50)*10;
       var emojis = ["🧘", "🕉️", "✨", "🌙", "☮️", "🦄", "🌈", "💎", "❤️", "☀️", "🌒", "🧚‍♀️", "🙏", "📿"];
       for(var i = 0; i <= bubblecount; i++) {
-          var size = ($.rnd(20,40)/10); // Adjusted size for better visibility
+          var size = ($.rnd(20,40)/10);
           var randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
-          $(this).append('<span class="yuj-emoji" aria-hidden="true" style="top:' + $.rnd(-10,110) + '%; left:' + $.rnd(-10,110) + '%;font-size:' + size + 'em;animation-delay: ' + ($.rnd(0,30)/10) + 's;">' + randomEmoji + '</span>');
+          $(this).append('<span class="yuj-emoji" aria-hidden="true" style="top:' + $.rnd(-20,120) + '%; left:' + $.rnd(-20,120) + '%;font-size:' + size + 'em;animation-delay: ' + ($.rnd(0,30)/10) + 's;">' + randomEmoji + '</span>');
       }
   });
 }

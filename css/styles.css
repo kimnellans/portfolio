@@ -607,11 +607,15 @@ nav a:hover {
   padding: 10px;
 }
 
-.yuj-link .emoji {
+.yuj-link .yuj-emoji { /* Renamed to match the class in JS */
   position: absolute;
-  opacity: 0.8; /* Adjusted for better visibility */
+  opacity: 0; /* Emojis are initially invisible */
   animation: float 2s infinite alternate, drift 10s infinite alternate;
   will-change: transform;
+}
+
+.yuj-link:hover .yuj-emoji {
+  opacity: 0.8; /* Emojis become visible on hover with 0.8 opacity */
 }
 
 @keyframes float {
@@ -628,17 +632,17 @@ nav a:hover {
 }
 
 /* Random positions for each emoji */
-.yuj-link .emoji:nth-child(1) { top: 10%; left: 5%; }
-.yuj-link .emoji:nth-child(2) { top: 20%; left: 15%; }
-.yuj-link .emoji:nth-child(3) { top: 30%; left: 25%; }
-.yuj-link .emoji:nth-child(4) { top: 40%; left: 35%; }
-.yuj-link .emoji:nth-child(5) { top: 50%; left: 45%; }
-.yuj-link .emoji:nth-child(6) { top: 60%; left: 55%; }
-.yuj-link .emoji:nth-child(7) { top: 70%; left: 65%; }
-.yuj-link .emoji:nth-child(8) { top: 80%; left: 75%; }
-.yuj-link .emoji:nth-child(9) { top: 90%; left: 85%; }
-.yuj-link .emoji:nth-child(10) { top: 80%; left: 10%; }
-.yuj-link .emoji:nth-child(11) { top: 70%; left: 20%; }
-.yuj-link .emoji:nth-child(12) { top: 60%; left: 30%; }
-.yuj-link .emoji:nth-child(13) { top: 50%; left: 40%; }
-.yuj-link .emoji:nth-child(14) { top: 40%; left: 50%; }
+.yuj-link .yuj-emoji:nth-child(1) { top: 10%; left: 5%; }
+.yuj-link .yuj-emoji:nth-child(2) { top: 20%; left: 15%; }
+.yuj-link .yuj-emoji:nth-child(3) { top: 30%; left: 25%; }
+.yuj-link .yuj-emoji:nth-child(4) { top: 40%; left: 35%; }
+.yuj-link .yuj-emoji:nth-child(5) { top: 50%; left: 45%; }
+.yuj-link .yuj-emoji:nth-child(6) { top: 60%; left: 55%; }
+.yuj-link .yuj-emoji:nth-child(7) { top: 70%; left: 65%; }
+.yuj-link .yuj-emoji:nth-child(8) { top: 80%; left: 75%; }
+.yuj-link .yuj-emoji:nth-child(9) { top: 90%; left: 85%; }
+.yuj-link .yuj-emoji:nth-child(10) { top: 80%; left: 10%; }
+.yuj-link .yuj-emoji:nth-child(11) { top: 70%; left: 20%; }
+.yuj-link .yuj-emoji:nth-child(12) { top: 60%; left: 30%; }
+.yuj-link .yuj-emoji:nth-child(13) { top: 50%; left: 40%; }
+.yuj-link .yuj-emoji:nth-child(14) { top: 40%; left: 50%; }
