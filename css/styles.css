@@ -553,12 +553,15 @@ nav a:hover {
 
 /* Lovavore interactive cs link */
 
+/* ... other styles ... */
+
 .case-study-link {
   position: relative;
   text-decoration: none;
   color: #333; /* or any color you prefer */
   overflow: visible; /* allow the emojis to be visible outside the link's boundary */
   display: inline-block; /* to ensure the relative positioning works correctly */
+  padding: 10px; /* provide some space for the emojis */
 }
 
 .emoji {
@@ -568,12 +571,12 @@ nav a:hover {
   transition: all 0.3s ease-out; /* smooth transition effect */
 }
 
-/* Position each emoji around the link in a circular pattern */
-.case-study-link .emoji:nth-child(2) { top: 0%; left: -10%; }
-.case-study-link .emoji:nth-child(3) { top: 0%; right: -10%; }
-.case-study-link .emoji:nth-child(4) { top: -10%; left: 50%; transform: translateX(-50%); }
-.case-study-link .emoji:nth-child(5) { bottom: -10%; left: 50%; transform: translateX(-50%); }
-.case-study-link .emoji:nth-child(6) { top: -10%; left: 0; }
-.case-study-link .emoji:nth-child(7) { top: -10%; right: 0; }
-.case-study-link .emoji:nth-child(8) { bottom: -10%; left: 0; }
-.case-study-link .emoji:nth-child(9) { bottom: -10%; right: 0; }
+/* Position each emoji around the link in a tight cluster */
+.case-study-link .emoji:nth-child(2) { top: 50%; left: -5%; transform: translateY(-50%); }
+.case-study-link .emoji:nth-child(3) { top: 50%; right: -5%; transform: translateY(-50%); }
+.case-study-link .emoji:nth-child(4) { top: -5%; left: 50%; transform: translateX(-50%); }
+.case-study-link .emoji:nth-child(5) { bottom: -5%; left: 50%; transform: translateX(-50%); }
+.case-study-link .emoji:nth-child(6) { top: -5%; left: 25%; transform: translateX(-50%); }
+.case-study-link .emoji:nth-child(7) { top: -5%; right: 25%; transform: translateX(50%); }
+.case-study-link .emoji:nth-child(8) { bottom: -5%; left: 25%; transform: translateX(-50%); }
+.case-study-link .emoji:nth-child(9) { bottom: -5%; right: 25%; transform: translateX(50%); }
