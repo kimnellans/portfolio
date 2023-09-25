@@ -553,7 +553,6 @@ nav a:hover {
 
 /* Lovavore interactive cs link */
 
-/* ... other styles ... */
 
 @keyframes explode {
   0% { transform: scale(0) translate(0, 0); }
@@ -563,25 +562,24 @@ nav a:hover {
 .case-study-link {
   position: relative;
   text-decoration: none;
-  color: #333; /* or any color you prefer */
-  overflow: visible; /* allow the emojis to be visible outside the link's boundary */
-  display: inline-block; /* to ensure the relative positioning works correctly */
-  padding: 10px; /* provide some space for the emojis */
+  color: #333;
+  overflow: visible;
+  display: inline-block;
+  padding: 10px;
 }
 
 .emoji {
   position: absolute;
-  opacity: 0; /* initially hide the emojis */
+  opacity: 0;
   transform: scale(0);
   transition: opacity 0.3s ease-out; /* Only transition the opacity */
-  --x: 0px; /* default translation values */
+  --x: 0px;
   --y: 0px;
 }
 
 .case-study-link:hover .emoji {
-  opacity: 1; /* show the emojis on hover */
-  transform: scale(1) translate(var(--x), var(--y)); /* scale to original size and apply translation */
-  transition: opacity 0.3s ease-out, transform 0s; /* Add transform 0s to remove the transition for position changes */
+  opacity: 1;
+  transform: scale(1) translate(var(--x), var(--y));
 }
 
 
