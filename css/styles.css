@@ -553,3 +553,26 @@ nav a:hover {
 
 /* Lovavore interactive cs link */
 
+.case-study-link {
+  position: relative;
+  text-decoration: none;
+  color: #333; /* or any color you prefer */
+  overflow: visible; /* allow the emojis to be visible outside the link's boundary */
+}
+
+.emoji {
+  position: absolute;
+  opacity: 0; /* initially hide the emojis */
+  transform: scale(0); /* start with the emojis scaled down to 0 */
+  transition: all 0.2s ease-out; /* faster transition for explosive effect */
+}
+
+/* Position each emoji around the link */
+.case-study-link .emoji:nth-child(2) { top: -20%; left: 50%; transform: translateX(-50%); }
+.case-study-link .emoji:nth-child(3) { bottom: -20%; left: 50%; transform: translateX(-50%); }
+.case-study-link .emoji:nth-child(4) { left: -20%; top: 50%; transform: translateY(-50%); }
+.case-study-link .emoji:nth-child(5) { right: -20%; top: 50%; transform: translateY(-50%); }
+.case-study-link .emoji:nth-child(6) { top: -20%; left: 0; }
+.case-study-link .emoji:nth-child(7) { top: -20%; right: 0; }
+.case-study-link .emoji:nth-child(8) { bottom: -20%; left: 0; }
+.case-study-link .emoji:nth-child(9) { bottom: -20%; right: 0; }
