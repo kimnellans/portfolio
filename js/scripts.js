@@ -1,5 +1,9 @@
 console.log("Hello World");
 
+
+
+// Locavore exploding fruit
+
 document.addEventListener('DOMContentLoaded', function() {
     const link = document.querySelector('.case-study-link');
     const emojis = document.querySelectorAll('.emoji');
@@ -8,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
       emojis.forEach((emoji, index) => {
         setTimeout(() => {
           emoji.style.opacity = '1';
-          emoji.style.transform = 'translateX(0)';
+          emoji.style.transform = 'scale(1)';
         }, index * 100); // 100ms delay between each emoji animation
       });
     });
@@ -17,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function() {
       emojis.forEach((emoji, index) => {
         setTimeout(() => {
           emoji.style.opacity = '0';
-          emoji.style.transform = 'translateX(100%)';
-        }, index * 100);
+          emoji.style.transform = 'scale(0)';
+        }, index * 50);
       });
     });
   });
