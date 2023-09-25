@@ -609,7 +609,7 @@ nav a:hover {
 
 .yuj-link .yuj-emoji { /* Renamed to match the class in JS */
   position: absolute;
-  opacity: 0; /* Emojis are initially invisible */
+  opacity: 1; /* Emojis are initially invisible */
   animation: float 2s infinite alternate, drift 10s infinite alternate;
   will-change: transform;
 }
