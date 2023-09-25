@@ -557,7 +557,6 @@ nav a:hover {
 
 @keyframes explode {
   0% { transform: scale(0) translate(0, 0); }
-  50% { transform: scale(1.2) translate(0, 0); }
   100% { transform: scale(1.5) translate(var(--x), var(--y)); }
 }
 
@@ -579,12 +578,12 @@ nav a:hover {
   --y: 0px;
 }
 
-/* Adjusted positioning with more randomness */
-.case-study-link .emoji:nth-child(2) { top: 20%; left: -5%; --x: -10px; --y: -10px; }
-.case-study-link .emoji:nth-child(3) { top: 80%; right: -5%; --x: 10px; --y: 10px; }
-.case-study-link .emoji:nth-child(4) { top: -5%; left: 30%; --x: -10px; --y: -10px; }
-.case-study-link .emoji:nth-child(5) { bottom: -5%; left: 70%; --x: 10px; --y: 10px; }
-.case-study-link .emoji:nth-child(6) { top: 10%; left: 10%; --x: -10px; --y: -10px; }
-.case-study-link .emoji:nth-child(7) { top: 10%; right: 10%; --x: 10px; --y: -10px; }
-.case-study-link .emoji:nth-child(8) { bottom: 10%; left: 10%; --x: -10px; --y: 10px; }
-.case-study-link .emoji:nth-child(9) { bottom: 10%; right: 10%; --x: 10px; --y: 10px; }
+/* More dramatic positioning and movement */
+.case-study-link .emoji:nth-child(2) { top: 10%; left: -10%; --x: -40px; --y: -40px; }
+.case-study-link .emoji:nth-child(3) { top: 90%; right: -10%; --x: 40px; --y: 40px; }
+.case-study-link .emoji:nth-child(4) { top: -10%; left: 20%; --x: -30px; --y: -30px; }
+.case-study-link .emoji:nth-child(5) { bottom: -10%; left: 70%; --x: 30px; --y: 30px; }
+.case-study-link .emoji:nth-child(6) { top: 5%; left: 10%; --x: -20px; --y: -20px; }
+.case-study-link .emoji:nth-child(7) { top: 5%; right: 10%; --x: 20px; --y: -20px; }
+.case-study-link .emoji:nth-child(8) { bottom: 5%; left: 10%; --x: -20px; --y: 20px; }
+.case-study-link .emoji:nth-child(9) { bottom: 5%; right: 10%; --x: 20px; --y: 20px; }

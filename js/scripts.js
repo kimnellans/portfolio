@@ -15,10 +15,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  link.addEventListener('mousemove', function(e) {
+    const rect = link.getBoundingClientRect();
+    const x = e.clientX - rect.left;
+    const y = e.clientY - rect.top;
+
+    emojis.forEach((emoji) => {
+      const dx = (emoji.getAttribute('data-dx') || 0) * (x / rect.width - 0.5);
+      const dy = (emoji.getAttribute('data-dy') || 0) * (y / rect.height - 0.5);
+      emoji.style.transform = `translate(${dx}px, ${dy}px)`;
+    });
+  });
+
   link.addEventListener('mouseleave', function() {
     emojis.forEach((emoji) => {
       emoji.style.opacity = '0';
       emoji.style.animation = 'none';
+      emoji.style.transform = 'none';
     });
   });
 });
