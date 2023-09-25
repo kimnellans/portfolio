@@ -627,14 +627,14 @@ nav a:hover {
   100% { transform: translateY(-10px); }
 }
 
-/* Randomized positioning */
-.yuj-link .yuj-emoji:nth-child(10) { top: 10%; left: -5%; --x: -10px; --y: -10px; }
-.yuj-link .yuj-emoji:nth-child(11) { top: 90%; right: -5%; --x: 10px; --y: 10px; }
-.yuj-link .yuj-emoji:nth-child(12) { top: -5%; left: 20%; --x: -10px; --y: -10px; }
-.yuj-link .yuj-emoji:nth-child(13) { bottom: -5%; left: 70%; --x: 10px; --y: 10px; }
-.yuj-link .yuj-emoji:nth-child(14) { top: 5%; left: 10%; --x: -10px; --y: -10px; }
-.yuj-link .yuj-emoji:nth-child(15) { top: 5%; right: 10%; --x: 10px; --y: -10px; }
-.yuj-link .yuj-emoji:nth-child(16) { bottom: 5%; left: 10%; --x: -10px; --y: 10px; }
-.yuj-link .yuj-emoji:nth-child(17) { bottom: 5%; right: 10%; --x: 10px; --y: 10px; }
-.yuj-link .yuj-emoji:nth-child(18) { top: 50%; left: -5%; --x: -10px; --y: 0px; }
-.yuj-link .yuj-emoji:nth-child(19) { top: 50%; right: -5%; --x: 10px; --y: 0px; }
+/* More randomized positioning */
+.yuj-link .yuj-emoji:nth-child(10) { top: 5%; left: -10%; --x: -15px; --y: -15px; }
+.yuj-link .yuj-emoji:nth-child(11) { top: 85%; right: -5%; --x: 15px; --y: 15px; }
+.yuj-link .yuj-emoji:nth-child(12) { top: -10%; left: 25%; --x: -15px; --y: -15px; }
+.yuj-link .yuj-emoji:nth-child(13) { bottom: -5%; left: 65%; --x: 15px; --y: 15px; }
+.yuj-link .yuj-emoji:nth-child(14) { top: 10%; left: 5%; --x: -15px; --y: -15px; }
+.yuj-link .yuj-emoji:nth-child(15) { top: 15%; right: 5%; --x: 15px; --y: -15px; }
+.yuj-link .yuj-emoji:nth-child(16) { bottom: 15%; left: 5%; --x: -15px; --y: 15px; }
+.yuj-link .yuj-emoji:nth-child(17) { bottom: 10%; right: 5%; --x: 15px; --y: 15px; }
+.yuj-link .yuj-emoji:nth-child(18) { top: 45%; left: -10%; --x: -15px; --y: 0px; }
+.yuj-link .yuj-emoji:nth-child(19) { top: 55%; right: -10%; --x: 15px; --y: 0px; }
